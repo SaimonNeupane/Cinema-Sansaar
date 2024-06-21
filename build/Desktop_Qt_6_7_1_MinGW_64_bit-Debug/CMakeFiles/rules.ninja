@@ -6,7 +6,7 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: Snasaar-Cinema
+# Project: Cinema-Sansaar
 # Configurations: Debug
 # =============================================================================
 # =============================================================================
@@ -14,7 +14,7 @@
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__Snasaar-Cinema_unscanned_Debug
+rule CXX_COMPILER__Cinema-Sansaar_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}C:\Qt\Tools\mingw1120_64\bin\g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -24,7 +24,7 @@ rule CXX_COMPILER__Snasaar-Cinema_unscanned_Debug
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__Snasaar-Cinema_Debug
+rule CXX_EXECUTABLE_LINKER__Cinema-Sansaar_Debug
   command = cmd.exe /C "$PRE_LINK && C:\Qt\Tools\mingw1120_64\bin\g++.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE -Wl,--out-implib,$TARGET_IMPLIB -Wl,--major-image-version,0,--minor-image-version,0 $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\Qt\Tools\CMake_64\bin\cmake.exe --regenerate-during-build -SC:\Users\ACER\Desktop\Snasaar-Cinema -BC:\Users\ACER\Desktop\Snasaar-Cinema\build\Desktop_Qt_6_7_1_MinGW_64_bit-Debug
+  command = C:\Qt\Tools\CMake_64\bin\cmake.exe --regenerate-during-build -SC:\Users\ACER\Desktop\Cinema-Sansaar -BC:\Users\ACER\Desktop\Cinema-Sansaar\build\Desktop_Qt_6_7_1_MinGW_64_bit-Debug
   description = Re-running CMake...
   generator = 1
 

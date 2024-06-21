@@ -27,7 +27,7 @@ void MainWindow::on_checkBox_clicked(bool checked)
 void MainWindow::on_Login_clicked()
 {
     QSqlDatabase sqlitedb = QSqlDatabase::addDatabase("QSQLITE");
-    sqlitedb.setDatabaseName("C:/Users/ACER/Desktop/Snasaar-Cinema/Database/Data.db");
+    sqlitedb.setDatabaseName("C:/Users/ACER/Desktop/Cinema-Sansaar/Database/Data.db");
 
     QString username = ui->lineEdit->text();
     QString password = ui->lineEdit_2->text();

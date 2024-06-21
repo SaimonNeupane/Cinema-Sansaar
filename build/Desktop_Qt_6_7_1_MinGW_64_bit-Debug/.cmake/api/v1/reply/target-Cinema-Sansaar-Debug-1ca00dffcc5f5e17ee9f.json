@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Snasaar-Cinema.exe"
+			"path" : "Cinema-Sansaar.exe"
 		},
 		{
-			"path" : "Snasaar-Cinema.pdb"
+			"path" : "Cinema-Sansaar.pdb"
 		}
 	],
 	"backtrace" : 4,
@@ -51,7 +51,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 27,
+				"line" : 26,
 				"parent" : 0
 			},
 			{
@@ -75,19 +75,19 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 66,
+				"line" : 56,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 49,
+				"line" : 42,
 				"parent" : 0
 			},
 			{
 				"command" : 8,
 				"file" : 1,
-				"line" : 13,
+				"line" : 16,
 				"parent" : 0
 			},
 			{
@@ -326,7 +326,7 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "C:/Users/ACER/Desktop/Snasaar-Cinema/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Snasaar-Cinema_autogen/include"
+					"path" : "C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/include"
 				},
 				{
 					"backtrace" : 23,
@@ -380,14 +380,14 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "Snasaar-Cinema_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"id" : "Cinema-Sansaar_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 0,
-			"id" : "Snasaar-Cinema_autogen::@6890427a1f51a3e7e1df"
+			"id" : "Cinema-Sansaar_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "Snasaar-Cinema::@6890427a1f51a3e7e1df",
+	"id" : "Cinema-Sansaar::@6890427a1f51a3e7e1df",
 	"install" : 
 	{
 		"destinations" : 
@@ -399,7 +399,7 @@
 		],
 		"prefix" : 
 		{
-			"path" : "C:/Program Files (x86)/Snasaar-Cinema"
+			"path" : "C:/Program Files (x86)/Cinema-Sansaar"
 		}
 	},
 	"link" : 
@@ -486,8 +486,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Snasaar-Cinema",
-	"nameOnDisk" : "Snasaar-Cinema.exe",
+	"name" : "Cinema-Sansaar",
+	"nameOnDisk" : "Cinema-Sansaar.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -501,9 +501,7 @@
 			[
 				0,
 				1,
-				2,
-				7,
-				8
+				2
 			]
 		},
 		{
@@ -511,9 +509,7 @@
 			"sourceIndexes" : 
 			[
 				3,
-				5,
-				6,
-				9
+				5
 			]
 		},
 		{
@@ -521,14 +517,14 @@
 			"sourceIndexes" : 
 			[
 				4,
-				10
+				6
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				11
+				7
 			]
 		}
 	],
@@ -538,7 +534,7 @@
 			"backtrace" : 0,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Snasaar-Cinema_autogen/mocs_compilation.cpp",
+			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/mocs_compilation.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -564,41 +560,21 @@
 			"sourceGroupIndex" : 2
 		},
 		{
-			"backtrace" : 4,
-			"path" : "Database/sqlite3.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"path" : "Database/sqlite3ext.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"path" : "Database/sqlite3.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"path" : "Database/shell.c",
-			"sourceGroupIndex" : 0
-		},
-		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Snasaar-Cinema_autogen/include/ui_mainwindow.h",
+			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/include/ui_mainwindow.h",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Snasaar-Cinema_autogen/timestamp",
+			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/timestamp",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Snasaar-Cinema_autogen/timestamp.rule",
+			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/timestamp.rule",
 			"sourceGroupIndex" : 3
 		}
 	],
