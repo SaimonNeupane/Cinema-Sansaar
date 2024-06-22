@@ -20,6 +20,6 @@ To use this project, you need:
 
 # Contributors
 - [Aashutosh Upadhyaya Sapkota](https://github.com/ASU-N)
-- [Risham Raj (Byahut)]((https://github.com/RishamRaj-17)
+- [Risham Raj (Byahut)]((https://github.com/Rishamraj-17)
 - Saimon Neupane 
 
