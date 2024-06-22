@@ -17,12 +17,12 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "Snasaar-Cinema_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"id" : "Cinema-Sansaar_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
-	"id" : "Snasaar-Cinema_autogen::@6890427a1f51a3e7e1df",
+	"id" : "Cinema-Sansaar_autogen::@6890427a1f51a3e7e1df",
 	"isGeneratorProvided" : true,
-	"name" : "Snasaar-Cinema_autogen",
+	"name" : "Cinema-Sansaar_autogen",
 	"paths" : 
 	{
 		"build" : ".",
@@ -51,19 +51,19 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/Snasaar-Cinema_autogen",
+			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/Cinema-Sansaar_autogen",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/Snasaar-Cinema_autogen.rule",
+			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/Cinema-Sansaar_autogen.rule",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Snasaar-Cinema_autogen/timestamp.rule",
+			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/timestamp.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

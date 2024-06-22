@@ -50,6 +50,8 @@ void MainWindow::on_Login_clicked()
             if (query.next()) {
                 ui->label_3->setText("Login Successful");
                 qDebug() << "Login Successful";
+                dashboard = new Dashboard(this);
+                dashboard->show();
             } else {
                 ui->label_3->setText("No user exists with those credentials");
                 qDebug() << "No user exists with those credentials";
@@ -68,3 +70,10 @@ void MainWindow::on_Login_clicked()
         qDebug() << errorMsg;
     }
 }
+
+void MainWindow::on_Signup_clicked()
+{
+    signup = new Signup(this);
+        signup->show();
+}
+

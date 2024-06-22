@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-82a1807797f31d838c75.json",
+					"jsonFile" : "directory-.-Debug-500fe5256c136235ae3e.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Cinema-Sansaar::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Cinema-Sansaar-Debug-1ca00dffcc5f5e17ee9f.json",
+					"jsonFile" : "target-Cinema-Sansaar-Debug-6469e1d3e3c83748faa6.json",
 					"name" : "Cinema-Sansaar",
 					"projectIndex" : 0
 				},

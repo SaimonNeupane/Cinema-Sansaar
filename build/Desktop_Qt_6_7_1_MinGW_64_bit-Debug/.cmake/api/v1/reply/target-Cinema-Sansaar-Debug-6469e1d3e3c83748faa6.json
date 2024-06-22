@@ -41,7 +41,9 @@
 			"C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake",
 			"C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets.cmake",
 			"C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfig.cmake",
-			"C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake"
+			"C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake",
+			"C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6NetworkTargets.cmake",
+			"C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake"
 		],
 		"nodes" : 
 		[
@@ -75,13 +77,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 56,
+				"line" : 58,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 42,
+				"line" : 44,
 				"parent" : 0
 			},
 			{
@@ -259,6 +261,32 @@
 				"file" : 12,
 				"line" : 76,
 				"parent" : 37
+			},
+			{
+				"command" : 8,
+				"file" : 4,
+				"line" : 169,
+				"parent" : 8
+			},
+			{
+				"file" : 16,
+				"parent" : 40
+			},
+			{
+				"command" : 7,
+				"file" : 16,
+				"line" : 55,
+				"parent" : 41
+			},
+			{
+				"file" : 15,
+				"parent" : 42
+			},
+			{
+				"command" : 6,
+				"file" : 15,
+				"line" : 61,
+				"parent" : 43
 			}
 		]
 	},
@@ -288,6 +316,10 @@
 				{
 					"backtrace" : 23,
 					"define" : "QT_NEEDS_QMAIN"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "QT_NETWORK_LIB"
 				},
 				{
 					"backtrace" : 6,
@@ -357,6 +389,11 @@
 					"backtrace" : 6,
 					"isSystem" : true,
 					"path" : "C:/Qt/6.7.1/mingw_64/include/QtSql"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "C:/Qt/6.7.1/mingw_64/include/QtNetwork"
 				}
 			],
 			"language" : "CXX",
@@ -373,7 +410,9 @@
 			[
 				0,
 				1,
-				2
+				2,
+				6,
+				9
 			]
 		}
 	],
@@ -422,6 +461,11 @@
 			{
 				"backtrace" : 6,
 				"fragment" : "C:\\Qt\\6.7.1\\mingw_64\\lib\\libQt6Sql.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "C:\\Qt\\6.7.1\\mingw_64\\lib\\libQt6Network.a",
 				"role" : "libraries"
 			},
 			{
@@ -480,6 +524,11 @@
 				"role" : "libraries"
 			},
 			{
+				"backtrace" : 44,
+				"fragment" : "-lws2_32",
+				"role" : "libraries"
+			},
+			{
 				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
 				"role" : "libraries"
 			}
@@ -501,7 +550,9 @@
 			[
 				0,
 				1,
-				2
+				2,
+				6,
+				9
 			]
 		},
 		{
@@ -509,7 +560,11 @@
 			"sourceIndexes" : 
 			[
 				3,
-				5
+				5,
+				8,
+				11,
+				12,
+				13
 			]
 		},
 		{
@@ -517,14 +572,16 @@
 			"sourceIndexes" : 
 			[
 				4,
-				6
+				7,
+				10,
+				14
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				7
+				15
 			]
 		}
 	],
@@ -560,9 +617,53 @@
 			"sourceGroupIndex" : 2
 		},
 		{
+			"backtrace" : 4,
+			"path" : "dashboard.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "dashboard.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "dashboard.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "signup.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "signup.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "signup.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/include/ui_mainwindow.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/include/ui_dashboard.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/include/ui_signup.h",
 			"sourceGroupIndex" : 1
 		},
 		{
