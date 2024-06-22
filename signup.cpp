@@ -15,8 +15,8 @@ Signup::Signup(QWidget *parent)
     networkManager = new QNetworkAccessManager(this);
 
     // Set your Mailgun API key and domain
-    apiKey = "83f0e2060fc62ed09732ca264a447a4f-6fafb9bf-e8c2ff41";
-    mailgunDomain = "sandbox197ea7f998c84dd6902cac16aa72ab31.mailgun.org";
+    apiKey = "API KEY";
+    mailgunDomain = "DOMAIN";
 
     // Initialize SQLite database
     database = QSqlDatabase::addDatabase("QSQLITE");
