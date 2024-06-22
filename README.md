@@ -4,7 +4,7 @@
 Cinema Sansaar is a simple movie ticket booking system prototype developed using Qt Creator, a C++ framework. The application allows users to  select s tickets for their desired movies .
 
 # Features
-- **User Signup**: Users can sign up for a cinema membership by providing their username, email, password, and a verification code sent to their email.\
+- **User Signup**: Users can sign up for a cinema membership by providing their username, email, password, and a verification code sent to their email.
 - **Email Verification**: The application uses Mailgun to send a verification code to the user's email for verification during signup.
 - **Local Database**: SQLite is used for local storage to store user information securely.
 - **Internet Access**: Internet access is required during the signup process to send and receive verification emails.
