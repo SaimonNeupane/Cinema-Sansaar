@@ -691,5 +691,11 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/C
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wctype.h \
   C:/Users/ACER/Desktop/Cinema-Sansaar/dashboard.h \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/harry.h \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/kabir.h \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/mahajatra.h \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/mirzapur.h \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/sanju.h \
   C:/Users/ACER/Desktop/Cinema-Sansaar/signup.h \
-  C:/Users/ACER/Desktop/Cinema-Sansaar/sinister.h
+  C:/Users/ACER/Desktop/Cinema-Sansaar/sinister.h \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/thor.h

@@ -1,4 +1,4 @@
-C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/EWIEGA46WW/moc_dashboard.cpp: C:/Users/ACER/Desktop/Cinema-Sansaar/dashboard.h \
+C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/EWIEGA46WW/moc_kabir.cpp: C:/Users/ACER/Desktop/Cinema-Sansaar/kabir.h \
   C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/moc_predefs.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/q20memory.h \
@@ -347,11 +347,4 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/C
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/sys/types.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
-  C:/Users/ACER/Desktop/Cinema-Sansaar/harry.h \
-  C:/Users/ACER/Desktop/Cinema-Sansaar/kabir.h \
-  C:/Users/ACER/Desktop/Cinema-Sansaar/mahajatra.h \
-  C:/Users/ACER/Desktop/Cinema-Sansaar/mirzapur.h \
-  C:/Users/ACER/Desktop/Cinema-Sansaar/sanju.h \
-  C:/Users/ACER/Desktop/Cinema-Sansaar/sinister.h \
-  C:/Users/ACER/Desktop/Cinema-Sansaar/thor.h
+  C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h

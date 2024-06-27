@@ -322,9 +322,39 @@
 			null
 		],
 		[
+			"C:/Users/ACER/Desktop/Cinema-Sansaar/harry.h",
+			"MU",
+			"EWIEGA46WW/moc_harry.cpp",
+			null
+		],
+		[
+			"C:/Users/ACER/Desktop/Cinema-Sansaar/kabir.h",
+			"MU",
+			"EWIEGA46WW/moc_kabir.cpp",
+			null
+		],
+		[
+			"C:/Users/ACER/Desktop/Cinema-Sansaar/mahajatra.h",
+			"MU",
+			"EWIEGA46WW/moc_mahajatra.cpp",
+			null
+		],
+		[
 			"C:/Users/ACER/Desktop/Cinema-Sansaar/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
+			null
+		],
+		[
+			"C:/Users/ACER/Desktop/Cinema-Sansaar/mirzapur.h",
+			"MU",
+			"EWIEGA46WW/moc_mirzapur.cpp",
+			null
+		],
+		[
+			"C:/Users/ACER/Desktop/Cinema-Sansaar/sanju.h",
+			"MU",
+			"EWIEGA46WW/moc_sanju.cpp",
 			null
 		],
 		[
@@ -337,6 +367,12 @@
 			"C:/Users/ACER/Desktop/Cinema-Sansaar/sinister.h",
 			"MU",
 			"EWIEGA46WW/moc_sinister.cpp",
+			null
+		],
+		[
+			"C:/Users/ACER/Desktop/Cinema-Sansaar/thor.h",
+			"MU",
+			"EWIEGA46WW/moc_thor.cpp",
 			null
 		]
 	],
@@ -416,10 +452,16 @@
 	"SOURCES" : 
 	[
 		[ "C:/Users/ACER/Desktop/Cinema-Sansaar/dashboard.cpp", "MU", null ],
+		[ "C:/Users/ACER/Desktop/Cinema-Sansaar/harry.cpp", "MU", null ],
+		[ "C:/Users/ACER/Desktop/Cinema-Sansaar/kabir.cpp", "MU", null ],
+		[ "C:/Users/ACER/Desktop/Cinema-Sansaar/mahajatra.cpp", "MU", null ],
 		[ "C:/Users/ACER/Desktop/Cinema-Sansaar/main.cpp", "MU", null ],
 		[ "C:/Users/ACER/Desktop/Cinema-Sansaar/mainwindow.cpp", "MU", null ],
+		[ "C:/Users/ACER/Desktop/Cinema-Sansaar/mirzapur.cpp", "MU", null ],
+		[ "C:/Users/ACER/Desktop/Cinema-Sansaar/sanju.cpp", "MU", null ],
 		[ "C:/Users/ACER/Desktop/Cinema-Sansaar/signup.cpp", "MU", null ],
-		[ "C:/Users/ACER/Desktop/Cinema-Sansaar/sinister.cpp", "MU", null ]
+		[ "C:/Users/ACER/Desktop/Cinema-Sansaar/sinister.cpp", "MU", null ],
+		[ "C:/Users/ACER/Desktop/Cinema-Sansaar/thor.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
