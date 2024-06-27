@@ -307,7 +307,8 @@
 		"C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets.cmake",
 		"C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets-relwithdebinfo.cmake",
 		"C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginAdditionalTargetInfo.cmake",
-		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/GNUInstallDirs.cmake"
+		"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/GNUInstallDirs.cmake",
+		"C:/Users/ACER/Desktop/Cinema-Sansaar/Posters.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "C:/Users/ACER/Desktop/Cinema-Sansaar",
 	"DEP_FILE" : "C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/deps",
@@ -330,6 +331,12 @@
 			"C:/Users/ACER/Desktop/Cinema-Sansaar/signup.h",
 			"MU",
 			"EWIEGA46WW/moc_signup.cpp",
+			null
+		],
+		[
+			"C:/Users/ACER/Desktop/Cinema-Sansaar/sinister.h",
+			"MU",
+			"EWIEGA46WW/moc_sinister.cpp",
 			null
 		]
 	],
@@ -411,7 +418,8 @@
 		[ "C:/Users/ACER/Desktop/Cinema-Sansaar/dashboard.cpp", "MU", null ],
 		[ "C:/Users/ACER/Desktop/Cinema-Sansaar/main.cpp", "MU", null ],
 		[ "C:/Users/ACER/Desktop/Cinema-Sansaar/mainwindow.cpp", "MU", null ],
-		[ "C:/Users/ACER/Desktop/Cinema-Sansaar/signup.cpp", "MU", null ]
+		[ "C:/Users/ACER/Desktop/Cinema-Sansaar/signup.cpp", "MU", null ],
+		[ "C:/Users/ACER/Desktop/Cinema-Sansaar/sinister.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

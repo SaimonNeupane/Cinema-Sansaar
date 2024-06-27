@@ -907,6 +907,7 @@ Cinema-Sansaar_autogen/timestamp: \
 	C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
 	C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wctype.h \
 	C:/Users/ACER/Desktop/Cinema-Sansaar/CMakeLists.txt \
+	C:/Users/ACER/Desktop/Cinema-Sansaar/Posters.qrc \
 	C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake \
 	C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
 	C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeRCCompiler.cmake \
@@ -919,7 +920,10 @@ Cinema-Sansaar_autogen/timestamp: \
 	C:/Users/ACER/Desktop/Cinema-Sansaar/mainwindow.h \
 	C:/Users/ACER/Desktop/Cinema-Sansaar/signup.cpp \
 	C:/Users/ACER/Desktop/Cinema-Sansaar/signup.h \
+	C:/Users/ACER/Desktop/Cinema-Sansaar/sinister.cpp \
+	C:/Users/ACER/Desktop/Cinema-Sansaar/sinister.h \
 	C:/Users/ACER/Desktop/Cinema-Sansaar/dashboard.ui \
 	C:/Users/ACER/Desktop/Cinema-Sansaar/mainwindow.ui \
 	C:/Users/ACER/Desktop/Cinema-Sansaar/signup.ui \
+	C:/Users/ACER/Desktop/Cinema-Sansaar/sinister.ui \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

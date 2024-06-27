@@ -28,6 +28,11 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
         dashboard.h dashboard.cpp dashboard.ui
         signup.h signup.cpp signup.ui
+        Posters.qrc
+        sinister.h sinister.cpp sinister.ui
+
+
+
     )
 else()
     if(ANDROID)

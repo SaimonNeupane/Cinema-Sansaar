@@ -98,6 +98,7 @@ void Signup::verifyCode(const QString &email, const QString &code)
 
     if (query.next()) {
         QMessageBox::information(this, "Verification", "Verification successful!");
+        hide();
     } else {
         QMessageBox::warning(this, "Verification", "Verification failed. Please try again.");
     }

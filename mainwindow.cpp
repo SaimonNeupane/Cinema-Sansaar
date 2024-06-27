@@ -50,6 +50,7 @@ void MainWindow::on_Login_clicked()
             if (query.next()) {
                 ui->label_3->setText("Login Successful");
                 qDebug() << "Login Successful";
+                hide();
                 dashboard = new Dashboard(this);
                 dashboard->show();
             } else {

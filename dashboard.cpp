@@ -1,5 +1,6 @@
 #include "dashboard.h"
 #include "ui_dashboard.h"
+#include "sinister.h"
 
 Dashboard::Dashboard(QWidget *parent)
     : QDialog(parent)
@@ -12,3 +13,10 @@ Dashboard::~Dashboard()
 {
     delete ui;
 }
+
+void Dashboard::on_pushButton_2_clicked()
+{
+    sinister=new Sinister(this);
+    sinister->show();
+}
+

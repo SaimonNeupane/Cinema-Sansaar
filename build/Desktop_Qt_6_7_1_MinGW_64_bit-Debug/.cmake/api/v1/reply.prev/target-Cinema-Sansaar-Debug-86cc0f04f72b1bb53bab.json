@@ -77,13 +77,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 58,
+				"line" : 62,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 44,
+				"line" : 48,
 				"parent" : 0
 			},
 			{
@@ -412,7 +412,8 @@
 				1,
 				2,
 				6,
-				9
+				9,
+				16
 			]
 		}
 	],
@@ -552,7 +553,8 @@
 				1,
 				2,
 				6,
-				9
+				9,
+				16
 			]
 		},
 		{
@@ -562,9 +564,9 @@
 				3,
 				5,
 				8,
-				11,
 				12,
-				13
+				13,
+				14
 			]
 		},
 		{
@@ -574,14 +576,16 @@
 				4,
 				7,
 				10,
-				14
+				11,
+				15
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				15
+				17,
+				18
 			]
 		}
 	],
@@ -649,6 +653,11 @@
 			"sourceGroupIndex" : 2
 		},
 		{
+			"backtrace" : 4,
+			"path" : "Posters.qrc",
+			"sourceGroupIndex" : 2
+		},
+		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/include/ui_mainwindow.h",
@@ -674,8 +683,21 @@
 		},
 		{
 			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/EWIEGA46WW/qrc_Posters.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/timestamp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/EWIEGA46WW/qrc_Posters.cpp.rule",
 			"sourceGroupIndex" : 3
 		}
 	],

@@ -32,5 +32,7 @@ private:
     Ui::MainWindow *ui;
     Dashboard *dashboard;
     Signup *signup;
+
+
 };
 #endif // MAINWINDOW_H

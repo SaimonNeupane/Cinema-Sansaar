@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Posters/Harry.jpg</file>
+        <file>Posters/Kabir_Singh.jpg</file>
+        <file>Posters/mahajatra.jpg</file>
+        <file>Posters/Mirzapur.jpeg</file>
+        <file>Posters/Sanju.jpg</file>
+        <file>Posters/sinister-poster-zjhbccpk9qxgn8cq.jpg</file>
+        <file>Posters/Thor.jpeg</file>
+        <file>Posters/Harrycpoy.jpg</file>
+    </qresource>
+</RCC>
