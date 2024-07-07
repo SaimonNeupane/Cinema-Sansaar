@@ -4,6 +4,7 @@
 #include <QMessageBox>
 #include <QSqlError>
 #include <QDebug>
+QString code1 = QString::number(QRandomGenerator::global()->bounded(100000, 999999));
 
 Signup::Signup(QWidget *parent)
     : QDialog(parent)
@@ -20,12 +21,12 @@ Signup::Signup(QWidget *parent)
 
     // Initialize SQLite database
     database = QSqlDatabase::addDatabase("QSQLITE");
-    database.setDatabaseName("C:/Users/ACER/Desktop/Ram.db");
+    database.setDatabaseName("C:/Users/ACER/Desktop/Cinema-Sansaar/Database/Data.db");
     if (!database.open()) {
         qDebug() << "Error: Failed to open database:" << database.lastError();
     }
     QSqlQuery query;
-    query.exec("CREATE TABLE IF NOT EXISTS verification (email TEXT PRIMARY KEY, code TEXT)");
+    query.exec("SELECT * FROM User (email TEXT , code TEXT,username TEXT,password TEXT)");
 }
 
 Signup::~Signup()
@@ -35,23 +36,24 @@ Signup::~Signup()
 void Signup::on_sendVerificationCodeButton_clicked()
 {
     QString email = ui->emailLineEdit->text();
+    QString username = ui->usernameLineEdit->text();
+    QString password = ui->passwordLineEdit->text();
     sendVerificationCode(email);
 }
 
 void Signup::on_verifyCodeButton_clicked()
 {
-    QString email = ui->emailLineEdit->text();
-    QString code = ui->codeLineEdit->text();
-    verifyCode(email, code);
+     // QString email = ui->emailLineEdit->text();
+     QString code = ui->codeLineEdit->text();
+    verifyCode( code,code1);
 }
 
 void Signup::sendVerificationCode(const QString &email)
 {
-    // Generate verification code
-    QString code = QString::number(QRandomGenerator::global()->bounded(100000, 999999));
+    QString username = ui->usernameLineEdit->text();
+    QString password = ui->passwordLineEdit->text();
 
-    // Save verification code in database
-    saveVerificationCode(email, code);
+
 
     // Send verification email using Mailgun API
     QUrl url("https://api.mailgun.net/v3/" + mailgunDomain + "/messages");
@@ -62,12 +64,12 @@ void Signup::sendVerificationCode(const QString &email)
     postData.append("from=Saimon Neupane <mailgun@" + mailgunDomain.toUtf8() + ">");
     postData.append("&to=" + email.toUtf8());
     postData.append("&subject=Verification Code");
-    postData.append("&text=Your verification code is: " + code.toUtf8());
+    postData.append("&text=Your verification code is: " + code1.toUtf8());
 
     request.setRawHeader("Authorization", "Basic " + QByteArray(QString("api:%1").arg(apiKey).toUtf8().toBase64()));
 
     qDebug() << "Sending verification email to:" << email;
-    qDebug() << "Verification code:" << code;
+    qDebug() << "Verification code:" << code1;
 
     // Send the network request
     QNetworkReply *reply = networkManager->post(request, postData);
@@ -85,18 +87,22 @@ void Signup::sendVerificationCode(const QString &email)
 
         reply->deleteLater(); // Clean up the reply object
     });
+
+
+    // Save verification code in database
+    saveInfo(email, username,password);
 }
 
-void Signup::verifyCode(const QString &email, const QString &code)
+void Signup::verifyCode(const QString &code, const QString &code1)
 {
     // Check if the code matches the one saved in the database
-    QSqlQuery query;
-    query.prepare("SELECT * FROM verification WHERE email = :email AND code = :code");
-    query.bindValue(":email", email);
-    query.bindValue(":code", code);
-    query.exec();
+    // QSqlQuery query;
+    // query.prepare("SELECT * FROM User WHERE email = :email ");
+    // query.bindValue(":email", email);
 
-    if (query.next()) {
+    // query.exec();
+
+    if ( code==code1) {
         QMessageBox::information(this, "Verification", "Verification successful!");
         hide();
     } else {
@@ -104,11 +110,12 @@ void Signup::verifyCode(const QString &email, const QString &code)
     }
 }
 
-void Signup::saveVerificationCode(const QString &email, const QString &code)
+void Signup::saveInfo(const QString &email, const QString &username,const QString &password)
 {
     QSqlQuery query;
-    query.prepare("INSERT OR REPLACE INTO verification (email, code) VALUES (:email, :code)");
+    query.prepare("INSERT OR REPLACE INTO User (email, username,password) VALUES (:email, :username,:password)");
     query.bindValue(":email", email);
-    query.bindValue(":code", code);
+    query.bindValue(":username", username);
+    query.bindValue(":password", password);
     query.exec();
 }

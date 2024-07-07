@@ -1,4 +1,4 @@
-#ifndef SIGNUP_H
+    #ifndef SIGNUP_H
 #define SIGNUP_H
 
 #include <QDialog>
@@ -34,7 +34,7 @@ private:
     QSqlDatabase database;
    void sendVerificationCode(const QString &email);
    void verifyCode(const QString &email, const QString &code);
-   void saveVerificationCode(const QString &email, const QString &code);
+   void saveInfo(const QString &email, const QString &username,const QString &password);
 };
 
 
