@@ -8,8 +8,12 @@
 Signup::Signup(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::Signup)
+    , frame(nullptr)
+
 {
     ui->setupUi(this);
+
+    frame=ui->frame1;
 
     // Initialize network manager
     networkManager = new QNetworkAccessManager(this);
@@ -20,7 +24,7 @@ Signup::Signup(QWidget *parent)
 
     // Initialize SQLite database
     database = QSqlDatabase::addDatabase("QSQLITE");
-    database.setDatabaseName("C:/Users/ACER/Desktop/Ram.db");
+    database.setDatabaseName("C:/Users/DELL/Desktop/program test/Cinema-Sansaar/Data.db");
     if (!database.open()) {
         qDebug() << "Error: Failed to open database:" << database.lastError();
     }
@@ -111,4 +115,19 @@ void Signup::saveVerificationCode(const QString &email, const QString &code)
     query.bindValue(":email", email);
     query.bindValue(":code", code);
     query.exec();
+}
+
+void Signup::resizeEvent(QResizeEvent *event)
+{
+    QDialog::resizeEvent(event);
+    centerFrame();  // Ensure the frame stays centered when the window is resized
+}
+// frame centering (screen size - 2*frame size)/2 to determine the top left (x,y) position
+void Signup::centerFrame()
+{
+    if (frame) {
+        int x = (width() - frame->width()) / 2;
+        int y = (height() - frame->height()) / 2;
+        frame->move(x, y);
+    }
 }

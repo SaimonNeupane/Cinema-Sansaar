@@ -6,12 +6,22 @@
 #include <QMessageBox>
 #include <QDebug>
 
+#include <QGuiApplication>
+#include <QScreen>
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
+    , frame(nullptr)
+
 {
     ui->setupUi(this);
     ui->lineEdit_2->setEchoMode(ui->checkBox->isChecked() ? QLineEdit::Normal : QLineEdit::Password);
+
+    // move(QGuiApplication::screens().at(0)->geometry().center() - frameGeometry().center());//centering the main window
+    //centering the frame
+    frame = ui->frame;
+    centerFrame();
 }
 
 MainWindow::~MainWindow()
@@ -23,12 +33,11 @@ void MainWindow::on_checkBox_clicked(bool checked)
 {
     ui->lineEdit_2->setEchoMode(checked ? QLineEdit::Normal : QLineEdit::Password);
 }
-
+// on login click check
 void MainWindow::on_Login_clicked()
 {
     QSqlDatabase sqlitedb = QSqlDatabase::addDatabase("QSQLITE");
-    sqlitedb.setDatabaseName("C:/Users/ACER/Desktop/Cinema-Sansaar/Database/Data.db");
-
+    sqlitedb.setDatabaseName("C:/Users/DELL/Desktop/program test/Cinema-Sansaar/Database/Data.db");
     QString username = ui->lineEdit->text();
     QString password = ui->lineEdit_2->text();
 
@@ -51,8 +60,9 @@ void MainWindow::on_Login_clicked()
                 ui->label_3->setText("Login Successful");
                 qDebug() << "Login Successful";
                 hide();
-                dashboard = new Dashboard(this);
-                dashboard->show();
+                Homepage = new homepage(this);
+                Homepage->showFullScreen();
+
             } else {
                 ui->label_3->setText("No user exists with those credentials");
                 qDebug() << "No user exists with those credentials";
@@ -71,10 +81,24 @@ void MainWindow::on_Login_clicked()
         qDebug() << errorMsg;
     }
 }
-
+// on clicking signup shows signup page
 void MainWindow::on_Signup_clicked()
 {
     signup = new Signup(this);
-        signup->show();
+    signup->show();
 }
 
+void MainWindow::resizeEvent(QResizeEvent *event)
+{
+    QMainWindow::resizeEvent(event);
+    centerFrame();  // Ensure the frame stays centered when the window is resized
+}
+// frame centering (window size - 2*frame size)/2 to determine the top left (x,y) position
+void MainWindow::centerFrame()
+{
+    if (frame) {
+        int x = (width() - frame->width()) / 2;
+        int y = (height() - frame->height()) / 2;
+        frame->move(x, y);
+    }
+}

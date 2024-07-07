@@ -26,19 +26,11 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(Cinema-Sansaar
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        dashboard.h dashboard.cpp dashboard.ui
         signup.h signup.cpp signup.ui
         Posters.qrc
-        sinister.h sinister.cpp sinister.ui
-        mirzapur.h mirzapur.cpp mirzapur.ui
-        sanju.h sanju.cpp sanju.ui
-        mahajatra.h mahajatra.cpp mahajatra.ui
-        kabir.h kabir.cpp kabir.ui
-        thor.h thor.cpp thor.ui
-        harry.h harry.cpp harry.ui
-
-
-
+        homepage.h homepage.cpp homepage.ui
+        imagebutton.h imagebutton.cpp
+        seat_selection.h seat_selection.cpp seat_selection.ui
     )
 else()
     if(ANDROID)

@@ -4,8 +4,9 @@
 #include <QMainWindow>
 #include<Qtsql>
 #include<QSqlDatabase>
-#include "dashboard.h"
+#include "homepage.h"
 #include "signup.h"
+#include<QFrame>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -20,7 +21,6 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-
 private slots:
     void on_checkBox_clicked(bool checked);
 
@@ -30,9 +30,12 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    Dashboard *dashboard;
+    homepage *Homepage;
     Signup *signup;
 
-
+    //resize functions;
+    void resizeEvent(QResizeEvent *event);
+    void centerFrame();
+    QFrame *frame;
 };
 #endif // MAINWINDOW_H

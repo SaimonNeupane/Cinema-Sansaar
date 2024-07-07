@@ -9,6 +9,8 @@
 #include <QSqlDatabase>
 #include <QSqlQuery>
 
+#include<QFrame>
+
 namespace Ui {
 class Signup;
 }
@@ -35,6 +37,11 @@ private:
    void sendVerificationCode(const QString &email);
    void verifyCode(const QString &email, const QString &code);
    void saveVerificationCode(const QString &email, const QString &code);
+
+   //resize functions;
+   void resizeEvent(QResizeEvent *event);
+   void centerFrame();
+   QFrame *frame;
 };
 
 
