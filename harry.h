@@ -18,6 +18,8 @@ public:
 private slots:
     void on_btnConfirmBooking1_clicked();
 
+    void on_btnSelectSeat1_clicked();
+
 private:
     Ui::Harry *ui;
     QSqlDatabase db;
