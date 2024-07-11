@@ -264,7 +264,7 @@ build Cinema-Sansaar_autogen/timestamp Cinema-Sansaar_autogen/mocs_compilation.c
 #############################################
 # Custom command for Cinema-Sansaar_autogen\EWIEGA46WW\qrc_Posters.cpp
 
-build Cinema-Sansaar_autogen/EWIEGA46WW/qrc_Posters.cpp | ${cmake_ninja_workdir}Cinema-Sansaar_autogen/EWIEGA46WW/qrc_Posters.cpp: CUSTOM_COMMAND C$:/Users/ACER/Desktop/Cinema-Sansaar/Posters.qrc CMakeFiles/Cinema-Sansaar_autogen.dir/AutoRcc_Posters_EWIEGA46WW_Info.json C$:/Users/ACER/Desktop/Cinema-Sansaar/Posters/Harry.jpg C$:/Users/ACER/Desktop/Cinema-Sansaar/Posters/Mirzapur.jpeg C$:/Users/ACER/Desktop/Cinema-Sansaar/Posters/mahajatra.jpg C$:/Users/ACER/Desktop/Cinema-Sansaar/Posters/Kabir_Singh.jpg C$:/Users/ACER/Desktop/Cinema-Sansaar/Posters/Harrycpoy.jpg C$:/Users/ACER/Desktop/Cinema-Sansaar/Posters/sinister-poster-zjhbccpk9qxgn8cq.jpg C$:/Users/ACER/Desktop/Cinema-Sansaar/Posters/Sanju.jpg C$:/Users/ACER/Desktop/Cinema-Sansaar/Posters/Thor.jpeg C$:/Qt/6.7.1/mingw_64/./bin/rcc.exe || Cinema-Sansaar_autogen Cinema-Sansaar_autogen_timestamp_deps
+build Cinema-Sansaar_autogen/EWIEGA46WW/qrc_Posters.cpp | ${cmake_ninja_workdir}Cinema-Sansaar_autogen/EWIEGA46WW/qrc_Posters.cpp: CUSTOM_COMMAND C$:/Users/ACER/Desktop/Cinema-Sansaar/Posters.qrc CMakeFiles/Cinema-Sansaar_autogen.dir/AutoRcc_Posters_EWIEGA46WW_Info.json C$:/Users/ACER/Desktop/Cinema-Sansaar/Posters/Background.png C$:/Users/ACER/Desktop/Cinema-Sansaar/Posters/new$ logo$ (1).png C$:/Users/ACER/Desktop/Cinema-Sansaar/Posters/Harry.jpg C$:/Users/ACER/Desktop/Cinema-Sansaar/Posters/Mirzapur.jpeg C$:/Users/ACER/Desktop/Cinema-Sansaar/Posters/mahajatra.jpg C$:/Users/ACER/Desktop/Cinema-Sansaar/Posters/Kabir_Singh.jpg C$:/Users/ACER/Desktop/Cinema-Sansaar/Posters/Harrycpoy.jpg C$:/Users/ACER/Desktop/Cinema-Sansaar/Posters/sinister-poster-zjhbccpk9qxgn8cq.jpg C$:/Users/ACER/Desktop/Cinema-Sansaar/Posters/Sanju.jpg C$:/Users/ACER/Desktop/Cinema-Sansaar/Posters/Thor.jpeg C$:/Qt/6.7.1/mingw_64/./bin/rcc.exe || Cinema-Sansaar_autogen Cinema-Sansaar_autogen_timestamp_deps
   COMMAND = cmd.exe /C "cd /D C:\Users\ACER\Desktop\Cinema-Sansaar\build\Desktop_Qt_6_7_1_MinGW_64_bit-Debug && C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/Cinema-Sansaar_autogen.dir/AutoRcc_Posters_EWIEGA46WW_Info.json Debug"
   DESC = Automatic RCC for Posters.qrc
   restat = 1
@@ -273,7 +273,7 @@ build Cinema-Sansaar_autogen/EWIEGA46WW/qrc_Posters.cpp | ${cmake_ninja_workdir}
 #############################################
 # Phony custom command for CMakeFiles\Cinema-Sansaar_autogen_timestamp_deps
 
-build CMakeFiles/Cinema-Sansaar_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/Cinema-Sansaar_autogen_timestamp_deps: phony C$:/Qt/6.7.1/mingw_64/./bin/moc.exe C$:/Qt/6.7.1/mingw_64/./bin/uic.exe C$:/Qt/6.7.1/mingw_64/lib/libQt6Core.a C$:/Qt/6.7.1/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.7.1/mingw_64/lib/libQt6Sql.a C$:/Qt/6.7.1/mingw_64/lib/libQt6Network.a
+build CMakeFiles/Cinema-Sansaar_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/Cinema-Sansaar_autogen_timestamp_deps: phony C$:/Qt/6.7.1/mingw_64/./bin/moc.exe C$:/Qt/6.7.1/mingw_64/./bin/uic.exe C$:/Qt/6.7.1/mingw_64/lib/libQt6Sql.a C$:/Qt/6.7.1/mingw_64/lib/libQt6Core.a C$:/Qt/6.7.1/mingw_64/lib/libQt6Network.a C$:/Qt/6.7.1/mingw_64/lib/libQt6Widgets.a
 
 
 #############################################

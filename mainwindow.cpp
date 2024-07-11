@@ -48,18 +48,16 @@ void MainWindow::on_Login_clicked()
             qDebug() << "Query executed successfully";
 
             if (query.next()) {
-                ui->label_3->setText("Login Successful");
+
                 qDebug() << "Login Successful";
                 hide();
                 dashboard = new Dashboard(this);
                 dashboard->show();
             } else {
-                ui->label_3->setText("No user exists with those credentials");
                 qDebug() << "No user exists with those credentials";
             }
         } else {
             QString errorMsg = "Database error: " + query.lastError().text();
-            ui->label_3->setText(errorMsg);
             qDebug() << errorMsg;
         }
 
@@ -67,7 +65,6 @@ void MainWindow::on_Login_clicked()
         qDebug() << "Database connection closed";
     } else {
         QString errorMsg = "Cannot connect with database: " + sqlitedb.lastError().text();
-        ui->label_3->setText(errorMsg);
         qDebug() << errorMsg;
     }
 }

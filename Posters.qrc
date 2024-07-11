@@ -9,4 +9,8 @@
         <file>Posters/Thor.jpeg</file>
         <file>Posters/Harrycpoy.jpg</file>
     </qresource>
+    <qresource prefix="/new/prefix1">
+        <file>Posters/Background.png</file>
+        <file>Posters/new logo (1).png</file>
+    </qresource>
 </RCC>
