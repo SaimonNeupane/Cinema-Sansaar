@@ -1,7 +1,6 @@
 C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/EWIEGA46WW/moc_signup.cpp: C:/Users/ACER/Desktop/Cinema-Sansaar/signup.h \
   C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/moc_predefs.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QFlags \
-  C:/Qt/6.7.1/mingw_64/include/QtCore/QIODevice \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QList \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QMetaType \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QObject \
@@ -158,14 +157,11 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/C
   C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.7.1/mingw_64/include/QtNetwork/QNetworkAccessManager \
-  C:/Qt/6.7.1/mingw_64/include/QtNetwork/QNetworkReply \
-  C:/Qt/6.7.1/mingw_64/include/QtNetwork/QNetworkRequest \
   C:/Qt/6.7.1/mingw_64/include/QtNetwork/QSslConfiguration \
   C:/Qt/6.7.1/mingw_64/include/QtNetwork/QSslPreSharedKeyAuthenticator \
   C:/Qt/6.7.1/mingw_64/include/QtNetwork/qabstractsocket.h \
   C:/Qt/6.7.1/mingw_64/include/QtNetwork/qhostaddress.h \
   C:/Qt/6.7.1/mingw_64/include/QtNetwork/qnetworkaccessmanager.h \
-  C:/Qt/6.7.1/mingw_64/include/QtNetwork/qnetworkreply.h \
   C:/Qt/6.7.1/mingw_64/include/QtNetwork/qnetworkrequest.h \
   C:/Qt/6.7.1/mingw_64/include/QtNetwork/qssl.h \
   C:/Qt/6.7.1/mingw_64/include/QtNetwork/qsslcertificate.h \
@@ -178,18 +174,13 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/C
   C:/Qt/6.7.1/mingw_64/include/QtNetwork/qtnetworkexports.h \
   C:/Qt/6.7.1/mingw_64/include/QtNetwork/qtnetworkglobal.h \
   C:/Qt/6.7.1/mingw_64/include/QtSql/QSqlDatabase \
-  C:/Qt/6.7.1/mingw_64/include/QtSql/QSqlQuery \
   C:/Qt/6.7.1/mingw_64/include/QtSql/qsqldatabase.h \
-  C:/Qt/6.7.1/mingw_64/include/QtSql/qsqlquery.h \
   C:/Qt/6.7.1/mingw_64/include/QtSql/qtsql-config.h \
   C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlexports.h \
   C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlglobal.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
-  C:/Qt/6.7.1/mingw_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialog.h \
-  C:/Qt/6.7.1/mingw_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qsizepolicy.h \
-  C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \

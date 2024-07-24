@@ -1,13 +1,9 @@
-    #ifndef SIGNUP_H
+#ifndef SIGNUP_H
 #define SIGNUP_H
 
 #include <QDialog>
-
-#include <QMainWindow>
 #include <QNetworkAccessManager>
-#include <QNetworkReply>
 #include <QSqlDatabase>
-#include <QSqlQuery>
 
 namespace Ui {
 class Signup;
@@ -25,19 +21,17 @@ private slots:
     void on_sendVerificationCodeButton_clicked();
     void on_verifyCodeButton_clicked();
 
-
 private:
     Ui::Signup *ui;
     QNetworkAccessManager *networkManager;
     QString apiKey;
     QString mailgunDomain;
     QSqlDatabase database;
-   void sendVerificationCode(const QString &email);
-   void verifyCode(const QString &email, const QString &code);
-   void saveInfo(const QString &email, const QString &username,const QString &password);
+    QString verificationCode;
+
+    void sendVerificationCode(const QString &email);
+    void verifyCode(const QString &code);
+    void saveInfo(const QString &email, const QString &username, const QString &password);
 };
-
-
-
 
 #endif // SIGNUP_H

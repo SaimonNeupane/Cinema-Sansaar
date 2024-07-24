@@ -1,62 +1,152 @@
 #include "sanju.h"
 #include "ui_sanju.h"
-#include <QItemDelegate>
-#include <QPainter>
-#include <QStyleOptionViewItem>
-#include <QCheckBox>
-
-// Custom delegate class for QComboBox items
-class CheckBoxDelegate : public QItemDelegate
-{
-public:
-    CheckBoxDelegate(QObject *parent = nullptr) : QItemDelegate(parent) {}
-
-    // Corrected paint function without extra qualification
-    void paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const override
-    {
-        QStyleOptionViewItem opt = option;
-
-        const QStyle *style = opt.widget ? opt.widget->style() : QApplication::style();
-        style->drawControl(QStyle::CE_ItemViewItem, &opt, painter, opt.widget);
-
-        // Draw checkbox next to item text
-        QRect checkboxRect = style->subElementRect(QStyle::SE_ItemViewItemCheckIndicator, &opt);
-        checkboxRect.moveTopLeft(QPoint(opt.rect.left() + 5, opt.rect.center().y() - checkboxRect.height() / 2));
-
-        QCheckBox checkbox;
-        checkbox.setChecked(true); // Adjust as needed
-        checkbox.render(painter, checkboxRect.topLeft());
-    }
-
-    QSize sizeHint(const QStyleOptionViewItem &option, const QModelIndex &index) const override
-    {
-        QSize size = QItemDelegate::sizeHint(option, index);
-        size.setWidth(size.width() + 20); // Adjust width to accommodate checkbox
-        return size;
-    }
-};
+#include <QDebug>
+#include <QSqlQuery>
+#include <QString>
+#include <QSqlError>
+#include <QLabel>
+#include <QMessageBox>
+#include <QRegularExpression>
 
 Sanju::Sanju(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::Sanju)
 {
     ui->setupUi(this);
-
-    // Set custom delegate to the comboBox
-    ui->comboBox->setItemDelegate(new CheckBoxDelegate(ui->comboBox));
-
-    // Populate the comboBox with items A1 to I10 (excluding specific combinations)
-    for (char c = 'A'; c <= 'I'; c++) {
-        for (int i = 1; i <= 10; i++) {
-            if (!((c == 'C' && (i == 9 || i == 10)) || (c == 'I' && (i == 1 || i == 2 || i == 9 || i == 10)))) {
-                QString item = QString("%1%2").arg(c).arg(i);
-                ui->comboBox->addItem(item);
-            }
-        }
-    }
+    initializeDatabase();
+    colorOfTheSeats();
 }
 
 Sanju::~Sanju()
 {
     delete ui;
+}
+
+void Sanju::initializeDatabase() {
+    db = QSqlDatabase::addDatabase("QSQLITE", "SaimonNeupane");
+    db.setDatabaseName("C:/Users/ACER/Desktop/Cinema-Sansaar/Database/Data.db");
+    if (db.open()) {
+        qDebug() << "Database connected successfully.";
+    } else {
+        qDebug() << "Database connection failed:" << db.lastError().text();
+    }
+}
+
+void Sanju::colorOfTheSeats() {
+    QString sqlQuery = "SELECT s.seat_id, s.is_available "
+                       "FROM Seats s "
+                       "WHERE s.showtime_id = 5";
+
+    QSqlQuery query(db);  // Associate the query with the open database connection
+
+    qDebug() << "Executing SQL query: " << sqlQuery;  // Log the SQL query
+
+    if (query.exec(sqlQuery)) {
+        qDebug() << "SQL query executed successfully.";  // Log query success
+
+        int rowCount = 0;
+        while (query.next()) {
+            rowCount++;
+            QString seatNumber = query.value(0).toString();   // Retrieve seat_id
+            bool isAvailable = query.value(1).toBool();       // Retrieve is_available
+
+            // Find the corresponding QLabel based on seatNumber
+            QString labelObjectName = "lbl" + seatNumber;  // Assuming seat labels are named lblA1, lblA2, etc.
+            QLabel *seatLabel = findChild<QLabel *>(labelObjectName);
+
+            if (seatLabel) {
+                // Set the color based on availability
+                if (isAvailable) {
+                    seatLabel->setStyleSheet("background-color: green;");
+                } else {
+                    seatLabel->setStyleSheet("background-color: red;");
+                }
+            } else {
+                qDebug() << "Label" << labelObjectName << "not found.";
+            }
+
+            // Display seat information
+            qDebug() << "Row" << rowCount << ":";
+            qDebug() << "Seat:" << seatNumber << "Available:" << (isAvailable ? "Yes" : "No");
+        }
+        if (rowCount == 0) {
+            qDebug() << "No rows returned.";
+        }
+    } else {
+        // Handle query execution error
+        qDebug() << "Error executing SQL query:" << query.lastError().text();
+    }
+}
+
+void Sanju::on_btnConfirmBooking1_clicked() {
+    bool seatsSelected = false; // Flag to check if any seat is selected
+
+    // Iterate through all seat labels to check which ones are selected for booking
+    QList<QLabel *> allLabels = this->findChildren<QLabel *>(QRegularExpression("lbl\\w+"));
+
+    QSqlQuery query(db);
+    query.prepare("UPDATE Seats SET is_available = 0 WHERE seat_id = :seat_id AND showtime_id = 5");
+
+    for (QLabel *label : allLabels) {
+        if (label->styleSheet().contains("background-color: gray;")) {
+            label->setStyleSheet("background-color: red;");
+            seatsSelected = true; // Set flag to true if at least one seat is selected
+            query.bindValue(":seat_id", label->objectName().mid(3)); // Remove 'lbl' prefix to get the seat number
+            if (!query.exec()) {
+                qDebug() << "Failed to update seat availability:" << query.lastError().text();
+            }
+        }
+    }
+
+    if (seatsSelected) {
+        qDebug() << "Seats booked successfully!";
+        // Optionally, you can update your database or perform other actions here
+    } else {
+        qDebug() << "No seats selected for booking.";
+        // Optionally, show a message or handle the case where no seats are selected
+    }
+}
+void Sanju::on_btnSelectSeat1_clicked()
+{
+    // Get selected seat number from combo box
+    QString selectedSeat = ui->comboBoxSeatSelection->currentText();
+    QLabel *selectedSeatLabel = findChild<QLabel *>("lbl" + selectedSeat);
+
+    if (selectedSeatLabel) {
+        qDebug() << "Selected seat label found: " << selectedSeatLabel->objectName();
+
+        // Check if the seat is already booked
+        if (selectedSeatLabel->styleSheet().contains("background-color: red;")) {
+            QMessageBox::information(this, "Seat Unavailable", "The selected seat is already booked.");
+            qDebug() << "Seat already booked: " << selectedSeat;
+            return; // Exit the function if the seat is already booked
+        }
+
+        // Set the background color to gray to indicate selection
+        selectedSeatLabel->setStyleSheet("background-color: gray;");
+        qDebug() << "Seat selected: " << selectedSeat << " set to gray.";
+
+        // Calculate the total number of selected seats
+        int selectedSeatCount = 0;
+        QList<QLabel *> allLabels = this->findChildren<QLabel *>(QRegularExpression("lbl\\w+"));
+
+        for (QLabel *label : allLabels) {
+            if (label->styleSheet().contains("background-color: gray;")) {
+                selectedSeatCount++;
+            }
+        }
+
+        // Calculate price (assuming Rs 250 per seat)
+        int seatPrice = 250; // Rs 250 per seat
+        int totalPrice = seatPrice * selectedSeatCount;
+
+        // Update lblTotal with the total price
+        ui->lblTotal->setText(QString::number(totalPrice));
+
+        // Log the selected seat and the total price
+        qDebug() << "Selected Seat: " << selectedSeat;
+        qDebug() << "Total Price: Rs" << totalPrice;
+    } else {
+        qDebug() << "Selected seat label not found: " << selectedSeat;
+    }
 }

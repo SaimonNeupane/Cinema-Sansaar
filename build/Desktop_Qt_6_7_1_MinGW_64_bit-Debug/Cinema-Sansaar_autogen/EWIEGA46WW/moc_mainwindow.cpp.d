@@ -3,7 +3,6 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/C
   C:/Qt/6.7.1/mingw_64/include/QtCore/QDeadlineTimer \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QFlags \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QHash \
-  C:/Qt/6.7.1/mingw_64/include/QtCore/QIODevice \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QList \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QMap \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QMetaType \
@@ -302,14 +301,11 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/C
   C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.7.1/mingw_64/include/QtNetwork/QNetworkAccessManager \
-  C:/Qt/6.7.1/mingw_64/include/QtNetwork/QNetworkReply \
-  C:/Qt/6.7.1/mingw_64/include/QtNetwork/QNetworkRequest \
   C:/Qt/6.7.1/mingw_64/include/QtNetwork/QSslConfiguration \
   C:/Qt/6.7.1/mingw_64/include/QtNetwork/QSslPreSharedKeyAuthenticator \
   C:/Qt/6.7.1/mingw_64/include/QtNetwork/qabstractsocket.h \
   C:/Qt/6.7.1/mingw_64/include/QtNetwork/qhostaddress.h \
   C:/Qt/6.7.1/mingw_64/include/QtNetwork/qnetworkaccessmanager.h \
-  C:/Qt/6.7.1/mingw_64/include/QtNetwork/qnetworkreply.h \
   C:/Qt/6.7.1/mingw_64/include/QtNetwork/qnetworkrequest.h \
   C:/Qt/6.7.1/mingw_64/include/QtNetwork/qssl.h \
   C:/Qt/6.7.1/mingw_64/include/QtNetwork/qsslcertificate.h \
@@ -322,7 +318,6 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/C
   C:/Qt/6.7.1/mingw_64/include/QtNetwork/qtnetworkexports.h \
   C:/Qt/6.7.1/mingw_64/include/QtNetwork/qtnetworkglobal.h \
   C:/Qt/6.7.1/mingw_64/include/QtSql/QSqlDatabase \
-  C:/Qt/6.7.1/mingw_64/include/QtSql/QSqlQuery \
   C:/Qt/6.7.1/mingw_64/include/QtSql/QtSqlDepends \
   C:/Qt/6.7.1/mingw_64/include/QtSql/Qtsql \
   C:/Qt/6.7.1/mingw_64/include/QtSql/qsqldatabase.h \

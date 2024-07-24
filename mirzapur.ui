@@ -1847,25 +1847,6 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="btnCancelSeat1">
-    <property name="geometry">
-     <rect>
-      <x>1049</x>
-      <y>150</y>
-      <width>171</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Leelawadee UI Semilight</family>
-      <pointsize>11</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Cancel Selection</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_19">
     <property name="geometry">
      <rect>
@@ -1888,8 +1869,8 @@
    <widget class="QPushButton" name="btnConfirmBooking1">
     <property name="geometry">
      <rect>
-      <x>905</x>
-      <y>236</y>
+      <x>880</x>
+      <y>350</y>
       <width>181</width>
       <height>41</height>
      </rect>
@@ -1902,25 +1883,6 @@
     </property>
     <property name="text">
      <string>Confirm Booking</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btnSelectSeat1">
-    <property name="geometry">
-     <rect>
-      <x>859</x>
-      <y>150</y>
-      <width>171</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Leelawadee UI Semilight</family>
-      <pointsize>11</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Seat Selection</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_22">
@@ -2033,25 +1995,6 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="btnReset">
-    <property name="geometry">
-     <rect>
-      <x>1049</x>
-      <y>700</y>
-      <width>171</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Leelawadee UI Semilight</family>
-      <pointsize>11</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Reset</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_16">
     <property name="geometry">
      <rect>
@@ -2133,8 +2076,8 @@
    <widget class="QLabel" name="label_23">
     <property name="geometry">
      <rect>
-      <x>759</x>
-      <y>192</y>
+      <x>770</x>
+      <y>270</y>
       <width>91</width>
       <height>21</height>
      </rect>
@@ -2146,14 +2089,14 @@
      </font>
     </property>
     <property name="text">
-     <string>Total ($)  :</string>
+     <string>Total :</string>
     </property>
    </widget>
    <widget class="QLabel" name="lblTotal">
     <property name="geometry">
      <rect>
-      <x>860</x>
-      <y>193</y>
+      <x>890</x>
+      <y>270</y>
       <width>131</width>
       <height>21</height>
      </rect>
@@ -2165,7 +2108,405 @@
      </font>
     </property>
     <property name="text">
-     <string>$0</string>
+     <string/>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxSeatSelection">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>150</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>A1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A4</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A6</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A8</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A9</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>A10</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B4</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B6</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B8</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B9</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>B10</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C4</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C6</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>C8</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D4</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D6</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D8</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D9</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>D10</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>E1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>E2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>E3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>E4</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>E5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>E6</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>E7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>E8</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>E9</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>E10</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F4</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F6</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F8</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F9</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>F10</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G4</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G6</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G8</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G9</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G10</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>I3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>I4</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>I5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>I6</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>I7</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>I8</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="btnSelectSeat1">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>210</y>
+      <width>311</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Select</string>
     </property>
    </widget>
   </widget>

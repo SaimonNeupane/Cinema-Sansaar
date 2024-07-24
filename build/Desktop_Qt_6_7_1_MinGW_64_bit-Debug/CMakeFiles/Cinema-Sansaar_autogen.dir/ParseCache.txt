@@ -864,6 +864,11 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/mirzapur.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtGui/qtransform.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs_win.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/QSqlDatabase
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qsqldatabase.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qtsql-config.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlexports.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlglobal.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog
  mdp:C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialog.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtWidgets/qsizepolicy.h
@@ -1216,6 +1221,11 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/kabir.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtGui/qtransform.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs_win.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/QSqlDatabase
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qsqldatabase.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qtsql-config.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlexports.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlglobal.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog
  mdp:C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialog.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtWidgets/qsizepolicy.h
@@ -1570,6 +1580,11 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/mahajatra.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtGui/qtransform.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs_win.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/QSqlDatabase
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qsqldatabase.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qtsql-config.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlexports.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlglobal.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog
  mdp:C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialog.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtWidgets/qsizepolicy.h
@@ -1922,6 +1937,11 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/thor.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtGui/qtransform.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs_win.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/QSqlDatabase
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qsqldatabase.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qtsql-config.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlexports.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlglobal.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog
  mdp:C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialog.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtWidgets/qsizepolicy.h
@@ -2274,6 +2294,11 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/sanju.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtGui/qtransform.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs_win.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/QSqlDatabase
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qsqldatabase.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qtsql-config.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlexports.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlglobal.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog
  mdp:C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialog.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtWidgets/qsizepolicy.h
@@ -2487,7 +2512,6 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/mainwindow.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/QDeadlineTimer
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/QFlags
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/QHash
- mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/QIODevice
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/QList
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/QMap
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/QMetaType
@@ -2786,14 +2810,11 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/mainwindow.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs_win.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtNetwork/QNetworkAccessManager
- mdp:C:/Qt/6.7.1/mingw_64/include/QtNetwork/QNetworkReply
- mdp:C:/Qt/6.7.1/mingw_64/include/QtNetwork/QNetworkRequest
  mdp:C:/Qt/6.7.1/mingw_64/include/QtNetwork/QSslConfiguration
  mdp:C:/Qt/6.7.1/mingw_64/include/QtNetwork/QSslPreSharedKeyAuthenticator
  mdp:C:/Qt/6.7.1/mingw_64/include/QtNetwork/qabstractsocket.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtNetwork/qhostaddress.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtNetwork/qnetworkaccessmanager.h
- mdp:C:/Qt/6.7.1/mingw_64/include/QtNetwork/qnetworkreply.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtNetwork/qnetworkrequest.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtNetwork/qssl.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtNetwork/qsslcertificate.h
@@ -2806,7 +2827,6 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/mainwindow.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtNetwork/qtnetworkexports.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtNetwork/qtnetworkglobal.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/QSqlDatabase
- mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/QSqlQuery
  mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/QtSqlDepends
  mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/QtSql
  mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qsqldatabase.h
@@ -3188,7 +3208,6 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/mainwindow.h
 C:/Users/ACER/Desktop/Cinema-Sansaar/signup.h
  mmc:Q_OBJECT
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/QFlags
- mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/QIODevice
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/QList
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/QMetaType
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/QObject
@@ -3345,14 +3364,11 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/signup.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs_win.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtNetwork/QNetworkAccessManager
- mdp:C:/Qt/6.7.1/mingw_64/include/QtNetwork/QNetworkReply
- mdp:C:/Qt/6.7.1/mingw_64/include/QtNetwork/QNetworkRequest
  mdp:C:/Qt/6.7.1/mingw_64/include/QtNetwork/QSslConfiguration
  mdp:C:/Qt/6.7.1/mingw_64/include/QtNetwork/QSslPreSharedKeyAuthenticator
  mdp:C:/Qt/6.7.1/mingw_64/include/QtNetwork/qabstractsocket.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtNetwork/qhostaddress.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtNetwork/qnetworkaccessmanager.h
- mdp:C:/Qt/6.7.1/mingw_64/include/QtNetwork/qnetworkreply.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtNetwork/qnetworkrequest.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtNetwork/qssl.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtNetwork/qsslcertificate.h
@@ -3365,18 +3381,13 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/signup.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtNetwork/qtnetworkexports.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtNetwork/qtnetworkglobal.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/QSqlDatabase
- mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/QSqlQuery
  mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qsqldatabase.h
- mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qsqlquery.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qtsql-config.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlexports.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlglobal.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog
- mdp:C:/Qt/6.7.1/mingw_64/include/QtWidgets/QMainWindow
  mdp:C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialog.h
- mdp:C:/Qt/6.7.1/mingw_64/include/QtWidgets/qmainwindow.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtWidgets/qsizepolicy.h
- mdp:C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtabwidget.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtwidgets-config.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtwidgetsexports.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h
@@ -3582,6 +3593,10 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/signup.h
  mdp:C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
  mdp:C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/moc_predefs.h
  mdp:C:/Users/ACER/Desktop/Cinema-Sansaar/signup.h
+C:/Users/ACER/Desktop/Cinema-Sansaar/mirzapur.cpp
+ uic:ui_mirzapur.h
+C:/Users/ACER/Desktop/Cinema-Sansaar/harry.cpp
+ uic:ui_harry.h
 C:/Users/ACER/Desktop/Cinema-Sansaar/sinister.h
  mmc:Q_OBJECT
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/q20functional.h
@@ -3726,6 +3741,11 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/sinister.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtGui/qtransform.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs_win.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/QSqlDatabase
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qsqldatabase.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qtsql-config.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlexports.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlglobal.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog
  mdp:C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialog.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtWidgets/qsizepolicy.h
@@ -3934,10 +3954,6 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/sinister.h
  mdp:C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
  mdp:C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/moc_predefs.h
  mdp:C:/Users/ACER/Desktop/Cinema-Sansaar/sinister.h
-C:/Users/ACER/Desktop/Cinema-Sansaar/harry.cpp
- uic:ui_harry.h
-C:/Users/ACER/Desktop/Cinema-Sansaar/mirzapur.cpp
- uic:ui_mirzapur.h
 C:/Users/ACER/Desktop/Cinema-Sansaar/kabir.cpp
  uic:ui_kabir.h
 C:/Users/ACER/Desktop/Cinema-Sansaar/mahajatra.cpp
@@ -3945,10 +3961,10 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/mahajatra.cpp
 C:/Users/ACER/Desktop/Cinema-Sansaar/main.cpp
 C:/Users/ACER/Desktop/Cinema-Sansaar/mainwindow.cpp
  uic:./ui_mainwindow.h
-C:/Users/ACER/Desktop/Cinema-Sansaar/sanju.cpp
- uic:ui_sanju.h
 C:/Users/ACER/Desktop/Cinema-Sansaar/thor.cpp
  uic:ui_thor.h
+C:/Users/ACER/Desktop/Cinema-Sansaar/sanju.cpp
+ uic:ui_sanju.h
 C:/Users/ACER/Desktop/Cinema-Sansaar/signup.cpp
  uic:ui_signup.h
 C:/Users/ACER/Desktop/Cinema-Sansaar/sinister.cpp

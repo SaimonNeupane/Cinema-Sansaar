@@ -3,106 +3,74 @@
 #include <QRandomGenerator>
 #include <QMessageBox>
 #include <QSqlError>
-#include <QDebug>
-QString code1 = QString::number(QRandomGenerator::global()->bounded(100000, 999999));
+#include <QNetworkRequest>
+#include <QNetworkReply>
+#include<QSqlQuery>
 
-Signup::Signup(QWidget *parent)
-    : QDialog(parent)
-    , ui(new Ui::Signup)
+Signup::Signup(QWidget *parent) :
+    QDialog(parent),
+    ui(new Ui::Signup)
 {
     ui->setupUi(this);
 
-    // Initialize network manager
     networkManager = new QNetworkAccessManager(this);
+    apiKey = "";
+    mailgunDomain = "";
+    verificationCode = QString::number(QRandomGenerator::global()->bounded(100000, 999999));
 
-    // Set your Mailgun API key and domain
-    apiKey = "API KEY";
-    mailgunDomain = "DOMAIN";
-
-    // Initialize SQLite database
     database = QSqlDatabase::addDatabase("QSQLITE");
     database.setDatabaseName("C:/Users/ACER/Desktop/Cinema-Sansaar/Database/Data.db");
+
     if (!database.open()) {
-        qDebug() << "Error: Failed to open database:" << database.lastError();
+        QMessageBox::warning(this, "Error", "Failed to open database: " + database.lastError().text());
     }
-    QSqlQuery query;
-    query.exec("SELECT * FROM User (email TEXT , code TEXT,username TEXT,password TEXT)");
 }
 
 Signup::~Signup()
 {
     delete ui;
 }
+
 void Signup::on_sendVerificationCodeButton_clicked()
 {
     QString email = ui->emailLineEdit->text();
-    QString username = ui->usernameLineEdit->text();
-    QString password = ui->passwordLineEdit->text();
     sendVerificationCode(email);
 }
 
 void Signup::on_verifyCodeButton_clicked()
 {
-     // QString email = ui->emailLineEdit->text();
-     QString code = ui->codeLineEdit->text();
-    verifyCode( code,code1);
+    QString code = ui->codeLineEdit->text();
+    verifyCode(code);
 }
 
 void Signup::sendVerificationCode(const QString &email)
 {
-    QString username = ui->usernameLineEdit->text();
-    QString password = ui->passwordLineEdit->text();
+    QString postData = QString("from=Saimon <mailgun@%1>&to=%2&subject=Verification Code&text=Your verification code is: %3")
+                           .arg(mailgunDomain).arg(email).arg(verificationCode);
 
+   QNetworkRequest request(QUrl("https://api.mailgun.net/v3/" + mailgunDomain + "/messages"));
+   request.setHeader(QNetworkRequest::ContentTypeHeader, "application/x-www-form-urlencoded");
+   request.setRawHeader("Authorization", "Basic " + QByteArray(QString("api:%1").arg(apiKey).toUtf8().toBase64()));
 
+    QNetworkReply *reply = networkManager->post(request, postData.toUtf8());
 
-    // Send verification email using Mailgun API
-    QUrl url("https://api.mailgun.net/v3/" + mailgunDomain + "/messages");
-    QNetworkRequest request(url);
-    request.setHeader(QNetworkRequest::ContentTypeHeader, "application/x-www-form-urlencoded");
-
-    QByteArray postData;
-    postData.append("from=Saimon Neupane <mailgun@" + mailgunDomain.toUtf8() + ">");
-    postData.append("&to=" + email.toUtf8());
-    postData.append("&subject=Verification Code");
-    postData.append("&text=Your verification code is: " + code1.toUtf8());
-
-    request.setRawHeader("Authorization", "Basic " + QByteArray(QString("api:%1").arg(apiKey).toUtf8().toBase64()));
-
-    qDebug() << "Sending verification email to:" << email;
-    qDebug() << "Verification code:" << code1;
-
-    // Send the network request
-    QNetworkReply *reply = networkManager->post(request, postData);
-
-    // Connect signals for debugging
     connect(reply, &QNetworkReply::finished, [=]() {
         if (reply->error() == QNetworkReply::NoError) {
             QMessageBox::information(this, "Verification", "Verification code sent successfully!");
         } else {
-            QMessageBox::warning(this, "Verification", "Failed to send verification code. Error: " + reply->errorString());
+            QMessageBox::warning(this, "Verification", "Failed to send verification code: " + reply->errorString());
         }
-
-        qDebug() << "Response status code:" << reply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt();
-        qDebug() << "Response body:" << reply->readAll();
-
-        reply->deleteLater(); // Clean up the reply object
+        reply->deleteLater();
     });
 
-
-    // Save verification code in database
-    saveInfo(email, username,password);
+    QString username = ui->usernameLineEdit->text();
+    QString password = ui->passwordLineEdit->text();
+    saveInfo(email, username, password);
 }
 
-void Signup::verifyCode(const QString &code, const QString &code1)
+void Signup::verifyCode(const QString &code)
 {
-    // Check if the code matches the one saved in the database
-    // QSqlQuery query;
-    // query.prepare("SELECT * FROM User WHERE email = :email ");
-    // query.bindValue(":email", email);
-
-    // query.exec();
-
-    if ( code==code1) {
+    if (code == verificationCode) {
         QMessageBox::information(this, "Verification", "Verification successful!");
         hide();
     } else {
@@ -110,10 +78,10 @@ void Signup::verifyCode(const QString &code, const QString &code1)
     }
 }
 
-void Signup::saveInfo(const QString &email, const QString &username,const QString &password)
+void Signup::saveInfo(const QString &email, const QString &username, const QString &password)
 {
     QSqlQuery query;
-    query.prepare("INSERT OR REPLACE INTO User (email, username,password) VALUES (:email, :username,:password)");
+    query.prepare("INSERT OR REPLACE INTO User (email, username, password) VALUES (:email, :username, :password)");
     query.bindValue(":email", email);
     query.bindValue(":username", username);
     query.bindValue(":password", password);
