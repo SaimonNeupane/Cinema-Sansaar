@@ -14,8 +14,8 @@ Signup::Signup(QWidget *parent) :
     ui->setupUi(this);
 
     networkManager = new QNetworkAccessManager(this);
-    apiKey = "";
-    mailgunDomain = "";
+    apiKey = "8c6b7606bc7d7268ec49e03317f774e6-6fafb9bf-c6973a64";
+    mailgunDomain = "sandbox8f3585a674ed428b964dcbe043be6515.mailgun.org";
     verificationCode = QString::number(QRandomGenerator::global()->bounded(100000, 999999));
 
     database = QSqlDatabase::addDatabase("QSQLITE");

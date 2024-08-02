@@ -69,8 +69,8 @@ QPushButton#Forgot:pressed{
    <widget class="QFrame" name="frame_2">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>0</y>
+      <x>580</x>
+      <y>60</y>
       <width>781</width>
       <height>681</height>
      </rect>

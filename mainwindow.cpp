@@ -52,7 +52,7 @@ void MainWindow::on_Login_clicked()
                 qDebug() << "Login Successful";
                 hide();
                 dashboard = new Dashboard(this);
-                dashboard->show();
+                dashboard->showMaximized();
             } else {
                 qDebug() << "No user exists with those credentials";
             }
