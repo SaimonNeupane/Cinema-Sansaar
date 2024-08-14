@@ -15,30 +15,37 @@ set(CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/build/Cinema-Sansaar)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Sql Network)
 
-set(PROJECT_SOURCES
-        main.cpp
-        mainwindow.cpp
-        mainwindow.h
-        mainwindow.ui
+# Database is located in the 'Database' subfolder
+set(DATABASE_PATH "Database/Data.db")
+
+configure_file(
+    ${CMAKE_CURRENT_SOURCE_DIR}/${DATABASE_PATH}
+    ${CMAKE_CURRENT_BINARY_DIR}/${DATABASE_PATH}
+    COPYONLY
 )
 
-if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
-    qt_add_executable(Cinema-Sansaar
-        MANUAL_FINALIZATION
-        ${PROJECT_SOURCES}
-        dashboard.h dashboard.cpp dashboard.ui
-        signup.h signup.cpp signup.ui
-        Posters.qrc
-        sinister.h sinister.cpp sinister.ui
+add_definitions(-DDATABASE_PATH="${DATABASE_PATH}")
+
+set(PROJECT_SOURCES
+        main.cpp
+        mainwindow.cpp	mainwindow.h	mainwindow.ui
+    	database.h database.cpp
+	verification.h verification.cpp verification.ui
+	dashboard.h dashboard.cpp dashboard.ui
+	sinister.h sinister.cpp sinister.ui
         mirzapur.h mirzapur.cpp mirzapur.ui
         sanju.h sanju.cpp sanju.ui
         mahajatra.h mahajatra.cpp mahajatra.ui
         kabir.h kabir.cpp kabir.ui
         thor.h thor.cpp thor.ui
         harry.h harry.cpp harry.ui
+        Posters.qrc
+)
 
-
-
+if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
+    qt_add_executable(Cinema-Sansaar
+        MANUAL_FINALIZATION
+        ${PROJECT_SOURCES}
     )
 else()
     if(ANDROID)
