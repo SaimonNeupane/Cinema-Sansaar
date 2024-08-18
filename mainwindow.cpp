@@ -14,8 +14,8 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
     , networkManager(new QNetworkAccessManager(this))
-    , apiKey("") //Mailgun API key here
-    , mailgunDomain("") //Mailgun domain here
+    , apiKey("a2b32923329af20ddbd6965b51080874-911539ec-c4732afe")
+    , mailgunDomain("sandbox390660ef2697488790e3d3a0b72bc161.mailgun.org")
     , verificationCode(QString::number(QRandomGenerator::global()->bounded(100000, 999999)))
 {
     ui->setupUi(this);

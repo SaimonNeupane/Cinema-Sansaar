@@ -6,14 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1920</width>
-    <height>1080</height>
+    <width>1500</width>
+    <height>800</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>1920</width>
-    <height>1080</height>
+    <width>1500</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1500</width>
+    <height>800</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -24,146 +30,186 @@
 	height:500px;
 }</string>
   </property>
-  <layout class="QGridLayout" name="gridLayout">
-   <item row="0" column="5">
-    <widget class="QPushButton" name="pushButton_5">
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normalon>:/Posters/mahajatra.jpg</normalon>
-      </iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>250</width>
-       <height>500</height>
-      </size>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="3">
-    <widget class="QPushButton" name="pushButton_3">
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normalon>:/Posters/Thor.jpeg</normalon>
-      </iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>300</width>
-       <height>400000</height>
-      </size>
-     </property>
-     <property name="shortcut">
-      <string/>
-     </property>
-     <property name="autoRepeat">
-      <bool>true</bool>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="2" alignment="Qt::AlignVCenter">
-    <widget class="QPushButton" name="pushButton">
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normalon>:/Posters/Kabir_Singh.jpg</normalon>
-      </iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>200</width>
-       <height>10000000</height>
-      </size>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="7">
-    <widget class="QPushButton" name="pushButton_7">
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normalon>:/Posters/Mirzapur.jpeg</normalon>
-      </iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>700</width>
-       <height>900</height>
-      </size>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="4">
-    <widget class="QPushButton" name="pushButton_4">
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normalon>:/Posters/Sanju.jpg</normalon>
-      </iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>250</width>
-       <height>900</height>
-      </size>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="6">
-    <widget class="QPushButton" name="pushButton_6">
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normalon>:/Posters/Harry.jpg</normalon>
-      </iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>300</width>
-       <height>1100</height>
-      </size>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="1">
-    <widget class="QPushButton" name="pushButton_2">
-     <property name="styleSheet">
-      <string notr="true"/>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="icon">
-      <iconset>
-       <normalon>:/Posters/sinister-poster-zjhbccpk9qxgn8cq.jpg</normalon>
-      </iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>280</width>
-       <height>1100</height>
-      </size>
-     </property>
-     <property name="autoRepeat">
-      <bool>false</bool>
-     </property>
-    </widget>
-   </item>
-  </layout>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>1071</x>
+     <y>97</y>
+     <width>262</width>
+     <height>506</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normalon>:/Posters/mahajatra.jpg</normalon>
+    </iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>250</width>
+     <height>500</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>515</x>
+     <y>97</y>
+     <width>282</width>
+     <height>506</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normalon>:/Posters/Thor.jpeg</normalon>
+    </iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>300</width>
+     <height>400000</height>
+    </size>
+   </property>
+   <property name="shortcut">
+    <string/>
+   </property>
+   <property name="autoRepeat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>297</x>
+     <y>97</y>
+     <width>212</width>
+     <height>506</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normalon>:/Posters/Kabir_Singh.jpg</normalon>
+    </iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>200</width>
+     <height>10000000</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_7">
+   <property name="geometry">
+    <rect>
+     <x>1628</x>
+     <y>97</y>
+     <width>282</width>
+     <height>506</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normalon>:/Posters/Mirzapur.jpeg</normalon>
+    </iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>700</width>
+     <height>900</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>803</x>
+     <y>97</y>
+     <width>262</width>
+     <height>506</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normalon>:/Posters/Sanju.jpg</normalon>
+    </iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>250</width>
+     <height>900</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_6">
+   <property name="geometry">
+    <rect>
+     <x>1339</x>
+     <y>97</y>
+     <width>283</width>
+     <height>506</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normalon>:/Posters/Harry.jpg</normalon>
+    </iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>300</width>
+     <height>1100</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>97</y>
+     <width>282</width>
+     <height>506</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normalon>:/Posters/sinister-poster-zjhbccpk9qxgn8cq.jpg</normalon>
+    </iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>280</width>
+     <height>1100</height>
+    </size>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
