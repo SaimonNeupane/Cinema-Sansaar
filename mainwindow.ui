@@ -27,7 +27,7 @@
   </property>
   <property name="styleSheet">
    <string notr="true">*{
-	font-family:century gothic;
+	font-family:Titillium Web;
 	font-size:20px;
 }
 QFrame{
@@ -384,7 +384,7 @@ background:image: url(:/new/prefix1/Posters/new logo (1).png);
                 </property>
                 <property name="font">
                  <font>
-                  <family>century gothic</family>
+                  <family>Titillium Web</family>
                   <pointsize>-1</pointsize>
                   <stylestrategy>PreferAntialias</stylestrategy>
                  </font>
@@ -709,7 +709,7 @@ background:image: url(:/new/prefix1/Posters/new logo (1).png);
      <x>0</x>
      <y>0</y>
      <width>480</width>
-     <height>29</height>
+     <height>36</height>
     </rect>
    </property>
   </widget>
