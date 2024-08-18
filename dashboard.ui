@@ -26,17 +26,19 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QPushButton{
+   <string notr="true">QDialog{
+}
+QPushButton{
 	height:500px;
 }</string>
   </property>
   <widget class="QPushButton" name="pushButton_5">
    <property name="geometry">
     <rect>
-     <x>1071</x>
-     <y>97</y>
-     <width>262</width>
-     <height>506</height>
+     <x>860</x>
+     <y>146</y>
+     <width>206</width>
+     <height>508</height>
     </rect>
    </property>
    <property name="text">
@@ -57,10 +59,10 @@
   <widget class="QPushButton" name="pushButton_3">
    <property name="geometry">
     <rect>
-     <x>515</x>
-     <y>97</y>
-     <width>282</width>
-     <height>506</height>
+     <x>435</x>
+     <y>146</y>
+     <width>206</width>
+     <height>508</height>
     </rect>
    </property>
    <property name="text">
@@ -87,10 +89,10 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>297</x>
-     <y>97</y>
-     <width>212</width>
-     <height>506</height>
+     <x>222</x>
+     <y>146</y>
+     <width>207</width>
+     <height>508</height>
     </rect>
    </property>
    <property name="text">
@@ -111,10 +113,10 @@
   <widget class="QPushButton" name="pushButton_7">
    <property name="geometry">
     <rect>
-     <x>1628</x>
-     <y>97</y>
-     <width>282</width>
-     <height>506</height>
+     <x>1285</x>
+     <y>146</y>
+     <width>206</width>
+     <height>508</height>
     </rect>
    </property>
    <property name="text">
@@ -135,10 +137,10 @@
   <widget class="QPushButton" name="pushButton_4">
    <property name="geometry">
     <rect>
-     <x>803</x>
-     <y>97</y>
-     <width>262</width>
-     <height>506</height>
+     <x>647</x>
+     <y>146</y>
+     <width>207</width>
+     <height>508</height>
     </rect>
    </property>
    <property name="text">
@@ -159,10 +161,10 @@
   <widget class="QPushButton" name="pushButton_6">
    <property name="geometry">
     <rect>
-     <x>1339</x>
-     <y>97</y>
-     <width>283</width>
-     <height>506</height>
+     <x>1072</x>
+     <y>146</y>
+     <width>207</width>
+     <height>508</height>
     </rect>
    </property>
    <property name="text">
@@ -184,9 +186,9 @@
    <property name="geometry">
     <rect>
      <x>9</x>
-     <y>97</y>
-     <width>282</width>
-     <height>506</height>
+     <y>146</y>
+     <width>207</width>
+     <height>508</height>
     </rect>
    </property>
    <property name="styleSheet">

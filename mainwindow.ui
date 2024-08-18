@@ -6,20 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>480</width>
-    <height>660</height>
+    <width>624</width>
+    <height>870</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>480</width>
-    <height>660</height>
+    <width>624</width>
+    <height>870</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>480</width>
-    <height>660</height>
+    <width>624</width>
+    <height>870</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -71,14 +71,14 @@ QPushButton#Forgot:pressed{
   <widget class="QWidget" name="centralwidget">
    <property name="minimumSize">
     <size>
-     <width>480</width>
-     <height>603</height>
+     <width>624</width>
+     <height>783</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>480</width>
-     <height>603</height>
+     <width>624</width>
+     <height>783</height>
     </size>
    </property>
    <layout class="QGridLayout" name="gridLayout">
@@ -86,14 +86,14 @@ QPushButton#Forgot:pressed{
      <widget class="QFrame" name="frame">
       <property name="minimumSize">
        <size>
-        <width>462</width>
-        <height>582</height>
+        <width>600</width>
+        <height>756</height>
        </size>
       </property>
       <property name="maximumSize">
        <size>
-        <width>462</width>
-        <height>582</height>
+        <width>600</width>
+        <height>756</height>
        </size>
       </property>
       <property name="frameShape">
@@ -142,30 +142,30 @@ background:image: url(:/new/prefix1/Posters/new logo (1).png);
         <widget class="QStackedWidget" name="stackedWidget">
          <property name="minimumSize">
           <size>
-           <width>442</width>
-           <height>436</height>
+           <width>574</width>
+           <height>566</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>442</width>
-           <height>436</height>
+           <width>574</width>
+           <height>566</height>
           </size>
          </property>
          <property name="currentIndex">
-          <number>1</number>
+          <number>0</number>
          </property>
          <widget class="QWidget" name="page_1">
           <property name="minimumSize">
            <size>
-            <width>442</width>
-            <height>436</height>
+            <width>574</width>
+            <height>566</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>442</width>
-            <height>436</height>
+            <width>574</width>
+            <height>566</height>
            </size>
           </property>
           <layout class="QGridLayout" name="gridLayout_2">
@@ -190,6 +190,9 @@ background:image: url(:/new/prefix1/Posters/new logo (1).png);
               <enum>QFrame::Raised</enum>
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_4">
+              <property name="spacing">
+               <number>20</number>
+              </property>
               <item alignment="Qt::AlignHCenter">
                <widget class="QLabel" name="Login_label">
                 <property name="minimumSize">
@@ -216,6 +219,9 @@ background:image: url(:/new/prefix1/Posters/new logo (1).png);
                <layout class="QHBoxLayout" name="Fields_1">
                 <item>
                  <layout class="QVBoxLayout" name="Input_1">
+                  <property name="spacing">
+                   <number>25</number>
+                  </property>
                   <item>
                    <layout class="QHBoxLayout" name="User_1">
                     <item alignment="Qt::AlignVCenter">
@@ -405,14 +411,14 @@ background:image: url(:/new/prefix1/Posters/new logo (1).png);
          <widget class="QWidget" name="page_2">
           <property name="minimumSize">
            <size>
-            <width>442</width>
-            <height>436</height>
+            <width>574</width>
+            <height>566</height>
            </size>
           </property>
           <property name="maximumSize">
            <size>
-            <width>442</width>
-            <height>436</height>
+            <width>574</width>
+            <height>566</height>
            </size>
           </property>
           <layout class="QGridLayout" name="gridLayout_3">
@@ -420,14 +426,14 @@ background:image: url(:/new/prefix1/Posters/new logo (1).png);
             <widget class="QFrame" name="frame_2">
              <property name="minimumSize">
               <size>
-               <width>424</width>
-               <height>418</height>
+               <width>551</width>
+               <height>543</height>
               </size>
              </property>
              <property name="maximumSize">
               <size>
-               <width>424</width>
-               <height>418</height>
+               <width>551</width>
+               <height>543</height>
               </size>
              </property>
              <property name="frameShape">
@@ -437,6 +443,9 @@ background:image: url(:/new/prefix1/Posters/new logo (1).png);
               <enum>QFrame::Raised</enum>
              </property>
              <layout class="QVBoxLayout" name="verticalLayout">
+              <property name="spacing">
+               <number>20</number>
+              </property>
               <item alignment="Qt::AlignHCenter">
                <widget class="QLabel" name="Signup_label">
                 <property name="minimumSize">
@@ -461,8 +470,14 @@ background:image: url(:/new/prefix1/Posters/new logo (1).png);
               </item>
               <item>
                <layout class="QHBoxLayout" name="Input_2">
+                <property name="spacing">
+                 <number>6</number>
+                </property>
                 <item>
                  <layout class="QVBoxLayout" name="Fields_2">
+                  <property name="spacing">
+                   <number>25</number>
+                  </property>
                   <item>
                    <layout class="QHBoxLayout" name="User_2">
                     <item>
@@ -703,17 +718,6 @@ background:image: url(:/new/prefix1/Posters/new logo (1).png);
     </item>
    </layout>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>480</width>
-     <height>36</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
