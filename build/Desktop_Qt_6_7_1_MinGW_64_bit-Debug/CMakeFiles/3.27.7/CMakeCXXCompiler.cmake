@@ -1,4 +1,4 @@
-set(CMAKE_CXX_COMPILER "E:/Application/Qt/Tools/mingw1120_64/bin/g++.exe")
+set(CMAKE_CXX_COMPILER "C:/Qt/Tools/mingw1120_64/bin/g++.exe")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_COMPILER_VERSION "11.2.0")
@@ -22,17 +22,11 @@ set(CMAKE_CXX_SIMULATE_VERSION "")
 
 
 
-set(CMAKE_AR "E:/Application/Qt/Tools/mingw1120_64/bin/ar.exe")
-set(CMAKE_CXX_COMPILER_AR "E:/Application/Qt/Tools/mingw1120_64/bin/gcc-ar.exe")
-set(CMAKE_RANLIB "E:/Application/Qt/Tools/mingw1120_64/bin/ranlib.exe")
-set(CMAKE_CXX_COMPILER_RANLIB "E:/Application/Qt/Tools/mingw1120_64/bin/gcc-ranlib.exe")
-set(CMAKE_LINKER "E:/Application/Qt/Tools/mingw1120_64/bin/ld.exe")
-set(CMAKE_LINKER_LINK "")
-set(CMAKE_LINKER_LLD "")
-set(CMAKE_CXX_COMPILER_LINKER "../src/gcc-11.2.0/configure --host=x86_64-w64-mingw32 --build=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --prefix=/mingw64 --with-sysroot=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64 --enable-host-shared --disable-multilib --enable-languages=c,c++,fortran,lto --enable-libstdcxx-time=yes --enable-threads=posix --enable-libgomp --enable-libatomic --enable-lto --enable-graphite --enable-checking=release --enable-fully-dynamic-string --enable-version-specific-runtime-libs --enable-libstdcxx-filesystem-ts=yes --disable-libstdcxx-pch --disable-libstdcxx-debug --enable-bootstrap --disable-rpath --disable-win32-registry --disable-nls --disable-werror --disable-symvers --with-gnu-as --with-gnu-ld --with-arch=nocona --with-tune=core2 --with-libiconv --with-system-zlib --with-gmp=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpfr=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-mpc=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-isl=/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static --with-pkgversion='x86_64-posix-seh-rev3, Built by MinGW-W64 project' --with-bugurl=https:/sourceforge.net/projects/mingw-w64 CFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CXXFLAGS='-O2 -pipe -fno-ident -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' CPPFLAGS=' -I/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/include -I/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/include' LDFLAGS='-pipe -fno-ident -L/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/opt/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-zlib-static/lib -L/d/a/mingw-builds/mingw-builds/buildroot/prerequisites/x86_64-w64-mingw32-static/lib ' LD_FOR_TARGET=/d/a/mingw-builds/mingw-builds/buildroot/x86_64-1120-posix-seh-rt_v9-rev3/mingw64/bin/ld.exe")
-set(CMAKE_CXX_COMPILER_LINKER_ID "")
-set(CMAKE_CXX_COMPILER_LINKER_VERSION )
-set(CMAKE_CXX_COMPILER_LINKER_FRONTEND_VARIANT )
+set(CMAKE_AR "C:/Qt/Tools/mingw1120_64/bin/ar.exe")
+set(CMAKE_CXX_COMPILER_AR "C:/Qt/Tools/mingw1120_64/bin/gcc-ar.exe")
+set(CMAKE_RANLIB "C:/Qt/Tools/mingw1120_64/bin/ranlib.exe")
+set(CMAKE_CXX_COMPILER_RANLIB "C:/Qt/Tools/mingw1120_64/bin/gcc-ranlib.exe")
+set(CMAKE_LINKER "C:/Qt/Tools/mingw1120_64/bin/ld.exe")
 set(CMAKE_MT "")
 set(CMAKE_TAPI "CMAKE_TAPI-NOTFOUND")
 set(CMAKE_COMPILER_IS_GNUCXX 1)
@@ -46,7 +40,7 @@ set(CMAKE_CXX_COMPILER_ID_RUN 1)
 set(CMAKE_CXX_SOURCE_FILE_EXTENSIONS C;M;c++;cc;cpp;cxx;m;mm;mpp;CPP;ixx;cppm;ccm;cxxm;c++m)
 set(CMAKE_CXX_IGNORE_EXTENSIONS inl;h;hpp;HPP;H;o;O;obj;OBJ;def;DEF;rc;RC)
 
-foreach (lang IN ITEMS C OBJC OBJCXX)
+foreach (lang C OBJC OBJCXX)
   if (CMAKE_${lang}_COMPILER_ID_RUN)
     foreach(extension IN LISTS CMAKE_${lang}_SOURCE_FILE_EXTENSIONS)
       list(REMOVE_ITEM CMAKE_CXX_SOURCE_FILE_EXTENSIONS ${extension})
@@ -56,7 +50,7 @@ endforeach()
 
 set(CMAKE_CXX_LINKER_PREFERENCE 30)
 set(CMAKE_CXX_LINKER_PREFERENCE_PROPAGATES 1)
-set(CMAKE_CXX_LINKER_DEPFILE_SUPPORTED FALSE)
+set(CMAKE_CXX_LINKER_DEPFILE_SUPPORTED TRUE)
 
 # Save compiler ABI information.
 set(CMAKE_CXX_SIZEOF_DATA_PTR "8")
@@ -85,8 +79,7 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "E:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++;E:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32;E:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward;E:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include;E:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed;E:/Application/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++;C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32;C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward;C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include;C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed;C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include")
 set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;mingw32;gcc_s;gcc;moldname;mingwex;kernel32;pthread;advapi32;shell32;user32;kernel32;iconv;mingw32;gcc_s;gcc;moldname;mingwex;kernel32")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "E:/Application/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0;E:/Application/Qt/Tools/mingw1120_64/lib/gcc;E:/Application/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/lib;E:/Application/Qt/Tools/mingw1120_64/lib")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0;C:/Qt/Tools/mingw1120_64/lib/gcc;C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/lib;C:/Qt/Tools/mingw1120_64/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
-set(CMAKE_CXX_COMPILER_CLANG_RESOURCE_DIR "")

@@ -28,23 +28,23 @@
 		],
 		"files" : 
 		[
-			"E:/Application/Qt/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
+			"C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake",
 			"CMakeLists.txt",
-			"E:/Application/Qt/6.7.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake",
-			"E:/Application/Qt/6.7.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake",
-			"E:/Application/Qt/6.7.1/mingw_64/lib/cmake/Qt6/Qt6Config.cmake",
-			"E:/Application/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake",
-			"E:/Application/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake",
-			"E:/Application/Qt/Tools/CMake_64/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake",
-			"E:/Application/Qt/6.7.1/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
-			"E:/Application/Qt/6.7.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake",
-			"E:/Application/Qt/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake",
-			"E:/Application/Qt/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake",
-			"E:/Application/Qt/6.7.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets.cmake",
-			"E:/Application/Qt/6.7.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfig.cmake",
-			"E:/Application/Qt/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake",
-			"E:/Application/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6NetworkTargets.cmake",
-			"E:/Application/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake"
+			"C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake",
+			"C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake",
+			"C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6/Qt6Config.cmake",
+			"C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake",
+			"C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake",
+			"C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake",
+			"C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+			"C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake",
+			"C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake",
+			"C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake",
+			"C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets.cmake",
+			"C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfig.cmake",
+			"C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake",
+			"C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6NetworkTargets.cmake",
+			"C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake"
 		],
 		"nodes" : 
 		[
@@ -369,42 +369,42 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "C:/Users/DELL/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/include"
+					"path" : "C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/include"
 				},
 				{
 					"backtrace" : 23,
 					"isSystem" : true,
-					"path" : "E:/Application/Qt/6.7.1/mingw_64/include/QtCore"
+					"path" : "C:/Qt/6.7.1/mingw_64/include/QtCore"
 				},
 				{
 					"backtrace" : 23,
 					"isSystem" : true,
-					"path" : "E:/Application/Qt/6.7.1/mingw_64/include"
+					"path" : "C:/Qt/6.7.1/mingw_64/include"
 				},
 				{
 					"backtrace" : 23,
 					"isSystem" : true,
-					"path" : "E:/Application/Qt/6.7.1/mingw_64/mkspecs/win32-g++"
+					"path" : "C:/Qt/6.7.1/mingw_64/mkspecs/win32-g++"
 				},
 				{
 					"backtrace" : 6,
 					"isSystem" : true,
-					"path" : "E:/Application/Qt/6.7.1/mingw_64/include/QtWidgets"
+					"path" : "C:/Qt/6.7.1/mingw_64/include/QtWidgets"
 				},
 				{
 					"backtrace" : 6,
 					"isSystem" : true,
-					"path" : "E:/Application/Qt/6.7.1/mingw_64/include/QtGui"
+					"path" : "C:/Qt/6.7.1/mingw_64/include/QtGui"
 				},
 				{
 					"backtrace" : 6,
 					"isSystem" : true,
-					"path" : "E:/Application/Qt/6.7.1/mingw_64/include/QtSql"
+					"path" : "C:/Qt/6.7.1/mingw_64/include/QtSql"
 				},
 				{
 					"backtrace" : 6,
 					"isSystem" : true,
-					"path" : "E:/Application/Qt/6.7.1/mingw_64/include/QtNetwork"
+					"path" : "C:/Qt/6.7.1/mingw_64/include/QtNetwork"
 				}
 			],
 			"language" : "CXX",
@@ -439,11 +439,11 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "Cinema-Sansaar_autogen::@6890427a1f51a3e7e1df"
+			"id" : "Cinema-Sansaar_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "Cinema-Sansaar_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "Cinema-Sansaar_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "Cinema-Sansaar::@6890427a1f51a3e7e1df",
@@ -475,22 +475,22 @@
 			},
 			{
 				"backtrace" : 6,
-				"fragment" : "E:\\Application\\Qt\\6.7.1\\mingw_64\\lib\\libQt6Widgets.a",
+				"fragment" : "C:\\Qt\\6.7.1\\mingw_64\\lib\\libQt6Widgets.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 6,
-				"fragment" : "E:\\Application\\Qt\\6.7.1\\mingw_64\\lib\\libQt6Sql.a",
+				"fragment" : "C:\\Qt\\6.7.1\\mingw_64\\lib\\libQt6Sql.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 6,
-				"fragment" : "E:\\Application\\Qt\\6.7.1\\mingw_64\\lib\\libQt6Network.a",
+				"fragment" : "C:\\Qt\\6.7.1\\mingw_64\\lib\\libQt6Network.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 13,
-				"fragment" : "E:\\Application\\Qt\\6.7.1\\mingw_64\\lib\\libQt6Gui.a",
+				"fragment" : "C:\\Qt\\6.7.1\\mingw_64\\lib\\libQt6Gui.a",
 				"role" : "libraries"
 			},
 			{
@@ -515,7 +515,7 @@
 			},
 			{
 				"backtrace" : 23,
-				"fragment" : "E:\\Application\\Qt\\6.7.1\\mingw_64\\lib\\libQt6Core.a",
+				"fragment" : "C:\\Qt\\6.7.1\\mingw_64\\lib\\libQt6Core.a",
 				"role" : "libraries"
 			},
 			{
@@ -535,7 +535,7 @@
 			},
 			{
 				"backtrace" : 38,
-				"fragment" : "E:\\Application\\Qt\\6.7.1\\mingw_64\\lib\\libQt6EntryPoint.a",
+				"fragment" : "C:\\Qt\\6.7.1\\mingw_64\\lib\\libQt6EntryPoint.a",
 				"role" : "libraries"
 			},
 			{

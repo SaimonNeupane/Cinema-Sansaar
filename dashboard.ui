@@ -7,19 +7,19 @@
     <x>0</x>
     <y>0</y>
     <width>1500</width>
-    <height>800</height>
+    <height>900</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>1500</width>
-    <height>800</height>
+    <height>900</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>1500</width>
-    <height>800</height>
+    <height>900</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -27,6 +27,7 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QDialog{
+	background-image: url(:/Posters/backdash.jpg);
 }
 QPushButton{
 	height:500px;
@@ -35,11 +36,23 @@ QPushButton{
   <widget class="QPushButton" name="pushButton_5">
    <property name="geometry">
     <rect>
-     <x>860</x>
-     <y>146</y>
-     <width>206</width>
-     <height>508</height>
+     <x>800</x>
+     <y>540</y>
+     <width>200</width>
+     <height>300</height>
     </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>300</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>200</width>
+     <height>300</height>
+    </size>
    </property>
    <property name="text">
     <string/>
@@ -59,11 +72,23 @@ QPushButton{
   <widget class="QPushButton" name="pushButton_3">
    <property name="geometry">
     <rect>
-     <x>435</x>
-     <y>146</y>
-     <width>206</width>
-     <height>508</height>
+     <x>650</x>
+     <y>190</y>
+     <width>200</width>
+     <height>300</height>
     </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>300</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>200</width>
+     <height>300</height>
+    </size>
    </property>
    <property name="text">
     <string/>
@@ -89,11 +114,23 @@ QPushButton{
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>222</x>
-     <y>146</y>
-     <width>207</width>
-     <height>508</height>
+     <x>370</x>
+     <y>190</y>
+     <width>200</width>
+     <height>300</height>
     </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>300</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>200</width>
+     <height>300</height>
+    </size>
    </property>
    <property name="text">
     <string/>
@@ -113,11 +150,23 @@ QPushButton{
   <widget class="QPushButton" name="pushButton_7">
    <property name="geometry">
     <rect>
-     <x>1285</x>
-     <y>146</y>
-     <width>206</width>
-     <height>508</height>
+     <x>480</x>
+     <y>550</y>
+     <width>200</width>
+     <height>300</height>
     </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>300</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>200</width>
+     <height>300</height>
+    </size>
    </property>
    <property name="text">
     <string/>
@@ -137,11 +186,23 @@ QPushButton{
   <widget class="QPushButton" name="pushButton_4">
    <property name="geometry">
     <rect>
-     <x>647</x>
-     <y>146</y>
-     <width>207</width>
-     <height>508</height>
+     <x>940</x>
+     <y>190</y>
+     <width>200</width>
+     <height>300</height>
     </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>300</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>200</width>
+     <height>300</height>
+    </size>
    </property>
    <property name="text">
     <string/>
@@ -161,11 +222,23 @@ QPushButton{
   <widget class="QPushButton" name="pushButton_6">
    <property name="geometry">
     <rect>
-     <x>1072</x>
-     <y>146</y>
-     <width>207</width>
-     <height>508</height>
+     <x>1230</x>
+     <y>180</y>
+     <width>200</width>
+     <height>300</height>
     </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>300</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>200</width>
+     <height>300</height>
+    </size>
    </property>
    <property name="text">
     <string/>
@@ -185,11 +258,23 @@ QPushButton{
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>9</x>
-     <y>146</y>
-     <width>207</width>
-     <height>508</height>
+     <x>80</x>
+     <y>190</y>
+     <width>200</width>
+     <height>300</height>
     </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>200</width>
+     <height>300</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>200</width>
+     <height>300</height>
+    </size>
    </property>
    <property name="styleSheet">
     <string notr="true"/>
@@ -210,6 +295,93 @@ QPushButton{
    </property>
    <property name="autoRepeat">
     <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>141</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/new/prefix1/Posters/new logo (1).png);
+background:none;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>1090</x>
+     <y>50</y>
+     <width>341</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:none;l</string>
+   </property>
+   <property name="text">
+    <string>Book Movies ,Book Smiles😊</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>30</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:none;
+font-family: DejaVu Sans Mono;
+font-size:23px;</string>
+   </property>
+   <property name="text">
+    <string>CINEMA</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>60</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:none;
+font-size:23px;
+font-family:DejaVu Sans Mono;</string>
+   </property>
+   <property name="text">
+    <string>SANSAAR</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>40</y>
+     <width>351</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:none;
+font-size:25px;
+font-family:coursive;</string>
+   </property>
+   <property name="text">
+    <string>NOW SHOWING</string>
    </property>
   </widget>
  </widget>

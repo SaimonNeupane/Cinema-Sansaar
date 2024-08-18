@@ -1075,6 +1075,9 @@
       <height>651</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color:blue;</string>
+    </property>
     <property name="orientation">
      <enum>Qt::Vertical</enum>
     </property>

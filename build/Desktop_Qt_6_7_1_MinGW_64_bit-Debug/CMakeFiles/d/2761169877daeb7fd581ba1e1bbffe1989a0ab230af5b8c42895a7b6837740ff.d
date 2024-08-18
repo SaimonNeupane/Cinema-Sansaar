@@ -1,5 +1,4 @@
-C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/EWIEGA46WW/moc_mainwindow.cpp: C:/Users/ACER/Desktop/Cinema-Sansaar/mainwindow.h \
-  C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/moc_predefs.h \
+Cinema-Sansaar_autogen/timestamp: \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QDeadlineTimer \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QDebug \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QFlags \
@@ -321,8 +320,8 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/C
   C:/Qt/6.7.1/mingw_64/include/QtSql/QSqlDatabase \
   C:/Qt/6.7.1/mingw_64/include/QtSql/QSqlError \
   C:/Qt/6.7.1/mingw_64/include/QtSql/QSqlQuery \
+  C:/Qt/6.7.1/mingw_64/include/QtSql/QtSql \
   C:/Qt/6.7.1/mingw_64/include/QtSql/QtSqlDepends \
-  C:/Qt/6.7.1/mingw_64/include/QtSql/Qtsql \
   C:/Qt/6.7.1/mingw_64/include/QtSql/qsqldatabase.h \
   C:/Qt/6.7.1/mingw_64/include/QtSql/qsqldriver.h \
   C:/Qt/6.7.1/mingw_64/include/QtSql/qsqldriverplugin.h \
@@ -367,6 +366,224 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/C
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qwidget.h \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6/FindWrapAtomic.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6/Qt6Config.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6/Qt6ConfigExtras.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6/Qt6Dependencies.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6/Qt6Targets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6/Qt6VersionlessTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6/QtFeature.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6/QtFeatureCommon.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6/QtPublicAppleHelpers.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6/QtPublicExternalProjectHelpers.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6/QtPublicPluginHelpers.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6/QtPublicTargetHelpers.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6/QtPublicTestHelpers.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6/QtPublicToolHelpers.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets-relwithdebinfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreVersionlessTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Core/QtInstallPaths.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets-relwithdebinfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointMinGW32Target.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfigVersion.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfigVersionImpl.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets-relwithdebinfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateVersionlessTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiPlugins.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets-relwithdebinfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6GuiVersionlessTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginTargets-relwithdebinfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets-relwithdebinfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets-relwithdebinfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets-relwithdebinfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-relwithdebinfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-relwithdebinfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets-relwithdebinfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets-relwithdebinfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargets-relwithdebinfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargets-relwithdebinfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-relwithdebinfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6NetworkAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6NetworkConfigVersion.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6NetworkConfigVersionImpl.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6NetworkDependencies.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6NetworkPlugins.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6NetworkTargets-relwithdebinfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6NetworkTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6NetworkVersionlessTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6QNLMNIPluginAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6QNLMNIPluginConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6QNLMNIPluginTargets-relwithdebinfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6QNLMNIPluginTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6QSchannelBackendPluginAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6QSchannelBackendPluginConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6QSchannelBackendPluginTargets-relwithdebinfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6QSchannelBackendPluginTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets-relwithdebinfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets-relwithdebinfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginTargets-relwithdebinfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginTargets-relwithdebinfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginTargets-relwithdebinfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets-relwithdebinfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlConfigVersion.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlConfigVersionImpl.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlDependencies.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlPlugins.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlTargets-relwithdebinfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql/Qt6SqlVersionlessTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-relwithdebinfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-relwithdebinfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateAdditionalTargetInfo.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateConfig.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateConfigVersion.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateConfigVersionImpl.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateTargets.cmake \
+  C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateVersionlessTargets.cmake \
+  C:/Qt/Tools/CMake_64/bin/cmake.exe \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeRCInformation.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CheckCXXCompilerFlag.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CheckIncludeFileCXX.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CheckLibraryExists.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/GNU.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/FindPackageMessage.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/FindThreads.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/FindVulkan.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/GNUInstallDirs.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Internal/CheckCompilerFlag.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Internal/CheckFlagCommonConfig.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows.cmake \
+  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake \
   C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/limits.h \
   C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed/syslimits.h \
   C:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/adxintrin.h \
@@ -691,13 +908,44 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/C
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wctype.h \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/CMakeLists.txt \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/Database/Data.db \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/Posters.qrc \
+  .qtc/package-manager/auto-setup.cmake \
+  CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
+  CMakeFiles/3.27.7/CMakeRCCompiler.cmake \
+  CMakeFiles/3.27.7/CMakeSystem.cmake \
+  Cinema-Sansaar_autogen/moc_predefs.h \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/dashboard.cpp \
   C:/Users/ACER/Desktop/Cinema-Sansaar/dashboard.h \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/dashboard.ui \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/database.cpp \
   C:/Users/ACER/Desktop/Cinema-Sansaar/database.h \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/harry.cpp \
   C:/Users/ACER/Desktop/Cinema-Sansaar/harry.h \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/harry.ui \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/kabir.cpp \
   C:/Users/ACER/Desktop/Cinema-Sansaar/kabir.h \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/kabir.ui \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/mahajatra.cpp \
   C:/Users/ACER/Desktop/Cinema-Sansaar/mahajatra.h \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/mahajatra.ui \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/main.cpp \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/mainwindow.cpp \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/mainwindow.h \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/mainwindow.ui \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/mirzapur.cpp \
   C:/Users/ACER/Desktop/Cinema-Sansaar/mirzapur.h \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/mirzapur.ui \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/sanju.cpp \
   C:/Users/ACER/Desktop/Cinema-Sansaar/sanju.h \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/sanju.ui \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/sinister.cpp \
   C:/Users/ACER/Desktop/Cinema-Sansaar/sinister.h \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/sinister.ui \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/thor.cpp \
   C:/Users/ACER/Desktop/Cinema-Sansaar/thor.h \
-  C:/Users/ACER/Desktop/Cinema-Sansaar/verification.h
+  C:/Users/ACER/Desktop/Cinema-Sansaar/thor.ui \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/verification.cpp \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/verification.h \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/verification.ui
