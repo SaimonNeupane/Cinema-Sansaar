@@ -6,9 +6,10 @@
 #include<QSqlDatabase>
 #include<QPushButton>
 #include "dashboard.h"
-#include "signup.h"
+// #include "signup.h"
 #include "database.h"
 #include "verification.h"
+#include<QNetworkAccessManager>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {

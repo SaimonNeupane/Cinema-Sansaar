@@ -35,7 +35,7 @@ void Kabir::initializeDatabase() {
 void Kabir::colorOfTheSeats() {
     QString sqlQuery = "SELECT s.seat_id, s.is_available "
                        "FROM Seats s "
-                       "WHERE s.showtime_id = 2";
+                       "WHERE s.showtime_id = 3";
 
     QSqlQuery query(db);  // Associate the query with the open database connection
 

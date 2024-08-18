@@ -1,5 +1,6 @@
 Cinema-Sansaar_autogen/timestamp: \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QDeadlineTimer \
+  C:/Qt/6.7.1/mingw_64/include/QtCore/QDebug \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QFlags \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QHash \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QList \
@@ -317,6 +318,8 @@ Cinema-Sansaar_autogen/timestamp: \
   C:/Qt/6.7.1/mingw_64/include/QtNetwork/qtnetworkexports.h \
   C:/Qt/6.7.1/mingw_64/include/QtNetwork/qtnetworkglobal.h \
   C:/Qt/6.7.1/mingw_64/include/QtSql/QSqlDatabase \
+  C:/Qt/6.7.1/mingw_64/include/QtSql/QSqlError \
+  C:/Qt/6.7.1/mingw_64/include/QtSql/QSqlQuery \
   C:/Qt/6.7.1/mingw_64/include/QtSql/QtSql \
   C:/Qt/6.7.1/mingw_64/include/QtSql/QtSqlDepends \
   C:/Qt/6.7.1/mingw_64/include/QtSql/qsqldatabase.h \
@@ -338,6 +341,8 @@ Cinema-Sansaar_autogen/timestamp: \
   C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlversion.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/QMainWindow \
+  C:/Qt/6.7.1/mingw_64/include/QtWidgets/QPushButton \
+  C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractitemview.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractscrollarea.h \
@@ -348,6 +353,7 @@ Cinema-Sansaar_autogen/timestamp: \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qframe.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlistview.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qmainwindow.h \
+  C:/Qt/6.7.1/mingw_64/include/QtWidgets/qpushbutton.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qrubberband.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qslider.h \
@@ -546,81 +552,23 @@ Cinema-Sansaar_autogen/timestamp: \
   C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateTargets.cmake \
   C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateVersionlessTargets.cmake \
   C:/Qt/Tools/CMake_64/bin/cmake.exe \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeCXXCompiler.cmake.in \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeCompilerIdDetection.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeDetermineCompileFeatures.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeDetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeDetermineRCCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeFindBinUtils.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeNinjaFindMake.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeParseImplicitIncludeInfo.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeParseImplicitLinkInfo.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeParseLibraryArchitecture.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeRCCompiler.cmake.in \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeRCInformation.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeSystem.cmake.in \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeTestCompilerCommon.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CMakeTestRCCompiler.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CheckCXXCompilerFlag.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CheckIncludeFileCXX.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/CheckLibraryExists.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/ADSP-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Borland-DetermineCompiler.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Clang-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Cray-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/GHS-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/GNU-FindBinUtils.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/GNU.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/IAR-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Intel-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/MSVC-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/PGI-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/PathScale-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/SCO-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/TI-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Tasking-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/Watcom-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/FindPackageHandleStandardArgs.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/FindPackageMessage.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/FindThreads.cmake \
@@ -629,8 +577,6 @@ Cinema-Sansaar_autogen/timestamp: \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Internal/CheckCompilerFlag.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Internal/CheckFlagCommonConfig.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Internal/FeatureTesting.cmake \
-  C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-Determine-CXX.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake \
@@ -963,6 +909,7 @@ Cinema-Sansaar_autogen/timestamp: \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wctype.h \
   C:/Users/ACER/Desktop/Cinema-Sansaar/CMakeLists.txt \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/Database/Data.db \
   C:/Users/ACER/Desktop/Cinema-Sansaar/Posters.qrc \
   .qtc/package-manager/auto-setup.cmake \
   CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
@@ -972,6 +919,8 @@ Cinema-Sansaar_autogen/timestamp: \
   C:/Users/ACER/Desktop/Cinema-Sansaar/dashboard.cpp \
   C:/Users/ACER/Desktop/Cinema-Sansaar/dashboard.h \
   C:/Users/ACER/Desktop/Cinema-Sansaar/dashboard.ui \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/database.cpp \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/database.h \
   C:/Users/ACER/Desktop/Cinema-Sansaar/harry.cpp \
   C:/Users/ACER/Desktop/Cinema-Sansaar/harry.h \
   C:/Users/ACER/Desktop/Cinema-Sansaar/harry.ui \
@@ -991,12 +940,12 @@ Cinema-Sansaar_autogen/timestamp: \
   C:/Users/ACER/Desktop/Cinema-Sansaar/sanju.cpp \
   C:/Users/ACER/Desktop/Cinema-Sansaar/sanju.h \
   C:/Users/ACER/Desktop/Cinema-Sansaar/sanju.ui \
-  C:/Users/ACER/Desktop/Cinema-Sansaar/signup.cpp \
-  C:/Users/ACER/Desktop/Cinema-Sansaar/signup.h \
-  C:/Users/ACER/Desktop/Cinema-Sansaar/signup.ui \
   C:/Users/ACER/Desktop/Cinema-Sansaar/sinister.cpp \
   C:/Users/ACER/Desktop/Cinema-Sansaar/sinister.h \
   C:/Users/ACER/Desktop/Cinema-Sansaar/sinister.ui \
   C:/Users/ACER/Desktop/Cinema-Sansaar/thor.cpp \
   C:/Users/ACER/Desktop/Cinema-Sansaar/thor.h \
-  C:/Users/ACER/Desktop/Cinema-Sansaar/thor.ui
+  C:/Users/ACER/Desktop/Cinema-Sansaar/thor.ui \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/verification.cpp \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/verification.h \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/verification.ui
