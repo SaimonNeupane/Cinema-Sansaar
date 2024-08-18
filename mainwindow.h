@@ -9,6 +9,7 @@
 // #include "signup.h"
 #include "database.h"
 #include "verification.h"
+#include "change_pass.h"
 #include<QNetworkAccessManager>
 
 QT_BEGIN_NAMESPACE
@@ -31,10 +32,13 @@ private slots:
     void on_Login_clicked();//login page->login button
     void on_SendVerificationCode_clicked();//to open dialog box
     void sendVerificationCode(const QString &email);
+    void on_SendVerificationCode_2_clicked();
+
 private:
     Ui::MainWindow *ui;
     Dashboard *dashboard;
     Verification *verify;
+    Change_pass *new_pass;
     Database db;
     QPushButton *widget_index[4];//for button connection for stacked widget
 

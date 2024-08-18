@@ -36,7 +36,7 @@ void MainWindow::connect_stackedWidget()
     widget_index[0]= ui->Signup;
     widget_index[1]= ui->login_goBack;//already have an account button
     widget_index[2]= ui->Forgot;
-    // widget_index[3]= ui->;
+    widget_index[3]= ui->login_goBack_2;
     connect(widget_index[0], &QPushButton::clicked, this, [=]() {
         stackedWidget->setCurrentIndex(1); // Switch to second page,signup page
     });
@@ -46,9 +46,9 @@ void MainWindow::connect_stackedWidget()
     connect(widget_index[2], &QPushButton::clicked, this, [=]() {
         stackedWidget->setCurrentIndex(2); // Switch to third page,forgot page
     });
-    // connect(widget_index[3], &QPushButton::clicked, this, [=]() {
-    //     stackedWidget->setCurrentIndex(0); // Switch to first page,login page
-    // });
+    connect(widget_index[3], &QPushButton::clicked, this, [=]() {
+        stackedWidget->setCurrentIndex(0); // Switch to first page,login page
+    });
     // Show the first widget initially
     stackedWidget->setCurrentIndex(0);
 }
@@ -100,8 +100,10 @@ void MainWindow::on_SendVerificationCode_clicked()
         QString username =ui->lineEdit2_1->text();
         QString password =ui->lineEdit2_2->text();
         Database db;
-        db.saveUserInfo(email, username, password);//(email,username,password)
+        db.saveUserInfo(email, username, password);//(email,username,password
+        db.closeDatabase();
     }
+    delete verify; // Clean up the verification dialog
 }
 //for sending verification coded
 void MainWindow::sendVerificationCode(const QString &email)
@@ -126,4 +128,25 @@ void MainWindow::sendVerificationCode(const QString &email)
 }
 
 
+
+
+void MainWindow::on_SendVerificationCode_2_clicked()
+{
+    QString email = ui->lineEdit3_3->text();
+    sendVerificationCode(email);
+    verify = new Verification(verificationCode, this);
+    if (verify->exec() == QDialog::Accepted) {
+        // Verification successful
+        new_pass=new Change_pass(this);
+        if (new_pass->exec() == QDialog::Accepted) {
+            QString password = new_pass->getNewPassword(); // Get the new password from the dialog
+            // Update the user's password in the database
+            Database db;
+            db.changeUserInfo(email, password);//(changed password)
+            db.closeDatabase();
+        }
+        delete new_pass; // Clean up the dialog
+    }
+    delete verify; // Clean up the verification dialog
+}
 

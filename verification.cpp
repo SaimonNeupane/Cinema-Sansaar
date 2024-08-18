@@ -1,6 +1,7 @@
 #include "verification.h"
 #include "ui_verification.h"
 #include <QMessageBox>
+#include <QDebug>
 
 Verification::Verification(const QString &verificationCode, QWidget *parent)
     : QDialog(parent)
@@ -8,6 +9,7 @@ Verification::Verification(const QString &verificationCode, QWidget *parent)
 {
     ui->setupUi(this);
     connect(ui->verifyCodeButton, &QPushButton::clicked, this, &Verification::on_verifyCodeButton_clicked);
+    qDebug()<<"code:" <<verificationCode;
 }
 
 Verification::~Verification()
@@ -26,7 +28,6 @@ void Verification::verifyCode(const QString &code)
     if (code == verificationCode) {
         QMessageBox::information(this, "Verification", "Verification successful!");
         accept();  // Close the dialog and return true
-
     } else {
         QMessageBox::warning(this, "Verification", "Verification failed. Please try again.");
     }

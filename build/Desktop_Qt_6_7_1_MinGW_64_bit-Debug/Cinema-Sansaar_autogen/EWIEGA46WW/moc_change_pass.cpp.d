@@ -1,5 +1,6 @@
-C:/Users/DELL/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/EWIEGA46WW/moc_sanju.cpp: C:/Users/DELL/Desktop/Cinema-Sansaar/sanju.h \
+C:/Users/DELL/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/EWIEGA46WW/moc_change_pass.cpp: C:/Users/DELL/Desktop/Cinema-Sansaar/change_pass.h \
   C:/Users/DELL/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/moc_predefs.h \
+  E:/Application/Qt/6.7.1/mingw_64/include/QtCore/QTimer \
   E:/Application/Qt/6.7.1/mingw_64/include/QtCore/q20functional.h \
   E:/Application/Qt/6.7.1/mingw_64/include/QtCore/q20memory.h \
   E:/Application/Qt/6.7.1/mingw_64/include/QtCore/q20type_traits.h \
@@ -13,6 +14,7 @@ C:/Users/DELL/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/C
   E:/Application/Qt/6.7.1/mingw_64/include/QtCore/qatomic.h \
   E:/Application/Qt/6.7.1/mingw_64/include/QtCore/qatomic_cxx11.h \
   E:/Application/Qt/6.7.1/mingw_64/include/QtCore/qbasicatomic.h \
+  E:/Application/Qt/6.7.1/mingw_64/include/QtCore/qbasictimer.h \
   E:/Application/Qt/6.7.1/mingw_64/include/QtCore/qbindingstorage.h \
   E:/Application/Qt/6.7.1/mingw_64/include/QtCore/qbytearray.h \
   E:/Application/Qt/6.7.1/mingw_64/include/QtCore/qbytearrayalgorithms.h \
@@ -101,6 +103,7 @@ C:/Users/DELL/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/C
   E:/Application/Qt/6.7.1/mingw_64/include/QtCore/qtdeprecationmarkers.h \
   E:/Application/Qt/6.7.1/mingw_64/include/QtCore/qtenvironmentvariables.h \
   E:/Application/Qt/6.7.1/mingw_64/include/QtCore/qtextstream.h \
+  E:/Application/Qt/6.7.1/mingw_64/include/QtCore/qtimer.h \
   E:/Application/Qt/6.7.1/mingw_64/include/QtCore/qtmetamacros.h \
   E:/Application/Qt/6.7.1/mingw_64/include/QtCore/qtnoop.h \
   E:/Application/Qt/6.7.1/mingw_64/include/QtCore/qtpreprocessorsupport.h \
@@ -142,11 +145,6 @@ C:/Users/DELL/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/C
   E:/Application/Qt/6.7.1/mingw_64/include/QtGui/qtransform.h \
   E:/Application/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs.h \
   E:/Application/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs_win.h \
-  E:/Application/Qt/6.7.1/mingw_64/include/QtSql/QSqlDatabase \
-  E:/Application/Qt/6.7.1/mingw_64/include/QtSql/qsqldatabase.h \
-  E:/Application/Qt/6.7.1/mingw_64/include/QtSql/qtsql-config.h \
-  E:/Application/Qt/6.7.1/mingw_64/include/QtSql/qtsqlexports.h \
-  E:/Application/Qt/6.7.1/mingw_64/include/QtSql/qtsqlglobal.h \
   E:/Application/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
   E:/Application/Qt/6.7.1/mingw_64/include/QtWidgets/qdialog.h \
   E:/Application/Qt/6.7.1/mingw_64/include/QtWidgets/qsizepolicy.h \

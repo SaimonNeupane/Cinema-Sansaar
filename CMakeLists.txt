@@ -29,10 +29,11 @@ add_definitions(-DDATABASE_PATH="${DATABASE_PATH}")
 set(PROJECT_SOURCES
         main.cpp
         mainwindow.cpp	mainwindow.h	mainwindow.ui
-    	database.h database.cpp
-	verification.h verification.cpp verification.ui
-	dashboard.h dashboard.cpp dashboard.ui
-	sinister.h sinister.cpp sinister.ui
+        database.h database.cpp #file for function for database interaction
+        verification.h verification.cpp verification.ui #verification dialog box
+        change_pass.h change_pass.cpp change_pass.ui #change password
+        dashboard.h dashboard.cpp dashboard.ui #movie selection for user
+        sinister.h sinister.cpp sinister.ui
         mirzapur.h mirzapur.cpp mirzapur.ui
         sanju.h sanju.cpp sanju.ui
         mahajatra.h mahajatra.cpp mahajatra.ui

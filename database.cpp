@@ -48,17 +48,19 @@ bool Database::authenticateUser(const QString &username, const QString &password
 
     if (!query.exec()) {
         qDebug() << "Database error: " << query.lastError().text();
+        closeDatabase();
         return false;
     }
 
     if (query.next()) {
         qDebug() << "Login Successful";
+        closeDatabase();
         return true;
     } else {
         qDebug() << "No user exists with those credentials";
+        closeDatabase();
         return false;
     }
-    closeDatabase();
 }
 
 //for signup
@@ -73,5 +75,17 @@ bool Database::saveUserInfo(const QString &email, const QString &username, const
     query.bindValue(":username", username);
     query.bindValue(":password", password);
     return query.exec();
-    closeDatabase();
 }
+
+bool Database::changeUserInfo(const QString &email, const QString &new_password) {
+    if (!db.isOpen()) {
+        qDebug() << "Database is not open";
+        return false;
+    }
+    QSqlQuery query(db);
+    query.prepare("UPDATE User SET password = :password WHERE email = :email");
+    query.bindValue(":email", email);
+    query.bindValue(":password", new_password);
+    return query.exec();
+}
+

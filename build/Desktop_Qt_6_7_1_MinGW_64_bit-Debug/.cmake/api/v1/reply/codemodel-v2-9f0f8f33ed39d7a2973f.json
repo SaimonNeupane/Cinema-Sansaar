@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-71d1f29e105390ded07c.json",
+					"jsonFile" : "directory-.-Debug-a23cf44a7ff9177078eb.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Cinema-Sansaar::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Cinema-Sansaar-Debug-47ad5a3af713d5184170.json",
+					"jsonFile" : "target-Cinema-Sansaar-Debug-dee6d5a4281586a08b01.json",
 					"name" : "Cinema-Sansaar",
 					"projectIndex" : 0
 				},
@@ -58,7 +58,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Cinema-Sansaar_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Cinema-Sansaar_autogen_timestamp_deps-Debug-bcefd98f37fea0ff508e.json",
+					"jsonFile" : "target-Cinema-Sansaar_autogen_timestamp_deps-Debug-019bf4e6c89ca7be49f8.json",
 					"name" : "Cinema-Sansaar_autogen_timestamp_deps",
 					"projectIndex" : 0
 				}
@@ -68,12 +68,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug",
-		"source" : "C:/Users/ACER/Desktop/Cinema-Sansaar"
+		"build" : "C:/Users/DELL/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug",
+		"source" : "C:/Users/DELL/Desktop/Cinema-Sansaar"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 6
+		"minor" : 7
 	}
 }
