@@ -14,8 +14,8 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
     , networkManager(new QNetworkAccessManager(this))
-    , apiKey("a2b32923329af20ddbd6965b51080874-911539ec-c4732afe")
-    , mailgunDomain("sandbox390660ef2697488790e3d3a0b72bc161.mailgun.org")
+    , apiKey("")
+    , mailgunDomain("")
     , verificationCode(QString::number(QRandomGenerator::global()->bounded(100000, 999999)))
 {
     ui->setupUi(this);
@@ -83,7 +83,7 @@ void MainWindow::on_Login_clicked()
     Database db;
     if (db.openDatabase() && db.authenticateUser(username, password)) {
         hide();
-        dashboard = new Dashboard(this);
+        dashboard = new Dashboard(username,this);
         dashboard->show();
     } else {
         QMessageBox::warning(this, "Login Failed", "Invalid username or password.");
@@ -118,6 +118,9 @@ void MainWindow::sendVerificationCode(const QString &email)
     QNetworkReply *reply = networkManager->post(request, postData.toUtf8());
 
     connect(reply, &QNetworkReply::finished, [=]() {
+        qDebug() << "Reply URL:" << reply->url();
+        qDebug() << "Reply status code:" << reply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt();
+        qDebug() << "Reply response:" << reply->readAll();
         if (reply->error() == QNetworkReply::NoError) {
             QMessageBox::information(this, "Verification", "Verification code sent successfully!");
         } else {
@@ -125,6 +128,7 @@ void MainWindow::sendVerificationCode(const QString &email)
         }
         reply->deleteLater();
     });
+
 }
 
 

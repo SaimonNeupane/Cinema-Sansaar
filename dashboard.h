@@ -22,7 +22,7 @@ class Dashboard : public QDialog
     Q_OBJECT
 
 public:
-    explicit Dashboard(QWidget *parent = nullptr);
+    explicit Dashboard(const QString &username, QWidget *parent = nullptr);
     ~Dashboard();
 
 private slots:
@@ -49,6 +49,8 @@ private:
     Sanju *sanju;
     Mahajatra *mahajatra;
     Harry *harry;
+    QString loggedInUsername;
+
 
 
 

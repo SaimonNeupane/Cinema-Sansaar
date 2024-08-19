@@ -12,7 +12,7 @@ class Harry : public QDialog
     Q_OBJECT
 
 public:
-    explicit Harry(QWidget *parent = nullptr);
+    explicit Harry(QString loggedInUser, QWidget *parent = nullptr); // Update constructor
     ~Harry();
 
 private slots:
@@ -25,7 +25,8 @@ private:
     QSqlDatabase db;
     void initializeDatabase();
     void colorOfTheSeats();
-
+    QString username;
+      QString loggedInUser;
 };
 
 #endif // HARRY_H

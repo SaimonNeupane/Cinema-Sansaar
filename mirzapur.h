@@ -12,7 +12,7 @@ class Mirzapur : public QDialog
     Q_OBJECT
 
 public:
-    explicit Mirzapur(QWidget *parent = nullptr);
+    explicit Mirzapur(QString loggedInUser, QWidget *parent = nullptr); // Update constructor
     ~Mirzapur();
 
 private slots:
@@ -25,7 +25,7 @@ private:
     QSqlDatabase db;
     void initializeDatabase();
     void colorOfTheSeats();
-
+      QString loggedInUser;
 };
 
 #endif // MIRZAPUR_H

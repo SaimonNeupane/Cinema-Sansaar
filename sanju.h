@@ -12,7 +12,7 @@ class Sanju : public QDialog
     Q_OBJECT
 
 public:
-    explicit Sanju(QWidget *parent = nullptr);
+    explicit Sanju(QString loggedInUser, QWidget *parent = nullptr); // Update constructor
     ~Sanju();
 
 private slots:
@@ -25,7 +25,7 @@ private:
     QSqlDatabase db;
     void initializeDatabase();
     void colorOfTheSeats();
-
+      QString loggedInUser;
 };
 
 #endif // SANJU_H

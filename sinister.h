@@ -12,7 +12,7 @@ class Sinister : public QDialog
     Q_OBJECT
 
 public:
-    explicit Sinister(QWidget *parent = nullptr);
+    explicit Sinister(QString loggedInUser, QWidget *parent = nullptr); // Update constructor
     ~Sinister();
 
 private slots:
@@ -25,7 +25,7 @@ private:
     QSqlDatabase db;
     void initializeDatabase();
     void colorOfTheSeats();
-
+      QString loggedInUser;
 };
 
 #endif // SINISTER_H

@@ -9,9 +9,10 @@
 #include "thor.h"
 
 
-Dashboard::Dashboard(QWidget *parent)
+Dashboard::Dashboard(const QString &loggedInUser, QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::Dashboard)
+    , loggedInUsername(loggedInUser)
 {
     ui->setupUi(this);
 }
@@ -23,49 +24,49 @@ Dashboard::~Dashboard()
 
 void Dashboard::on_pushButton_2_clicked()
 {
-    sinister=new Sinister(this);
+    sinister=new Sinister(loggedInUsername,this);
     sinister->show();
 }
 
 
 void Dashboard::on_pushButton_clicked()
 {
-    kabir=new Kabir(this);
+    kabir=new Kabir(loggedInUsername,this);
     kabir->show();
 }
 
 
 void Dashboard::on_pushButton_3_clicked()
 {
-    thor=new Thor(this);
+    thor=new Thor(loggedInUsername,this);
     thor->show();
 }
 
 
 void Dashboard::on_pushButton_4_clicked()
 {
-    sanju=new Sanju(this);
+    sanju=new Sanju(loggedInUsername,this);
     sanju->show();
 }
 
 
 void Dashboard::on_pushButton_5_clicked()
 {
-    mahajatra=new Mahajatra(this);
+    mahajatra=new Mahajatra(loggedInUsername,this);
     mahajatra->show();
 }
 
 
 void Dashboard::on_pushButton_6_clicked()
 {
-    harry=new Harry(this);
+    harry=new Harry(loggedInUsername,this);
     harry->show();
 }
 
 
 void Dashboard::on_pushButton_7_clicked()
 {
-    mirzapur=new Mirzapur(this);
+    mirzapur=new Mirzapur(loggedInUsername,this);
     mirzapur->show();
 }
 

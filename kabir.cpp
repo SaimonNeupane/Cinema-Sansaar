@@ -8,9 +8,10 @@
 #include <QMessageBox>
 #include <QRegularExpression>
 
-Kabir::Kabir(QWidget *parent)
+Kabir::Kabir(QString loggedInUser,QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::Kabir)
+    , loggedInUser(loggedInUser)
 {
     ui->setupUi(this);
     initializeDatabase();
@@ -79,33 +80,103 @@ void Kabir::colorOfTheSeats() {
 }
 
 void Kabir::on_btnConfirmBooking1_clicked() {
-    bool seatsSelected = false; // Flag to check if any seat is selected
+    bool seatsSelected = false;
+    int showtimeId = 3;
+    QStringList bookedSeats;
+    QList<int> bookingIds; // To store booking IDs
 
-    // Iterate through all seat labels to check which ones are selected for booking
     QList<QLabel *> allLabels = this->findChildren<QLabel *>(QRegularExpression("lbl\\w+"));
 
-    QSqlQuery query(db);
-    query.prepare("UPDATE Seats SET is_available = 0 WHERE seat_id = :seat_id AND showtime_id = 2");
+    QSqlQuery updateQuery(db);
+    updateQuery.prepare("UPDATE Seats SET is_available = 0 WHERE seat_id = :seat_id AND showtime_id = :showtime_id");
+
+    QSqlQuery insertQuery(db);
+    insertQuery.prepare("INSERT INTO Bookings (user_id, showtime_id, seat_id) "
+                        "VALUES (:user_id, :showtime_id, :seat_id)");
+
+    QSqlQuery selectLastIdQuery(db);
+    selectLastIdQuery.prepare("SELECT last_insert_rowid()");
 
     for (QLabel *label : allLabels) {
         if (label->styleSheet().contains("background-color: gray;")) {
-            label->setStyleSheet("background-color: red;");
-            seatsSelected = true; // Set flag to true if at least one seat is selected
-            query.bindValue(":seat_id", label->objectName().mid(3)); // Remove 'lbl' prefix to get the seat number
-            if (!query.exec()) {
-                qDebug() << "Failed to update seat availability:" << query.lastError().text();
+            QString seatId = label->objectName().mid(3);
+
+            // Update seat availability
+            updateQuery.bindValue(":seat_id", seatId);
+            updateQuery.bindValue(":showtime_id", showtimeId);
+            if (!updateQuery.exec()) {
+                qDebug() << "Failed to update seat availability:" << updateQuery.lastError().text();
+            } else {
+                label->setStyleSheet("background-color: red;"); // Ensure UI reflects change
+                seatsSelected = true;
+
+                // Insert the booking into the Bookings table
+                insertQuery.bindValue(":user_id", loggedInUser);
+                insertQuery.bindValue(":showtime_id", showtimeId);
+                insertQuery.bindValue(":seat_id", seatId);
+                if (!insertQuery.exec()) {
+                    qDebug() << "Failed to insert booking:" << insertQuery.lastError().text();
+                } else {
+                    // Retrieve the booking ID
+                    if (selectLastIdQuery.exec() && selectLastIdQuery.next()) {
+                        int bookingId = selectLastIdQuery.value(0).toInt();
+                        bookedSeats.append(seatId);
+                        bookingIds.append(bookingId);
+                        qDebug() << "Booking inserted for seat:" << seatId << "with Booking ID:" << bookingId;
+                    } else {
+                        qDebug() << "Failed to retrieve last booking ID.";
+                    }
+                }
             }
         }
     }
 
     if (seatsSelected) {
-        qDebug() << "Seats booked successfully!";
-        // Optionally, you can update your database or perform other actions here
+        // Create a message string
+        QStringList bookingDetails;
+        for (int i = 0; i < bookingIds.size(); ++i) {
+            bookingDetails.append(QString("Booking ID %1: Seat %2").arg(bookingIds[i]).arg(bookedSeats[i]));
+        }
+        QString message = QString("Your booking is confirmed!\n%1\nPlease remember these IDs and take a screenshot.")
+                              .arg(bookingDetails.join("\n"));
+
+
+
+
+        // Show the message box
+        QMessageBox msgBox(this);
+        msgBox.setWindowTitle("Booking Confirmation");
+        msgBox.setText(message);
+        msgBox.setStyleSheet(
+
+            "msgBox{"
+            "background:none;"
+            "}"
+            "QLabel{"
+            "background:none;"
+            "}"
+            "QPushButton {"
+            "    background-color: #c0c0c0;"
+            "    border: 1px solid #a0a0a0;"
+            "    border-radius: 5px;"
+            "    padding: 10px;"
+            "    height:15px;"
+            "    width:30px;"
+            "background:none;"
+            "}"
+            "QPushButton:hover {"
+            "    background-color: #b0b0b0;"
+            "}"
+            "QPushButton:pressed {"
+            "    background-color: #a0a0a0;"
+            "}"
+            );
+        msgBox.exec();
     } else {
         qDebug() << "No seats selected for booking.";
-        // Optionally, show a message or handle the case where no seats are selected
     }
 }
+
 void Kabir::on_btnSelectSeat1_clicked()
 {
     // Get selected seat number from combo box
@@ -117,10 +188,44 @@ void Kabir::on_btnSelectSeat1_clicked()
 
         // Check if the seat is already booked
         if (selectedSeatLabel->styleSheet().contains("background-color: red;")) {
-            QMessageBox::information(this, "Seat Unavailable", "The selected seat is already booked.");
+            QString msg = "The seat is already booked";
+
+            // Create and customize the QMessageBox
+            QMessageBox msgBox(this);
+            msgBox.setWindowTitle("Seat Unavailable");
+            msgBox.setText(msg);
+
+            // Apply custom stylesheet to QMessageBox
+            msgBox.setStyleSheet(
+                "QMessageBox {"
+                "    background: transparent;"
+                "}"
+                "QLabel {"
+                "    background: transparent;"
+                "}"
+                "QPushButton {"
+                "    background-color: #c0c0c0;"
+                "    border: 1px solid #a0a0a0;"
+                "    border-radius: 5px;"
+                "    padding: 5px 10px;"
+                "    min-width: 80px;"
+                "    height:20px;"
+                "}"
+                "QPushButton:hover {"
+                "    background-color: #b0b0b0;"
+                "}"
+                "QPushButton:pressed {"
+                "    background-color: #a0a0a0;"
+                "}"
+                );
+
+            // Show the message box
+            msgBox.exec();
+
             qDebug() << "Seat already booked: " << selectedSeat;
             return; // Exit the function if the seat is already booked
         }
+
 
         // Set the background color to gray to indicate selection
         selectedSeatLabel->setStyleSheet("background-color: gray;");

@@ -12,7 +12,7 @@ class Thor : public QDialog
     Q_OBJECT
 
 public:
-    explicit Thor(QWidget *parent = nullptr);
+    explicit Thor(QString loggedInUser, QWidget *parent = nullptr); // Update constructor
     ~Thor();
 
 private slots:
@@ -25,7 +25,7 @@ private:
     QSqlDatabase db;
     void initializeDatabase();
     void colorOfTheSeats();
-
+      QString loggedInUser;
 };
 
 #endif // THOR_H

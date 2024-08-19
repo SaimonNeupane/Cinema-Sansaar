@@ -12,7 +12,7 @@ class Kabir : public QDialog
     Q_OBJECT
 
 public:
-    explicit Kabir(QWidget *parent = nullptr);
+    explicit Kabir(QString loggedInUser, QWidget *parent = nullptr); // Update constructor
     ~Kabir();
 
 private slots:
@@ -25,7 +25,7 @@ private:
     QSqlDatabase db;
     void initializeDatabase();
     void colorOfTheSeats();
-
+      QString loggedInUser;
 };
 
 #endif // KABIR_H

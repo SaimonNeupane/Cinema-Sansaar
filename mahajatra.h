@@ -12,7 +12,7 @@ class Mahajatra : public QDialog
     Q_OBJECT
 
 public:
-    explicit Mahajatra(QWidget *parent = nullptr);
+    explicit Mahajatra(QString loggedInUser, QWidget *parent = nullptr); // Update constructor
     ~Mahajatra();
 
 private slots:
@@ -25,7 +25,7 @@ private:
     QSqlDatabase db;
     void initializeDatabase();
     void colorOfTheSeats();
-
+      QString loggedInUser;
 };
 
 #endif // MAHAJATRA_H
