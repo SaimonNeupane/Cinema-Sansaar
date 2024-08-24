@@ -14,69 +14,77 @@ Sanju::Sanju(QString loggedInUser,QWidget *parent)
     , loggedInUser(loggedInUser)
 {
     ui->setupUi(this);
-    initializeDatabase();
-    colorOfTheSeats();
+    initialize();
 }
 
 Sanju::~Sanju()
 {
     delete ui;
 }
+void Sanju::initialize(){
+    if (!db.openDatabase()) {
+        QMessageBox::critical(this, "Database Error", "Failed to open the database.");
+        return; // Exit if the database cannot be opened
+    }
+    colorOfTheSeats();
+}
 
-void Sanju::initializeDatabase() {
-    db = QSqlDatabase::addDatabase("QSQLITE", "SaimonNeupane");
-    db.setDatabaseName("C:/Users/ACER/Desktop/Cinema-Sansaar/Database/Data.db");
-    if (db.open()) {
-        qDebug() << "Database connected successfully.";
+QSqlQuery Sanju::executeSeatQuery(int showtimeId) {
+    db.openDatabase();
+    const QString sqlQuery = "SELECT s.seat_id, s.is_available "
+                             "FROM Seats s "
+                             "WHERE s.showtime_id = :showtimeId";
+
+    QSqlQuery query(db.getDatabase());  // Associate the query with the open database connection
+    query.prepare(sqlQuery);
+    query.bindValue(":showtimeId", showtimeId);
+
+    if (!query.exec()) {
+        qDebug() << "Error executing SQL query:" << query.lastError().text();
+    }
+
+    return query;
+}
+
+void Sanju::updateSeatLabel(const QString &seatNumber, bool isAvailable) {
+    const QString labelObjectName = "lbl" + seatNumber;  // Assuming seat labels are named lblA1, lblA2, etc.
+    QLabel *seatLabel = findChild<QLabel *>(labelObjectName);
+
+    if (seatLabel) {
+        // Set the color based on availability
+        seatLabel->setStyleSheet(isAvailable ? "background-color: green;" : "background-color: red;");
     } else {
-        qDebug() << "Database connection failed:" << db.lastError().text();
+        qDebug() << "Label" << labelObjectName << "not found.";
+    }
+}
+
+void Sanju::processSeatQueryResults(QSqlQuery &query) {
+    int rowCount = 0;
+    while (query.next()) {
+        rowCount++;
+        const QString seatNumber = query.value(0).toString();   // Retrieve seat_id
+        const bool isAvailable = query.value(1).toBool();       // Retrieve is_available
+
+        updateSeatLabel(seatNumber, isAvailable);
+
+        // Display seat information
+        qDebug() << "Row" << rowCount << ":";
+        qDebug() << "Seat:" << seatNumber << "Available:" << (isAvailable ? "Yes" : "No");
+    }
+    if (rowCount == 0) {
+        qDebug() << "No seats found for the specified showtime.";
     }
 }
 
 void Sanju::colorOfTheSeats() {
-    QString sqlQuery = "SELECT s.seat_id, s.is_available "
-                       "FROM Seats s "
-                       "WHERE s.showtime_id = 5";
-
-    QSqlQuery query(db);  // Associate the query with the open database connection
-
-    qDebug() << "Executing SQL query: " << sqlQuery;  // Log the SQL query
-
-    if (query.exec(sqlQuery)) {
-        qDebug() << "SQL query executed successfully.";  // Log query success
-
-        int rowCount = 0;
-        while (query.next()) {
-            rowCount++;
-            QString seatNumber = query.value(0).toString();   // Retrieve seat_id
-            bool isAvailable = query.value(1).toBool();       // Retrieve is_available
-
-            // Find the corresponding QLabel based on seatNumber
-            QString labelObjectName = "lbl" + seatNumber;  // Assuming seat labels are named lblA1, lblA2, etc.
-            QLabel *seatLabel = findChild<QLabel *>(labelObjectName);
-
-            if (seatLabel) {
-                // Set the color based on availability
-                if (isAvailable) {
-                    seatLabel->setStyleSheet("background-color: green;");
-                } else {
-                    seatLabel->setStyleSheet("background-color: red;");
-                }
-            } else {
-                qDebug() << "Label" << labelObjectName << "not found.";
-            }
-
-            // Display seat information
-            qDebug() << "Row" << rowCount << ":";
-            qDebug() << "Seat:" << seatNumber << "Available:" << (isAvailable ? "Yes" : "No");
-        }
-        if (rowCount == 0) {
-            qDebug() << "No rows returned.";
-        }
-    } else {
-        // Handle query execution error
-        qDebug() << "Error executing SQL query:" << query.lastError().text();
+    const int showtimeId = 5; // Example showtime ID
+    QSqlQuery query = executeSeatQuery(showtimeId);
+    if (!query.isActive()) {
+        qDebug()<<"Query execution failed, exit early";
+        return;
     }
+
+    processSeatQueryResults(query);
 }
 
 void Sanju::on_btnConfirmBooking1_clicked() {
@@ -87,14 +95,14 @@ void Sanju::on_btnConfirmBooking1_clicked() {
 
     QList<QLabel *> allLabels = this->findChildren<QLabel *>(QRegularExpression("lbl\\w+"));
 
-    QSqlQuery updateQuery(db);
+    QSqlQuery updateQuery(db.getDatabase());
     updateQuery.prepare("UPDATE Seats SET is_available = 0 WHERE seat_id = :seat_id AND showtime_id = :showtime_id");
 
-    QSqlQuery insertQuery(db);
+    QSqlQuery insertQuery(db.getDatabase());
     insertQuery.prepare("INSERT INTO Bookings (user_id, showtime_id, seat_id) "
                         "VALUES (:user_id, :showtime_id, :seat_id)");
 
-    QSqlQuery selectLastIdQuery(db);
+    QSqlQuery selectLastIdQuery(db.getDatabase());
     selectLastIdQuery.prepare("SELECT last_insert_rowid()");
 
     for (QLabel *label : allLabels) {

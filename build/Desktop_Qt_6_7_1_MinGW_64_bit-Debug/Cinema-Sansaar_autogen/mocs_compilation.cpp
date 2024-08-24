@@ -7,6 +7,7 @@
 #include "EWIEGA46WW/moc_mainwindow.cpp"
 #include "EWIEGA46WW/moc_mirzapur.cpp"
 #include "EWIEGA46WW/moc_sanju.cpp"
+#include "EWIEGA46WW/moc_seatselection.cpp"
 #include "EWIEGA46WW/moc_sinister.cpp"
 #include "EWIEGA46WW/moc_thor.cpp"
 #include "EWIEGA46WW/moc_verification.cpp"

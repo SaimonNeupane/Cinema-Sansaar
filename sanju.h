@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include <QSqlDatabase>
+#include "database.h"
 namespace Ui {
 class Sanju;
 }
@@ -22,10 +23,14 @@ private slots:
 
 private:
     Ui::Sanju *ui;
-    QSqlDatabase db;
-    void initializeDatabase();
+    QString loggedInUser;
+    Database db;
+
+    void initialize();
+    QSqlQuery executeSeatQuery(int showtimeId);
+    void updateSeatLabel(const QString &seatNumber, bool isAvailable);
+    void processSeatQueryResults(QSqlQuery &query);
     void colorOfTheSeats();
-      QString loggedInUser;
 };
 
 #endif // SANJU_H

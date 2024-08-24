@@ -33,6 +33,7 @@ set(PROJECT_SOURCES
         verification.h verification.cpp verification.ui #verification dialog box
         change_pass.h change_pass.cpp change_pass.ui #change password
         dashboard.h dashboard.cpp dashboard.ui #movie selection for user
+        seatselection.h seatselection.cpp seatselection.ui #seat selection for different movies
         sinister.h sinister.cpp sinister.ui
         mirzapur.h mirzapur.cpp mirzapur.ui
         sanju.h sanju.cpp sanju.ui

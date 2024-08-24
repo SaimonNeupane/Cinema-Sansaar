@@ -6,6 +6,7 @@
 #include <QSqlError>
 #include <QSqlQuery>
 #include <QDebug>
+#include <QLabel>
 
 class Database {
 public:
@@ -17,9 +18,20 @@ public:
     bool authenticateUser(const QString &username, const QString &password);//login
     bool saveUserInfo(const QString &email, const QString &username, const QString &password);//signup
     bool changeUserInfo(const QString &email, const QString &password);//forgot pass
+    QSqlDatabase getDatabase() const;
 
+    //Seat Selection
+    QSqlQuery executeSeatQuery(int showtimeId);
+    bool updateSeatAvailability(const QString &seatId, int showtimeId);
+    bool insertBooking(const QString &userId, int showtimeId, const QString &seatId);
+    int retrieveLastBookingId();
+
+    bool isSeatAvailable(const QString &seatId, int showtimeId);
+    void updateSeatUI(QLabel *seatLabel, int showtimeId);
+    void setSeatColor(QLabel *seatLabel, bool isAvailable);
 private:
-    QSqlDatabase db;
+    QSqlDatabase dbConnection;
+    int showtimeId;
 };
 
 #endif // DATABASE_H

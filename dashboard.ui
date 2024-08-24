@@ -27,10 +27,10 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QDialog{
-	background-image: url(:/Posters/backdash.jpg);
+        background-image: url(:/Posters/backdash.jpg);
 }
 QPushButton{
-	height:500px;
+        height:500px;
 }</string>
   </property>
   <widget class="QPushButton" name="pushButton_5">
@@ -100,8 +100,8 @@ QPushButton{
    </property>
    <property name="iconSize">
     <size>
-     <width>300</width>
-     <height>400000</height>
+     <width>200</width>
+     <height>300</height>
     </size>
    </property>
    <property name="shortcut">
@@ -143,7 +143,7 @@ QPushButton{
    <property name="iconSize">
     <size>
      <width>200</width>
-     <height>10000000</height>
+     <height>300</height>
     </size>
    </property>
   </widget>
@@ -214,8 +214,8 @@ QPushButton{
    </property>
    <property name="iconSize">
     <size>
-     <width>250</width>
-     <height>900</height>
+     <width>200</width>
+     <height>300</height>
     </size>
    </property>
   </widget>
@@ -250,8 +250,8 @@ QPushButton{
    </property>
    <property name="iconSize">
     <size>
-     <width>300</width>
-     <height>1100</height>
+     <width>200</width>
+     <height>300</height>
     </size>
    </property>
   </widget>
@@ -289,8 +289,8 @@ QPushButton{
    </property>
    <property name="iconSize">
     <size>
-     <width>280</width>
-     <height>1100</height>
+     <width>200</width>
+     <height>300</height>
     </size>
    </property>
    <property name="autoRepeat">

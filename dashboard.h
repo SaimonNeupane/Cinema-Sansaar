@@ -2,11 +2,11 @@
 #define DASHBOARD_H
 
 #include <QDialog>
+#include "seatselection.h"
 #include "sinister.h"
 #include "mirzapur.h"
 #include "thor.h"
 #include "kabir.h"
-
 #include "sanju.h"
 #include "mahajatra.h"
 #include "harry.h"
@@ -50,10 +50,7 @@ private:
     Mahajatra *mahajatra;
     Harry *harry;
     QString loggedInUsername;
-
-
-
-
+    SeatSelection *seatselect;
 };
 
 #endif // DASHBOARD_H

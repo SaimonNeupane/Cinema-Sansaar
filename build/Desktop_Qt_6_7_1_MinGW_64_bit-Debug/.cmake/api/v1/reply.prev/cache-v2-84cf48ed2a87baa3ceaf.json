@@ -15,7 +15,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Qt/Tools/mingw1120_64/bin/addr2line.exe"
+			"value" : "E:/Application/Qt/Tools/mingw1120_64/bin/addr2line.exe"
 		},
 		{
 			"name" : "CMAKE_AR",
@@ -31,7 +31,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Qt/Tools/mingw1120_64/bin/ar.exe"
+			"value" : "E:/Application/Qt/Tools/mingw1120_64/bin/ar.exe"
 		},
 		{
 			"name" : "CMAKE_BUILD_TYPE",
@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug"
+			"value" : "c:/Users/DELL/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "27"
+			"value" : "29"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "7"
+			"value" : "3"
 		},
 		{
 			"name" : "CMAKE_COLOR_DIAGNOSTICS",
@@ -115,7 +115,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Qt/Tools/CMake_64/bin/cmake.exe"
+			"value" : "E:/Application/Qt/Tools/CMake_64/bin/cmake.exe"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -127,7 +127,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Qt/Tools/CMake_64/bin/cpack.exe"
+			"value" : "E:/Application/Qt/Tools/CMake_64/bin/cpack.exe"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -139,7 +139,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Qt/Tools/CMake_64/bin/ctest.exe"
+			"value" : "E:/Application/Qt/Tools/CMake_64/bin/ctest.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -155,7 +155,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "C:/Qt/Tools/mingw1120_64/bin/g++.exe"
+			"value" : "E:/Application/Qt/Tools/mingw1120_64/bin/g++.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -171,7 +171,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Qt/Tools/mingw1120_64/bin/gcc-ar.exe"
+			"value" : "E:/Application/Qt/Tools/mingw1120_64/bin/gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -187,7 +187,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Qt/Tools/mingw1120_64/bin/gcc-ranlib.exe"
+			"value" : "E:/Application/Qt/Tools/mingw1120_64/bin/gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -319,7 +319,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Qt/Tools/mingw1120_64/bin/gcc.exe"
+			"value" : "E:/Application/Qt/Tools/mingw1120_64/bin/gcc.exe"
 		},
 		{
 			"name" : "CMAKE_C_OUTPUT_EXTENSION",
@@ -347,7 +347,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Qt/Tools/mingw1120_64/bin/dlltool.exe"
+			"value" : "E:/Application/Qt/Tools/mingw1120_64/bin/dlltool.exe"
 		},
 		{
 			"name" : "CMAKE_EDIT_COMMAND",
@@ -359,7 +359,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Qt/Tools/CMake_64/bin/cmake-gui.exe"
+			"value" : "E:/Application/Qt/Tools/CMake_64/bin/cmake-gui.exe"
 		},
 		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
@@ -479,7 +479,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/DELL/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -563,7 +563,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/ACER/Desktop/Cinema-Sansaar"
+			"value" : "C:/Users/DELL/Desktop/Cinema-Sansaar"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -847,7 +847,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Qt/Tools/mingw1120_64/bin/ld.exe"
+			"value" : "E:/Application/Qt/Tools/mingw1120_64/bin/ld.exe"
 		},
 		{
 			"name" : "CMAKE_MAKE_PROGRAM",
@@ -863,7 +863,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Qt/Tools/Ninja/ninja.exe"
+			"value" : "E:/Application/Qt/Tools/Ninja/ninja.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -959,7 +959,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Qt/Tools/mingw1120_64/bin/nm.exe"
+			"value" : "E:/Application/Qt/Tools/mingw1120_64/bin/nm.exe"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -987,7 +987,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Qt/Tools/mingw1120_64/bin/objcopy.exe"
+			"value" : "E:/Application/Qt/Tools/mingw1120_64/bin/objcopy.exe"
 		},
 		{
 			"name" : "CMAKE_OBJDUMP",
@@ -1003,7 +1003,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Qt/Tools/mingw1120_64/bin/objdump.exe"
+			"value" : "E:/Application/Qt/Tools/mingw1120_64/bin/objdump.exe"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -1027,7 +1027,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Qt/6.7.1/mingw_64"
+			"value" : "E:/Application/Qt/6.7.1/mingw_64"
 		},
 		{
 			"name" : "CMAKE_PROJECT_DESCRIPTION",
@@ -1063,7 +1063,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake"
+			"value" : "C:/Users/DELL/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake"
 		},
 		{
 			"name" : "CMAKE_PROJECT_NAME",
@@ -1151,7 +1151,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Qt/Tools/mingw1120_64/bin/ranlib.exe"
+			"value" : "E:/Application/Qt/Tools/mingw1120_64/bin/ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER",
@@ -1167,7 +1167,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Qt/Tools/mingw1120_64/bin/windres.exe"
+			"value" : "E:/Application/Qt/Tools/mingw1120_64/bin/windres.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER_WORKS",
@@ -1275,7 +1275,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Qt/Tools/mingw1120_64/bin/readelf.exe"
+			"value" : "E:/Application/Qt/Tools/mingw1120_64/bin/readelf.exe"
 		},
 		{
 			"name" : "CMAKE_ROOT",
@@ -1287,7 +1287,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Qt/Tools/CMake_64/share/cmake-3.27"
+			"value" : "E:/Application/Qt/Tools/CMake_64/share/cmake-3.29"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1495,7 +1495,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Qt/Tools/mingw1120_64/bin/strip.exe"
+			"value" : "E:/Application/Qt/Tools/mingw1120_64/bin/strip.exe"
 		},
 		{
 			"name" : "CMAKE_TAPI",
@@ -1539,7 +1539,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug"
+			"value" : "C:/Users/DELL/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug"
 		},
 		{
 			"name" : "Cinema-Sansaar_IS_TOP_LEVEL",
@@ -1563,7 +1563,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/ACER/Desktop/Cinema-Sansaar"
+			"value" : "C:/Users/DELL/Desktop/Cinema-Sansaar"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Threads",
@@ -1647,7 +1647,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6"
+			"value" : "E:/Application/Qt/6.7.1/mingw_64/lib/cmake/Qt6"
 		},
 		{
 			"name" : "QT_FEATURE_abstractbutton",
@@ -6363,7 +6363,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Qt/6.7.1/mingw_64/bin/qmake.exe"
+			"value" : "E:/Application/Qt/6.7.1/mingw_64/bin/qmake.exe"
 		},
 		{
 			"name" : "Qt6CoreTools_DIR",
@@ -6375,7 +6375,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6CoreTools"
+			"value" : "E:/Application/Qt/6.7.1/mingw_64/lib/cmake/Qt6CoreTools"
 		},
 		{
 			"name" : "Qt6Core_DIR",
@@ -6387,7 +6387,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Core"
+			"value" : "E:/Application/Qt/6.7.1/mingw_64/lib/cmake/Qt6Core"
 		},
 		{
 			"name" : "Qt6EntryPointPrivate_DIR",
@@ -6399,7 +6399,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6EntryPointPrivate"
+			"value" : "E:/Application/Qt/6.7.1/mingw_64/lib/cmake/Qt6EntryPointPrivate"
 		},
 		{
 			"name" : "Qt6GuiTools_DIR",
@@ -6411,7 +6411,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6GuiTools"
+			"value" : "E:/Application/Qt/6.7.1/mingw_64/lib/cmake/Qt6GuiTools"
 		},
 		{
 			"name" : "Qt6Gui_DIR",
@@ -6423,7 +6423,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui"
+			"value" : "E:/Application/Qt/6.7.1/mingw_64/lib/cmake/Qt6Gui"
 		},
 		{
 			"name" : "Qt6Network_DIR",
@@ -6435,7 +6435,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network"
+			"value" : "E:/Application/Qt/6.7.1/mingw_64/lib/cmake/Qt6Network"
 		},
 		{
 			"name" : "Qt6Sql_DIR",
@@ -6447,7 +6447,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql"
+			"value" : "E:/Application/Qt/6.7.1/mingw_64/lib/cmake/Qt6Sql"
 		},
 		{
 			"name" : "Qt6WidgetsTools_DIR",
@@ -6459,7 +6459,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6WidgetsTools"
+			"value" : "E:/Application/Qt/6.7.1/mingw_64/lib/cmake/Qt6WidgetsTools"
 		},
 		{
 			"name" : "Qt6Widgets_DIR",
@@ -6471,7 +6471,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Widgets"
+			"value" : "E:/Application/Qt/6.7.1/mingw_64/lib/cmake/Qt6Widgets"
 		},
 		{
 			"name" : "Qt6ZlibPrivate_DIR",
@@ -6483,7 +6483,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6ZlibPrivate"
+			"value" : "E:/Application/Qt/6.7.1/mingw_64/lib/cmake/Qt6ZlibPrivate"
 		},
 		{
 			"name" : "Qt6_DIR",
@@ -6495,7 +6495,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6"
+			"value" : "E:/Application/Qt/6.7.1/mingw_64/lib/cmake/Qt6"
 		},
 		{
 			"name" : "Vulkan_GLSLANG_VALIDATOR_EXECUTABLE",
@@ -6571,7 +6571,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/Qt/6.7.1/mingw_64/bin/windeployqt.exe"
+			"value" : "E:/Application/Qt/6.7.1/mingw_64/bin/windeployqt.exe"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

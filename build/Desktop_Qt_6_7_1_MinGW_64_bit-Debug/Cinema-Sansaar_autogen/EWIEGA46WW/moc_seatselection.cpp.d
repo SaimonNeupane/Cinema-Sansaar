@@ -1,14 +1,6 @@
-C:/Users/DELL/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/EWIEGA46WW/moc_dashboard.cpp: C:/Users/DELL/Desktop/Cinema-Sansaar/dashboard.h \
+C:/Users/DELL/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/EWIEGA46WW/moc_seatselection.cpp: C:/Users/DELL/Desktop/Cinema-Sansaar/seatselection.h \
   C:/Users/DELL/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/moc_predefs.h \
   C:/Users/DELL/Desktop/Cinema-Sansaar/database.h \
-  C:/Users/DELL/Desktop/Cinema-Sansaar/harry.h \
-  C:/Users/DELL/Desktop/Cinema-Sansaar/kabir.h \
-  C:/Users/DELL/Desktop/Cinema-Sansaar/mahajatra.h \
-  C:/Users/DELL/Desktop/Cinema-Sansaar/mirzapur.h \
-  C:/Users/DELL/Desktop/Cinema-Sansaar/sanju.h \
-  C:/Users/DELL/Desktop/Cinema-Sansaar/seatselection.h \
-  C:/Users/DELL/Desktop/Cinema-Sansaar/sinister.h \
-  C:/Users/DELL/Desktop/Cinema-Sansaar/thor.h \
   E:/Application/Qt/6.7.1/mingw_64/include/QtCore/QDebug \
   E:/Application/Qt/6.7.1/mingw_64/include/QtCore/QString \
   E:/Application/Qt/6.7.1/mingw_64/include/QtCore/q20functional.h \

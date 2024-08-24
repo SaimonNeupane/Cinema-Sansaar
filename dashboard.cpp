@@ -1,5 +1,6 @@
 #include "dashboard.h"
 #include "ui_dashboard.h"
+#include "seatselection.h"
 #include "sinister.h"
 #include "kabir.h"
 #include "mirzapur.h"
@@ -24,8 +25,8 @@ Dashboard::~Dashboard()
 
 void Dashboard::on_pushButton_2_clicked()
 {
-    sinister=new Sinister(loggedInUsername,this);
-    sinister->show();
+    seatselect=new SeatSelection(loggedInUsername, 2,this);
+    seatselect->show();
 }
 
 
