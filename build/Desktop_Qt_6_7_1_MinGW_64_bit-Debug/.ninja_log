@@ -1,17 +1,28 @@
-# ninja log v5
-2	1955	7461789155871758	Cinema-Sansaar_autogen/timestamp	93ac9499d2adf384
-2	1955	7461789155871758	Cinema-Sansaar_autogen/mocs_compilation.cpp	93ac9499d2adf384
-2	1955	7461789155871758	C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/timestamp	93ac9499d2adf384
-2	1955	7461789155871758	C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/mocs_compilation.cpp	93ac9499d2adf384
-1957	2315	7461789160455555	Cinema-Sansaar_autogen/EWIEGA46WW/qrc_Posters.cpp	fa383341ea7d47ac
-1957	2315	7461789160455555	C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/EWIEGA46WW/qrc_Posters.cpp	fa383341ea7d47ac
-2320	6061	7461789197957280	CMakeFiles/Cinema-Sansaar.dir/database.cpp.obj	40cc80d3b43a74ae
-2334	6405	7461789201413164	CMakeFiles/Cinema-Sansaar.dir/verification.cpp.obj	4dca5631873f80ec
-2346	6467	7461789202028766	CMakeFiles/Cinema-Sansaar.dir/change_pass.cpp.obj	ca2275166d3053b
-2341	6470	7461789202028766	CMakeFiles/Cinema-Sansaar.dir/dashboard.cpp.obj	b8918e9d31164ac6
-2356	7822	7461789215588972	CMakeFiles/Cinema-Sansaar.dir/seatselection.cpp.obj	519f2d077fd6b4bf
-2316	8849	7461789225909970	CMakeFiles/Cinema-Sansaar.dir/main.cpp.obj	3c48b4e3400503d9
-2351	9106	7461789228493152	CMakeFiles/Cinema-Sansaar.dir/Cinema-Sansaar_autogen/EWIEGA46WW/qrc_Posters.cpp.obj	1f0bcc6c300643dd
-2361	9435	7461789231623574	CMakeFiles/Cinema-Sansaar.dir/Cinema-Sansaar_autogen/mocs_compilation.cpp.obj	50cc5cc0a135b573
-2326	9525	7461789232528317	CMakeFiles/Cinema-Sansaar.dir/mainwindow.cpp.obj	b194ed7105225e45
-9526	10434	7461789241609762	Cinema-Sansaar.exe	7dfb0eb4e5101721
+# ninja log v6
+44	304	7461860209836020	Cinema-Sansaar_autogen/timestamp	6c2fe7ffa9011c27
+4474	11274	7461854066619196	CMakeFiles/Cinema-Sansaar.dir/database.cpp.obj	aedd9ac6b8c0d0d
+44	304	7461860209836020	Cinema-Sansaar_autogen/mocs_compilation.cpp	6c2fe7ffa9011c27
+4093	4460	7461854066369873	C:/Users/DELL/Desktop/New folder/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/EWIEGA46WW/qrc_Posters.cpp	7daaa2f2c51876da
+44	304	7461860209836020	C:/Users/DELL/Desktop/New folder/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/timestamp	6c2fe7ffa9011c27
+311	6396	7461860212498867	CMakeFiles/Cinema-Sansaar.dir/verification.cpp.obj	8ae7137522b51724
+44	304	7461860209836020	C:/Users/DELL/Desktop/New folder/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/mocs_compilation.cpp	6c2fe7ffa9011c27
+6116	7411	7461856118221818	Cinema-Sansaar.exe	da95ee036651c6a
+4093	4460	7461854066369873	Cinema-Sansaar_autogen/EWIEGA46WW/qrc_Posters.cpp	7daaa2f2c51876da
+316	6399	7461860212548734	CMakeFiles/Cinema-Sansaar.dir/change_pass.cpp.obj	92bb27e1cd5e54b1
+4465	17421	7461854066529437	CMakeFiles/Cinema-Sansaar.dir/main.cpp.obj	f930bf73440ccb63
+4461	18105	7461854066489535	CMakeFiles/Cinema-Sansaar.dir/Cinema-Sansaar_autogen/mocs_compilation.cpp.obj	700bf49986a510f9
+321	6360	7461860212608565	CMakeFiles/Cinema-Sansaar.dir/dashboard.cpp.obj	6975a7b42e4b4255
+306	11742	7461860212448994	CMakeFiles/Cinema-Sansaar.dir/mainwindow.cpp.obj	b6072bece04be9cd
+11666	21843	7461854138545284	CMakeFiles/Cinema-Sansaar.dir/Cinema-Sansaar_autogen/EWIEGA46WW/qrc_Posters.cpp.obj	85c3809bded2217b
+327	8614	7461860212668409	CMakeFiles/Cinema-Sansaar.dir/seatselection.cpp.obj	b05db5a3255068d9
+47	309	7461861644787916	Cinema-Sansaar_autogen/timestamp	6c2fe7ffa9011c27
+47	309	7461861644787916	Cinema-Sansaar_autogen/mocs_compilation.cpp	6c2fe7ffa9011c27
+47	309	7461861644787916	C:/Users/DELL/Desktop/New folder/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/timestamp	6c2fe7ffa9011c27
+47	309	7461861644787916	C:/Users/DELL/Desktop/New folder/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/mocs_compilation.cpp	6c2fe7ffa9011c27
+316	7502	7461861647470731	CMakeFiles/Cinema-Sansaar.dir/database.cpp.obj	aedd9ac6b8c0d0d
+326	7520	7461861647570458	CMakeFiles/Cinema-Sansaar.dir/change_pass.cpp.obj	92bb27e1cd5e54b1
+331	7537	7461861647620327	CMakeFiles/Cinema-Sansaar.dir/dashboard.cpp.obj	6975a7b42e4b4255
+321	7616	7461861647520599	CMakeFiles/Cinema-Sansaar.dir/verification.cpp.obj	8ae7137522b51724
+335	9444	7461861647670194	CMakeFiles/Cinema-Sansaar.dir/seatselection.cpp.obj	b05db5a3255068d9
+311	12533	7461861647420873	CMakeFiles/Cinema-Sansaar.dir/mainwindow.cpp.obj	b6072bece04be9cd
+12534	13546	7461861769649044	Cinema-Sansaar.exe	da95ee036651c6a

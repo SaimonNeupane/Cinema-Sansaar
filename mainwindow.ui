@@ -153,7 +153,7 @@ background:image: url(:/new/prefix1/Posters/new logo (1).png);
           </size>
          </property>
          <property name="currentIndex">
-          <number>2</number>
+          <number>1</number>
          </property>
          <widget class="QWidget" name="page_1">
           <property name="minimumSize">

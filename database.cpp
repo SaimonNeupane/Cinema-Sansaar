@@ -15,34 +15,67 @@ Database::~Database() {
     closeDatabase();
 }
 
-bool Database::openDatabase() {
-    if (!dbConnection.isOpen() && !dbConnection.open()) {
-        qDebug() << "Error: connection with database failed" << dbConnection.lastError().text();
-        return false;
-    } else {
-        qDebug() << "Database: connection ok";
-        return true;
+bool Database::openConnection() {
+    if (!dbConnection.isOpen()) {
+        if (!dbConnection.open()) {
+            qDebug() << "Database error:" << dbConnection.lastError().text();
+            return false;
+        }
     }
+    return true;
 }
 
-void Database::closeDatabase() {
+bool Database::closeConnection() {
     if (dbConnection.isOpen()) {
         dbConnection.close();
         qDebug() << "Database: connection closed";
-    } else {
-        qDebug() << "Database: connection nil";
+        return true;
+    }
+    qDebug() << "Database: connection nil";
+    return false;
+}
+
+bool Database::openDatabase() {
+    return openConnection();
+}
+
+void Database::closeDatabase() {
+    closeConnection();
+}
+
+bool Database::doesEmailExist(const QString &email) {
+    if (!openDatabase()) {
+        return false;
+    }
+
+    QSqlQuery query(dbConnection);
+    query.prepare("SELECT COUNT(*) FROM User WHERE email = :email");
+    query.bindValue(":email", email);
+
+    if (!query.exec()) {
+        qDebug() << "Database query error:" << query.lastError().text();
+        return false;
+    }
+
+    query.next();
+    int count = query.value(0).toInt();
+    closeDatabase();
+    if(count>0){
+        return true;
+    } else{
+        return false;
     }
 }
 
-//for login
+// For login
 bool Database::authenticateUser(const QString &username, const QString &password) {
-    if (!dbConnection.isOpen() && !openDatabase()) {
+    if (!openDatabase()) {
         qDebug() << "Database is not open";
         return false;
     }
 
     QSqlQuery query(dbConnection);
-    query.prepare("SELECT * FROM User WHERE username = :username AND password = :password");
+    query.prepare("SELECT COUNT(*) FROM User WHERE username = :username AND password = :password");
     query.bindValue(":username", username);
     query.bindValue(":password", password);
 
@@ -52,49 +85,57 @@ bool Database::authenticateUser(const QString &username, const QString &password
         return false;
     }
 
-    if (query.next()) {
-        qDebug() << "Login Successful";
-        closeDatabase();
-        return true;
-    } else {
-        qDebug() << "No user exists with those credentials";
-        closeDatabase();
-        return false;
-    }
+    query.next();
+    int count = query.value(0).toInt();
+    closeDatabase();
+    return count > 0;
 }
 
-//for signup
+// For signup
 bool Database::saveUserInfo(const QString &email, const QString &username, const QString &password) {
-    if (!dbConnection.isOpen()) {
+    if (!openDatabase()) {
         qDebug() << "Database is not open";
         return false;
     }
+
     QSqlQuery query(dbConnection);
     query.prepare("INSERT OR REPLACE INTO User (email, username, password) VALUES (:email, :username, :password)");
     query.bindValue(":email", email);
     query.bindValue(":username", username);
     query.bindValue(":password", password);
-    return query.exec();
+
+    bool result = query.exec();
+    if (!result) {
+        qDebug() << "Database error: " << query.lastError().text();
+    }
+    closeDatabase();
+    return result;
 }
 
 bool Database::changeUserInfo(const QString &email, const QString &new_password) {
-    if (!dbConnection.isOpen()) {
+    if (!openDatabase()) {
         qDebug() << "Database is not open";
         return false;
     }
+
     QSqlQuery query(dbConnection);
     query.prepare("UPDATE User SET password = :password WHERE email = :email");
     query.bindValue(":email", email);
     query.bindValue(":password", new_password);
-    return query.exec();
+
+    bool result = query.exec();
+    if (!result) {
+        qDebug() << "Database error: " << query.lastError().text();
+    }
+    closeDatabase();
+    return result;
 }
 
 QSqlDatabase Database::getDatabase() const {
     return dbConnection;
 }
 
-
-//SeatSelection
+// SeatSelection
 QSqlQuery Database::executeSeatQuery(int showtimeId) {
     QSqlQuery query(dbConnection);
     query.prepare("SELECT seat_id, is_available FROM Seats WHERE showtime_id = :showtimeId");
@@ -108,56 +149,78 @@ QSqlQuery Database::executeSeatQuery(int showtimeId) {
 }
 
 bool Database::updateSeatAvailability(const QString &seatId, int showtimeId) {
+    if (!openDatabase()) {
+        return false;
+    }
+
     QSqlQuery query(dbConnection);
     query.prepare("UPDATE Seats SET is_available = 0 WHERE seat_id = :seat_id AND showtime_id = :showtime_id");
     query.bindValue(":seat_id", seatId);
     query.bindValue(":showtime_id", showtimeId);
 
-    if (!query.exec()) {
+    bool result = query.exec();
+    if (!result) {
         qDebug() << "Failed to update seat availability:" << query.lastError().text();
-        return false;
     }
-    return true;
+    closeDatabase();
+    return result;
 }
 
 bool Database::insertBooking(const QString &userId, int showtimeId, const QString &seatId) {
+    if (!openDatabase()) {
+        return false;
+    }
+
     QSqlQuery query(dbConnection);
     query.prepare("INSERT INTO Bookings (user_id, showtime_id, seat_id) VALUES (:user_id, :showtime_id, :seat_id)");
     query.bindValue(":user_id", userId);
     query.bindValue(":showtime_id", showtimeId);
     query.bindValue(":seat_id", seatId);
 
-    if (!query.exec()) {
+    bool result = query.exec();
+    if (!result) {
         qDebug() << "Failed to insert booking:" << query.lastError().text();
-        return false;
     }
-    return true;
+    closeDatabase();
+    return result;
 }
 
 int Database::retrieveLastBookingId() {
+    if (!openDatabase()) {
+        return -1;
+    }
+
     QSqlQuery query(dbConnection);
     query.prepare("SELECT last_insert_rowid()");
 
+    int bookingId = -1;
     if (query.exec() && query.next()) {
-        return query.value(0).toInt();
+        bookingId = query.value(0).toInt();
     } else {
         qDebug() << "Failed to retrieve last booking ID.";
-        return -1;
     }
+    closeDatabase();
+    return bookingId;
 }
 
 bool Database::isSeatAvailable(const QString &seatId, int showtimeId) {
+    if (!openDatabase()) {
+        return false;
+    }
+
     QSqlQuery query(dbConnection);
     query.prepare("SELECT is_available FROM Seats WHERE seat_id = :seat_id AND showtime_id = :showtime_id");
     query.bindValue(":seat_id", seatId);
     query.bindValue(":showtime_id", showtimeId);
 
+    bool isAvailable = false;
     if (query.exec() && query.next()) {
-        return query.value(0).toBool();
+        isAvailable = query.value(0).toBool();
     } else {
         qDebug() << "Failed to check seat availability:" << query.lastError().text();
-        return false;
     }
+    closeDatabase();
+    return isAvailable;
 }
 
 void Database::updateSeatUI(QLabel *seatLabel, int showtimeId) {
@@ -170,8 +233,6 @@ void Database::updateSeatUI(QLabel *seatLabel, int showtimeId) {
         seatLabel->setStyleSheet("background-color: red;");
     }
 }
-
-
 
 void Database::setSeatColor(QLabel *seatLabel, bool isAvailable) {
     seatLabel->setStyleSheet(isAvailable ? "background-color: green;" : "background-color: red;");
