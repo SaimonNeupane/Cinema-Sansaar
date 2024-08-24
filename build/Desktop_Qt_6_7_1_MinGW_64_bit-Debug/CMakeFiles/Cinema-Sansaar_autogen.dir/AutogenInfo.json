@@ -337,57 +337,15 @@
 			null
 		],
 		[
-			"C:/Users/DELL/Desktop/Cinema-Sansaar/harry.h",
-			"MU",
-			"EWIEGA46WW/moc_harry.cpp",
-			null
-		],
-		[
-			"C:/Users/DELL/Desktop/Cinema-Sansaar/kabir.h",
-			"MU",
-			"EWIEGA46WW/moc_kabir.cpp",
-			null
-		],
-		[
-			"C:/Users/DELL/Desktop/Cinema-Sansaar/mahajatra.h",
-			"MU",
-			"EWIEGA46WW/moc_mahajatra.cpp",
-			null
-		],
-		[
 			"C:/Users/DELL/Desktop/Cinema-Sansaar/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
 			null
 		],
 		[
-			"C:/Users/DELL/Desktop/Cinema-Sansaar/mirzapur.h",
-			"MU",
-			"EWIEGA46WW/moc_mirzapur.cpp",
-			null
-		],
-		[
-			"C:/Users/DELL/Desktop/Cinema-Sansaar/sanju.h",
-			"MU",
-			"EWIEGA46WW/moc_sanju.cpp",
-			null
-		],
-		[
 			"C:/Users/DELL/Desktop/Cinema-Sansaar/seatselection.h",
 			"MU",
 			"EWIEGA46WW/moc_seatselection.cpp",
-			null
-		],
-		[
-			"C:/Users/DELL/Desktop/Cinema-Sansaar/sinister.h",
-			"MU",
-			"EWIEGA46WW/moc_sinister.cpp",
-			null
-		],
-		[
-			"C:/Users/DELL/Desktop/Cinema-Sansaar/thor.h",
-			"MU",
-			"EWIEGA46WW/moc_thor.cpp",
 			null
 		],
 		[
@@ -476,16 +434,9 @@
 		[ "C:/Users/DELL/Desktop/Cinema-Sansaar/change_pass.cpp", "MU", null ],
 		[ "C:/Users/DELL/Desktop/Cinema-Sansaar/dashboard.cpp", "MU", null ],
 		[ "C:/Users/DELL/Desktop/Cinema-Sansaar/database.cpp", "MU", null ],
-		[ "C:/Users/DELL/Desktop/Cinema-Sansaar/harry.cpp", "MU", null ],
-		[ "C:/Users/DELL/Desktop/Cinema-Sansaar/kabir.cpp", "MU", null ],
-		[ "C:/Users/DELL/Desktop/Cinema-Sansaar/mahajatra.cpp", "MU", null ],
 		[ "C:/Users/DELL/Desktop/Cinema-Sansaar/main.cpp", "MU", null ],
 		[ "C:/Users/DELL/Desktop/Cinema-Sansaar/mainwindow.cpp", "MU", null ],
-		[ "C:/Users/DELL/Desktop/Cinema-Sansaar/mirzapur.cpp", "MU", null ],
-		[ "C:/Users/DELL/Desktop/Cinema-Sansaar/sanju.cpp", "MU", null ],
 		[ "C:/Users/DELL/Desktop/Cinema-Sansaar/seatselection.cpp", "MU", null ],
-		[ "C:/Users/DELL/Desktop/Cinema-Sansaar/sinister.cpp", "MU", null ],
-		[ "C:/Users/DELL/Desktop/Cinema-Sansaar/thor.cpp", "MU", null ],
 		[ "C:/Users/DELL/Desktop/Cinema-Sansaar/verification.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

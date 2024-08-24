@@ -3,14 +3,7 @@ C:/Users/DELL/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/C
   C:/Users/DELL/Desktop/Cinema-Sansaar/change_pass.h \
   C:/Users/DELL/Desktop/Cinema-Sansaar/dashboard.h \
   C:/Users/DELL/Desktop/Cinema-Sansaar/database.h \
-  C:/Users/DELL/Desktop/Cinema-Sansaar/harry.h \
-  C:/Users/DELL/Desktop/Cinema-Sansaar/kabir.h \
-  C:/Users/DELL/Desktop/Cinema-Sansaar/mahajatra.h \
-  C:/Users/DELL/Desktop/Cinema-Sansaar/mirzapur.h \
-  C:/Users/DELL/Desktop/Cinema-Sansaar/sanju.h \
   C:/Users/DELL/Desktop/Cinema-Sansaar/seatselection.h \
-  C:/Users/DELL/Desktop/Cinema-Sansaar/sinister.h \
-  C:/Users/DELL/Desktop/Cinema-Sansaar/thor.h \
   C:/Users/DELL/Desktop/Cinema-Sansaar/verification.h \
   E:/Application/Qt/6.7.1/mingw_64/include/QtCore/QDeadlineTimer \
   E:/Application/Qt/6.7.1/mingw_64/include/QtCore/QDebug \

@@ -54,7 +54,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 47,
+				"line" : 41,
 				"parent" : 0
 			},
 			{
@@ -78,13 +78,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 80,
+				"line" : 73,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 66,
+				"line" : 59,
 				"parent" : 0
 			},
 			{
@@ -427,25 +427,18 @@
 				11,
 				14,
 				17,
-				20,
-				23,
-				26,
-				29,
-				32,
-				35,
-				39,
-				54
+				26
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "Cinema-Sansaar_autogen::@6890427a1f51a3e7e1df"
+			"id" : "Cinema-Sansaar_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "Cinema-Sansaar_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "Cinema-Sansaar_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "Cinema-Sansaar::@6890427a1f51a3e7e1df",
@@ -578,14 +571,7 @@
 				11,
 				14,
 				17,
-				20,
-				23,
-				26,
-				29,
-				32,
-				35,
-				39,
-				54
+				26
 			]
 		},
 		{
@@ -598,25 +584,11 @@
 				10,
 				13,
 				16,
-				19,
+				20,
+				21,
 				22,
-				25,
-				28,
-				31,
-				34,
-				38,
-				41,
-				42,
-				43,
-				44,
-				45,
-				46,
-				47,
-				48,
-				49,
-				50,
-				51,
-				52
+				23,
+				24
 			]
 		},
 		{
@@ -628,23 +600,16 @@
 				12,
 				15,
 				18,
-				21,
-				24,
-				27,
-				30,
-				33,
-				36,
-				37,
-				40,
-				53
+				19,
+				25
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				55,
-				56
+				27,
+				28
 			]
 		}
 	],
@@ -740,123 +705,6 @@
 		},
 		{
 			"backtrace" : 4,
-			"path" : "sinister.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "sinister.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"path" : "sinister.ui",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 4,
-			"path" : "mirzapur.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "mirzapur.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"path" : "mirzapur.ui",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 4,
-			"path" : "sanju.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "sanju.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"path" : "sanju.ui",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 4,
-			"path" : "mahajatra.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "mahajatra.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"path" : "mahajatra.ui",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 4,
-			"path" : "kabir.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "kabir.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"path" : "kabir.ui",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 4,
-			"path" : "thor.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "thor.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"path" : "thor.ui",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 4,
-			"path" : "harry.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 4,
-			"compileGroupIndex" : 0,
-			"path" : "harry.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 4,
-			"path" : "harry.ui",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 4,
-			"path" : "Posters.qrc",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 4,
 			"path" : "seatselection.h",
 			"sourceGroupIndex" : 1
 		},
@@ -869,6 +717,11 @@
 		{
 			"backtrace" : 4,
 			"path" : "seatselection.ui",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "Posters.qrc",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -893,48 +746,6 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/include/ui_dashboard.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/include/ui_sinister.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/include/ui_mirzapur.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/include/ui_sanju.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/include/ui_mahajatra.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/include/ui_kabir.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/include/ui_thor.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/include/ui_harry.h",
 			"sourceGroupIndex" : 1
 		},
 		{

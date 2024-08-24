@@ -34,13 +34,6 @@ set(PROJECT_SOURCES
         change_pass.h change_pass.cpp change_pass.ui #change password
         dashboard.h dashboard.cpp dashboard.ui #movie selection for user
         seatselection.h seatselection.cpp seatselection.ui #seat selection for different movies
-        sinister.h sinister.cpp sinister.ui
-        mirzapur.h mirzapur.cpp mirzapur.ui
-        sanju.h sanju.cpp sanju.ui
-        mahajatra.h mahajatra.cpp mahajatra.ui
-        kabir.h kabir.cpp kabir.ui
-        thor.h thor.cpp thor.ui
-        harry.h harry.cpp harry.ui
         Posters.qrc
 )
 
