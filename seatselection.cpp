@@ -71,7 +71,7 @@ void SeatSelection::showConfirmationMessage(const QStringList &bookedSeats, cons
     for (int i = 0; i < bookingIds.size(); ++i) {
         bookingDetails.append(QString("Booking ID %1: Seat %2").arg(bookingIds[i]).arg(bookedSeats[i]));
     }
-    QString message = QString("Your booking is confirmed!\n%1\nPlease remember these IDs and take a screenshot.")
+    QString message = QString("Your booking is confirmed!\n%1\")
                           .arg(bookingDetails.join("\n"));
 
     // Show the message box

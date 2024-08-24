@@ -1,5 +1,6 @@
 #include "change_pass.h"
 #include "ui_change_pass.h"
+#include "database.h"
 
 Change_pass::Change_pass(QWidget *parent) :
     QDialog(parent),

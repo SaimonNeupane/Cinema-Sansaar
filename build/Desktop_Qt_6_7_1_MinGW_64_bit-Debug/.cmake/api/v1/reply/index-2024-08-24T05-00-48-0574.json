@@ -8,34 +8,34 @@
 		},
 		"paths" : 
 		{
-			"cmake" : "E:/Application/Qt/Tools/CMake_64/bin/cmake.exe",
-			"cpack" : "E:/Application/Qt/Tools/CMake_64/bin/cpack.exe",
-			"ctest" : "E:/Application/Qt/Tools/CMake_64/bin/ctest.exe",
-			"root" : "E:/Application/Qt/Tools/CMake_64/share/cmake-3.29"
+			"cmake" : "C:/Qt/Tools/CMake_64/bin/cmake.exe",
+			"cpack" : "C:/Qt/Tools/CMake_64/bin/cpack.exe",
+			"ctest" : "C:/Qt/Tools/CMake_64/bin/ctest.exe",
+			"root" : "C:/Qt/Tools/CMake_64/share/cmake-3.27"
 		},
 		"version" : 
 		{
 			"isDirty" : false,
 			"major" : 3,
-			"minor" : 29,
-			"patch" : 3,
-			"string" : "3.29.3",
+			"minor" : 27,
+			"patch" : 7,
+			"string" : "3.27.7",
 			"suffix" : ""
 		}
 	},
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-66ac53ea5e24c7ee523d.json",
+			"jsonFile" : "codemodel-v2-20e9fd8100b861e3f139.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
 				"major" : 2,
-				"minor" : 7
+				"minor" : 6
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-84cf48ed2a87baa3ceaf.json",
+			"jsonFile" : "cache-v2-c6b55239d74ce3ec8497.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,7 +44,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-ac8f4a7b7ae2c22c43cb.json",
+			"jsonFile" : "cmakeFiles-v1-0bf4e9fdeca50e231e58.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -57,7 +57,7 @@
 	{
 		"cache-v2" : 
 		{
-			"jsonFile" : "cache-v2-84cf48ed2a87baa3ceaf.json",
+			"jsonFile" : "cache-v2-c6b55239d74ce3ec8497.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -67,7 +67,7 @@
 		},
 		"cmakeFiles-v1" : 
 		{
-			"jsonFile" : "cmakeFiles-v1-ac8f4a7b7ae2c22c43cb.json",
+			"jsonFile" : "cmakeFiles-v1-0bf4e9fdeca50e231e58.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -77,12 +77,12 @@
 		},
 		"codemodel-v2" : 
 		{
-			"jsonFile" : "codemodel-v2-66ac53ea5e24c7ee523d.json",
+			"jsonFile" : "codemodel-v2-20e9fd8100b861e3f139.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
 				"major" : 2,
-				"minor" : 7
+				"minor" : 6
 			}
 		}
 	}

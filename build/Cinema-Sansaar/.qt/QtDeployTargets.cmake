@@ -1,2 +1,2 @@
-set(__QT_DEPLOY_TARGET_Cinema-Sansaar_FILE C:/Users/DELL/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar.exe)
-set(__QT_DEPLOY_TARGET_Cinema-Sansaar_RUNTIME_DLLS E:/Application/Qt/6.7.1/mingw_64/bin/Qt6Widgets.dll;E:/Application/Qt/6.7.1/mingw_64/bin/Qt6Sql.dll;E:/Application/Qt/6.7.1/mingw_64/bin/Qt6Network.dll;E:/Application/Qt/6.7.1/mingw_64/bin/Qt6Gui.dll;E:/Application/Qt/6.7.1/mingw_64/bin/Qt6Core.dll)
+set(__QT_DEPLOY_TARGET_Cinema-Sansaar_FILE C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar.exe)
+set(__QT_DEPLOY_TARGET_Cinema-Sansaar_RUNTIME_DLLS C:/Qt/6.7.1/mingw_64/bin/Qt6Widgets.dll;C:/Qt/6.7.1/mingw_64/bin/Qt6Sql.dll;C:/Qt/6.7.1/mingw_64/bin/Qt6Network.dll;C:/Qt/6.7.1/mingw_64/bin/Qt6Gui.dll;C:/Qt/6.7.1/mingw_64/bin/Qt6Core.dll)
