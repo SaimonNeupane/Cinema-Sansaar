@@ -168,10 +168,12 @@ bool Database::updateSeatAvailability(const QString &seatId, int showtimeId) {
 
 bool Database::insertBooking(const QString &userId, int showtimeId, const QString &seatId, int &bookingId) {
     if (!openDatabase()) {
+        qDebug() << "Failed to open the database";
         return false;
     }
 
     QSqlQuery query(dbConnection);
+
     query.prepare("INSERT INTO Bookings (user_id, showtime_id, seat_id) VALUES (:user_id, :showtime_id, :seat_id)");
     query.bindValue(":user_id", userId);
     query.bindValue(":showtime_id", showtimeId);
@@ -179,7 +181,7 @@ bool Database::insertBooking(const QString &userId, int showtimeId, const QStrin
 
     bool result = query.exec();
     if (result) {
-        // Retrieve the last inserted row ID
+        qDebug() << "Booking inserted successfully";
         bookingId = query.lastInsertId().toInt();
     } else {
         qDebug() << "Failed to insert booking:" << query.lastError().text();
@@ -189,6 +191,7 @@ bool Database::insertBooking(const QString &userId, int showtimeId, const QStrin
     closeDatabase();
     return result;
 }
+
 
 
 int Database::retrieveLastBookingId() {
