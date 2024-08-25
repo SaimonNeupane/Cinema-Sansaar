@@ -13,10 +13,11 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
     , networkManager(new QNetworkAccessManager(this))
-    , apiKey("c4337381272b747ec167493a971c6437-2b91eb47-912b16e3")
-    , mailgunDomain("sandboxde08e1df34f945698c2687ef92450cb7.mailgun.org")
+    , apiKey("")
+    , mailgunDomain("")
 {
     ui->setupUi(this);
+    db.openDatabase();
     connect_stackedWidget();
     connect_checkbox();
 }
@@ -76,7 +77,7 @@ void MainWindow::on_Login_clicked()
 
     qDebug() << "Username:" << username;
     qDebug() << "Password:" << password;
-    if (db.openDatabase() && db.authenticateUser(username, password)) {
+    if (/*db.openDatabase() &&*/ db.authenticateUser(username, password)) {
         hide();
         dashboard = new Dashboard(username, this);
         dashboard->show();
@@ -124,10 +125,10 @@ void MainWindow::sendVerificationCode(const QString &email)
 void MainWindow::on_SendVerificationCode_clicked()
 {
     QString email = ui->lineEdit3_2->text();
-    if (!db.openDatabase()) {
-        QMessageBox::critical(this, "Database Error", "Failed to open the database.");
-        return;
-    }
+    // if (!db.openDatabase()) {
+    //     QMessageBox::critical(this, "Database Error", "Failed to open the database.");
+    //     return;
+    // }
     bool email_exist= false;//db.doesEmailExist(email);
     if (email_exist==true) {
         // Email already exists
@@ -139,7 +140,7 @@ void MainWindow::on_SendVerificationCode_clicked()
         verify = new Verification(verificationCode, this);
         if (verify->exec() == QDialog::Accepted) {
             qDebug() << "Verification successful, proceeding to save user info.";
-            QString username = ui->lineEdit2_1->text();
+            QString username = ui->lineEdit_3->text();
             QString password = ui->lineEdit2_2->text();
             if (db.saveUserInfo(email, username, password)) {
                 QMessageBox::information(this, "Signup", "Account created successfully.");
@@ -161,10 +162,10 @@ void MainWindow::on_SendVerificationCode_2_clicked()
         QMessageBox::warning(this, "Input Error", "Email address cannot be empty.");
         return;
     }
-    if (!db.openDatabase()) {
-        QMessageBox::critical(this, "Database Error", "Failed to open the database.");
-        return;
-    }
+    // if (!db.openDatabase()) {
+    //     QMessageBox::critical(this, "Database Error", "Failed to open the database.");
+    //     return;
+    // }
 
     if (db.doesEmailExist(email)==true) {
         verificationCode=QString::number(QRandomGenerator::global()->bounded(100000, 999999));

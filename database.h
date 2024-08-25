@@ -12,8 +12,7 @@ class Database {
 public:
     Database();
     ~Database();
-
-    bool openConnection();
+    bool testConnection();
     bool closeConnection();
     bool openDatabase();
     void closeDatabase();
