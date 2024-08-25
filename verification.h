@@ -17,13 +17,11 @@ public:
     ~Verification();
 
 private slots:
-    void on_verifyCodeButton_clicked();
+    bool on_verifyCodeButton_clicked();
 
 private:
     Ui::Verification *ui;
     QString verificationCode;
-    void verifyCode(const QString &code);
-
 };
 
 #endif // VERIFICATION_H

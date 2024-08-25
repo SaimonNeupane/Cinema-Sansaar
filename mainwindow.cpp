@@ -13,9 +13,8 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
     , networkManager(new QNetworkAccessManager(this))
-    , apiKey("")
-    , mailgunDomain("")
-    , verificationCode(QString::number(QRandomGenerator::global()->bounded(100000, 999999)))
+    , apiKey("c4337381272b747ec167493a971c6437-2b91eb47-912b16e3")
+    , mailgunDomain("sandboxde08e1df34f945698c2687ef92450cb7.mailgun.org")
 {
     ui->setupUi(this);
     connect_stackedWidget();
@@ -81,7 +80,6 @@ void MainWindow::on_Login_clicked()
         hide();
         dashboard = new Dashboard(username, this);
         dashboard->show();
-        db.closeDatabase();
     } else {
         QMessageBox::warning(this, "Login Failed", "Invalid username or password.");
     }
@@ -91,12 +89,21 @@ void MainWindow::on_Login_clicked()
 // For sending verification code
 void MainWindow::sendVerificationCode(const QString &email)
 {
-    QString postData = QString("from=Saimon <mailgun@%1>&to=%2&subject=Verification Code&text=Your verification code is: %3")
-                           .arg(mailgunDomain).arg(email).arg(verificationCode);
+    if (email.isEmpty()) {
+        QMessageBox::warning(this, "Input Error", "Email address cannot be empty.");
+        return;
+    }
+
+    QString postData = QString("from=Cinema-Sansaar <mailgun@%1>&to=%2&subject=Verification Code&text=Your verification code is: %3")
+                           .arg(QUrl::toPercentEncoding(mailgunDomain))
+                           .arg(QUrl::toPercentEncoding(email))
+                           .arg(QUrl::toPercentEncoding(verificationCode));
 
     QNetworkRequest request(QUrl("https://api.mailgun.net/v3/" + mailgunDomain + "/messages"));
     request.setHeader(QNetworkRequest::ContentTypeHeader, "application/x-www-form-urlencoded");
     request.setRawHeader("Authorization", "Basic " + QByteArray(QString("api:%1").arg(apiKey).toUtf8().toBase64()));
+
+    qDebug() << "Sending request to Mailgun with data:" << postData;
 
     QNetworkReply *reply = networkManager->post(request, postData.toUtf8());
 
@@ -110,30 +117,28 @@ void MainWindow::sendVerificationCode(const QString &email)
             QMessageBox::warning(this, "Verification", "Failed to send verification code: " + reply->errorString());
         }
         reply->deleteLater();
+        qDebug()<<"end of send verification code";
     });
 }
 
 void MainWindow::on_SendVerificationCode_clicked()
 {
     QString email = ui->lineEdit3_2->text();
-    if (email.isEmpty()) {
-        QMessageBox::warning(this, "Input Error", "Email address cannot be empty.");
-        return;
-    }
     if (!db.openDatabase()) {
         QMessageBox::critical(this, "Database Error", "Failed to open the database.");
         return;
     }
-
-    if (db.doesEmailExist(email)==true) {
+    bool email_exist= false;//db.doesEmailExist(email);
+    if (email_exist==true) {
         // Email already exists
         QMessageBox::warning(this, "Email Exists", "The email address is already registered.");
     } else {
+        verificationCode=QString::number(QRandomGenerator::global()->bounded(100000, 999999));
         // Email does not exist, proceed to send verification code
         sendVerificationCode(email);
         verify = new Verification(verificationCode, this);
         if (verify->exec() == QDialog::Accepted) {
-            // Verification successful
+            qDebug() << "Verification successful, proceeding to save user info.";
             QString username = ui->lineEdit2_1->text();
             QString password = ui->lineEdit2_2->text();
             if (db.saveUserInfo(email, username, password)) {
@@ -141,10 +146,11 @@ void MainWindow::on_SendVerificationCode_clicked()
             } else {
                 QMessageBox::critical(this, "Database Error", "Failed to save user information.");
             }
+        } else {
+            qDebug() << "Verification failed or dialog was cancelled.";
         }
         delete verify; // Clean up the verification dialog
     }
-    db.closeDatabase(); // Ensure the database is closed after operations
 }
 
 void MainWindow::on_SendVerificationCode_2_clicked()
@@ -161,6 +167,7 @@ void MainWindow::on_SendVerificationCode_2_clicked()
     }
 
     if (db.doesEmailExist(email)==true) {
+        verificationCode=QString::number(QRandomGenerator::global()->bounded(100000, 999999));
         // Email is registered, send verification code
         sendVerificationCode(email);
         verify = new Verification(verificationCode, this);
@@ -181,6 +188,4 @@ void MainWindow::on_SendVerificationCode_2_clicked()
     } else {
         QMessageBox::warning(this, "Email Not Found", "The email address is not registered.");
     }
-
-    db.closeDatabase(); // Ensure the database is closed after operations
 }

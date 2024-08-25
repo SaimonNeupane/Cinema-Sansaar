@@ -12,7 +12,6 @@ int main(int argc, char *argv[])
 
     Database db;
     if (db.openDatabase()) {
-        db.closeDatabase();
         w.show();
         return a.exec();
     } else {
