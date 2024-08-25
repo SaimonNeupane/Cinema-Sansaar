@@ -1,7 +1,7 @@
 #include "database.h"
 
 Database::Database() {
-    QString dbPath = "C:/Users/DELL/Desktop/Cinema-Sansaar/Database/Data.db";//QString(DATABASE_PATH);
+    QString dbPath = "C:/Users/Acer/Desktop/Cinema-Sansaar/Database/Data.db";//QString(DATABASE_PATH);
     // Check if the connection already exists, otherwise create it
     if (!QSqlDatabase::contains("CinemaSansaarConnection")) {
         dbConnection = QSqlDatabase::addDatabase("QSQLITE", "CinemaSansaarConnection");
@@ -16,7 +16,7 @@ Database::~Database() {
 }
 bool Database::testConnection(){
     if(openDatabase()){
-        closeConnection();
+
         return true;
     }
 }
@@ -34,7 +34,7 @@ bool Database::closeConnection() {
 bool Database::openDatabase() {
     if (!dbConnection.isOpen()) {
         if (!dbConnection.open()) {
-            qDebug() << "Database error:" << dbConnection.lastError().text();
+            qDebug() << "Database error1:" << dbConnection.lastError().text();
             return false;
         }
     }
@@ -108,6 +108,7 @@ bool Database::saveUserInfo(const QString &email, const QString &username, const
         qDebug() << "Failed to start transaction: " << dbConnection.lastError().text();
         return false;
     }
+
     // Debugging output
     qDebug() << "Preparing query for saving user info";
     query.prepare("INSERT INTO User (username, password, email) VALUES (:username, :password, :email)");
@@ -120,25 +121,28 @@ bool Database::saveUserInfo(const QString &email, const QString &username, const
     bool result = query.exec();
     if (!result) {
         qDebug() << "Database error: " << query.lastError().text();
-
-    } else {
-        qDebug() << "User info saved successfully.";
-        // Check if the record was inserted by querying it back
-        query.prepare("SELECT * FROM User WHERE email = :email");
-        query.bindValue(":email", email);
-        if (!query.exec()) {
-            qDebug() << "Query error: " << query.lastError().text();
-        } else {
-            while (query.next()) {
-                qDebug() << "Record found: Email:" << query.value("email").toString()
-                         << ", Username:" << query.value("username").toString()
-                         << ", Password:" << query.value("password").toString();
-            }
-        }
-
-        qDebug() << "Database connection status: " << (dbConnection.isOpen() ? "Open" : "Closed");
+        dbConnection.rollback(); // Rollback changes on error
+        return false;
     }
-    return result;
+
+    // Commit the transaction only if the query is successful
+    dbConnection.commit();
+
+    // Check if the record was inserted by querying it back
+    query.prepare("SELECT * FROM User WHERE email = :email");
+    query.bindValue(":email", email);
+    if (!query.exec()) {
+        qDebug() << "Query error: " << query.lastError().text();
+    } else {
+        while (query.next()) {
+            qDebug() << "Record found: Email:" << query.value("email").toString()
+                     << ", Username:" << query.value("username").toString()
+                     << ", Password:" << query.value("password").toString();
+        }
+    }
+
+    qDebug() << "Database connection status: " << (dbConnection.isOpen() ? "Open" : "Closed");
+    return true;
 }
 
 

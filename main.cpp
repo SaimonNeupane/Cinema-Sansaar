@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 
     Database *db= new Database;
     if (db->testConnection()) {
-        delete db;
+
         w.show();
         return a.exec();
     } else {
@@ -21,6 +21,5 @@ int main(int argc, char *argv[])
         qCritical() << "Failed to open database. Application will exit.";
         return -1;  // Exit the application with an error code
     }
-    // w.showMaximized();
-    // return a.exec();
+
 }

@@ -11,6 +11,7 @@
 #include "verification.h"
 #include "change_pass.h"
 #include<QNetworkAccessManager>
+#include <QSqlDatabase>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -47,6 +48,7 @@ private:
     QString apiKey;
     QString mailgunDomain;
     QString verificationCode;
+    QSqlDatabase database;
 
 };
 #endif // MAINWINDOW_H
