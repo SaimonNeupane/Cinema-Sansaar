@@ -26,7 +26,7 @@ public:
     //Seat Selection
     QSqlQuery executeSeatQuery(int showtimeId);
     bool updateSeatAvailability(const QString &seatId, int showtimeId);
-    bool insertBooking(const QString &userId, int showtimeId, const QString &seatId);
+    bool insertBooking(const QString &userId, int showtimeId, const QString &seatId, int &bookingId);
     int retrieveLastBookingId();
 
     bool isSeatAvailable(const QString &seatId, int showtimeId);

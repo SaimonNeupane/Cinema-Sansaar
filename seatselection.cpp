@@ -131,8 +131,8 @@ void SeatSelection::on_btnConfirmBooking1_clicked() {
             QString seatId = label->objectName().mid(3);
 
             if (db.updateSeatAvailability(seatId, showtimeId)) {
-                if (db.insertBooking(loggedInUser, showtimeId, seatId)) {
-                    int bookingId = db.retrieveLastBookingId();
+                int bookingId = -1;
+                if (db.insertBooking(loggedInUser, showtimeId, seatId, bookingId)) {
                     if (bookingId != -1) {
                         bookedSeats.append(seatId);
                         bookingIds.append(bookingId);
@@ -140,6 +140,7 @@ void SeatSelection::on_btnConfirmBooking1_clicked() {
                         label->setStyleSheet("background-color: red;");
                     }
                 }
+
             }
         }
     }
