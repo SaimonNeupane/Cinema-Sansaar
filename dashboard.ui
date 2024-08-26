@@ -100,8 +100,8 @@ QPushButton{
    </property>
    <property name="iconSize">
     <size>
-     <width>200</width>
-     <height>300</height>
+     <width>300</width>
+     <height>4000</height>
     </size>
    </property>
    <property name="shortcut">
@@ -142,7 +142,7 @@ QPushButton{
    </property>
    <property name="iconSize">
     <size>
-     <width>200</width>
+     <width>300</width>
      <height>300</height>
     </size>
    </property>
@@ -250,8 +250,8 @@ QPushButton{
    </property>
    <property name="iconSize">
     <size>
-     <width>200</width>
-     <height>300</height>
+     <width>800</width>
+     <height>800</height>
     </size>
    </property>
   </widget>
