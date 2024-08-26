@@ -2,15 +2,7 @@
 #define DASHBOARD_H
 
 #include <QDialog>
-#include "sinister.h"
-#include "mirzapur.h"
-#include "thor.h"
-#include "kabir.h"
-
-#include "sanju.h"
-#include "mahajatra.h"
-#include "harry.h"
-
+#include "seatselection.h"
 
 
 namespace Ui {
@@ -22,7 +14,7 @@ class Dashboard : public QDialog
     Q_OBJECT
 
 public:
-    explicit Dashboard(QWidget *parent = nullptr);
+    explicit Dashboard(const QString &username, QWidget *parent = nullptr);
     ~Dashboard();
 
 private slots:
@@ -42,16 +34,8 @@ private slots:
 
 private:
     Ui::Dashboard *ui;
-    Sinister *sinister;
-    Mirzapur *mirzapur;
-    Thor *thor;
-    Kabir *kabir;
-    Sanju *sanju;
-    Mahajatra *mahajatra;
-    Harry *harry;
-
-
-
+    QString loggedInUsername;
+    SeatSelection *seatselect;
 };
 
 #endif // DASHBOARD_H

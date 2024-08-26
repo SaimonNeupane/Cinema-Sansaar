@@ -1,6 +1,7 @@
 C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/EWIEGA46WW/moc_mainwindow.cpp: C:/Users/ACER/Desktop/Cinema-Sansaar/mainwindow.h \
   C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/Cinema-Sansaar_autogen/moc_predefs.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QDeadlineTimer \
+  C:/Qt/6.7.1/mingw_64/include/QtCore/QDebug \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QFlags \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QHash \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QList \
@@ -11,6 +12,7 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/C
   C:/Qt/6.7.1/mingw_64/include/QtCore/QSharedDataPointer \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QString \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QStringList \
+  C:/Qt/6.7.1/mingw_64/include/QtCore/QTimer \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QUrl \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QVariant \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QtCore \
@@ -287,12 +289,14 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/C
   C:/Qt/6.7.1/mingw_64/include/QtGui/qkeysequence.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qpaintdevice.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qpalette.h \
+  C:/Qt/6.7.1/mingw_64/include/QtGui/qpicture.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qpixelformat.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qpixmap.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qpolygon.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qregion.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qrgb.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qrgba64.h \
+  C:/Qt/6.7.1/mingw_64/include/QtGui/qtextdocument.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qtgui-config.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qtguiexports.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qtguiglobal.h \
@@ -318,6 +322,8 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/C
   C:/Qt/6.7.1/mingw_64/include/QtNetwork/qtnetworkexports.h \
   C:/Qt/6.7.1/mingw_64/include/QtNetwork/qtnetworkglobal.h \
   C:/Qt/6.7.1/mingw_64/include/QtSql/QSqlDatabase \
+  C:/Qt/6.7.1/mingw_64/include/QtSql/QSqlError \
+  C:/Qt/6.7.1/mingw_64/include/QtSql/QSqlQuery \
   C:/Qt/6.7.1/mingw_64/include/QtSql/QtSqlDepends \
   C:/Qt/6.7.1/mingw_64/include/QtSql/Qtsql \
   C:/Qt/6.7.1/mingw_64/include/QtSql/qsqldatabase.h \
@@ -338,7 +344,10 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/C
   C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlglobal.h \
   C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlversion.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/QDialog \
+  C:/Qt/6.7.1/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/QMainWindow \
+  C:/Qt/6.7.1/mingw_64/include/QtWidgets/QPushButton \
+  C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractitemview.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractscrollarea.h \
@@ -347,8 +356,10 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/C
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qcombobox.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qdialog.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qframe.h \
+  C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlabel.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlistview.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qmainwindow.h \
+  C:/Qt/6.7.1/mingw_64/include/QtWidgets/qpushbutton.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qrubberband.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qslider.h \
@@ -685,12 +696,8 @@ C:/Users/ACER/Desktop/Cinema-Sansaar/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/C
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wctype.h \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/change_pass.h \
   C:/Users/ACER/Desktop/Cinema-Sansaar/dashboard.h \
-  C:/Users/ACER/Desktop/Cinema-Sansaar/harry.h \
-  C:/Users/ACER/Desktop/Cinema-Sansaar/kabir.h \
-  C:/Users/ACER/Desktop/Cinema-Sansaar/mahajatra.h \
-  C:/Users/ACER/Desktop/Cinema-Sansaar/mirzapur.h \
-  C:/Users/ACER/Desktop/Cinema-Sansaar/sanju.h \
-  C:/Users/ACER/Desktop/Cinema-Sansaar/signup.h \
-  C:/Users/ACER/Desktop/Cinema-Sansaar/sinister.h \
-  C:/Users/ACER/Desktop/Cinema-Sansaar/thor.h
+  C:/Users/ACER/Desktop/Cinema-Sansaar/database.h \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/seatselection.h \
+  C:/Users/ACER/Desktop/Cinema-Sansaar/verification.h

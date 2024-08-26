@@ -1,17 +1,12 @@
 #include "dashboard.h"
 #include "ui_dashboard.h"
-#include "sinister.h"
-#include "kabir.h"
-#include "mirzapur.h"
-#include "sanju.h"
-#include "harry.h"
-#include "mahajatra.h"
-#include "thor.h"
+#include "seatselection.h"
 
 
-Dashboard::Dashboard(QWidget *parent)
+Dashboard::Dashboard(const QString &loggedInUser, QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::Dashboard)
+    , loggedInUsername(loggedInUser)
 {
     ui->setupUi(this);
 }
@@ -23,49 +18,49 @@ Dashboard::~Dashboard()
 
 void Dashboard::on_pushButton_2_clicked()
 {
-    sinister=new Sinister(this);
-    sinister->show();
+    seatselect=new SeatSelection(loggedInUsername, 2,this);
+    seatselect->show();
 }
 
 
 void Dashboard::on_pushButton_clicked()
 {
-    kabir=new Kabir(this);
-    kabir->show();
+    seatselect=new SeatSelection(loggedInUsername, 3,this);
+    seatselect->show();
 }
 
 
 void Dashboard::on_pushButton_3_clicked()
 {
-    thor=new Thor(this);
-    thor->show();
+    seatselect=new SeatSelection(loggedInUsername, 4,this);
+    seatselect->show();
 }
 
 
 void Dashboard::on_pushButton_4_clicked()
 {
-    sanju=new Sanju(this);
-    sanju->show();
+    seatselect=new SeatSelection(loggedInUsername, 5,this);
+    seatselect->show();
 }
 
 
 void Dashboard::on_pushButton_5_clicked()
 {
-    mahajatra=new Mahajatra(this);
-    mahajatra->show();
+    seatselect=new SeatSelection(loggedInUsername, 6,this);
+    seatselect->show();
 }
 
 
 void Dashboard::on_pushButton_6_clicked()
 {
-    harry=new Harry(this);
-    harry->show();
+    seatselect=new SeatSelection(loggedInUsername, 1,this);
+    seatselect->show();
 }
 
 
 void Dashboard::on_pushButton_7_clicked()
 {
-    mirzapur=new Mirzapur(this);
-    mirzapur->show();
+    seatselect=new SeatSelection(loggedInUsername, 7,this);
+    seatselect->show();
 }
 

@@ -4,8 +4,14 @@
 #include <QMainWindow>
 #include<Qtsql>
 #include<QSqlDatabase>
+#include<QPushButton>
 #include "dashboard.h"
-#include "signup.h"
+// #include "signup.h"
+#include "database.h"
+#include "verification.h"
+#include "change_pass.h"
+#include<QNetworkAccessManager>
+#include <QSqlDatabase>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -22,17 +28,27 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_checkBox_clicked(bool checked);
-
-    void on_Login_clicked();
-
-    void on_Signup_clicked();
+    void connect_stackedWidget();//button connection for stacked widget
+    void connect_checkbox();//checkbox of show password
+    void on_Login_clicked();//login page->login button
+    void on_SendVerificationCode_clicked();//to open dialog box
+    void sendVerificationCode(const QString &email);
+    void on_SendVerificationCode_2_clicked();
 
 private:
     Ui::MainWindow *ui;
     Dashboard *dashboard;
-    Signup *signup;
+    Verification *verify;
+    Change_pass *new_pass;
+    Database db;
+    QPushButton *widget_index[4];//for button connection for stacked widget
 
+    // Signup related members
+    QNetworkAccessManager *networkManager;
+    QString apiKey;
+    QString mailgunDomain;
+    QString verificationCode;
+    QSqlDatabase database;
 
 };
 #endif // MAINWINDOW_H
